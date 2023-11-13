@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>G9 Aerospace | BBN Resources</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/g9aerospace.png">
+
+    <!-- Additional styles for advanced functionalities -->
+    <style>
+        /* Adjust styles for sliders */
+        .slider-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .slider-label {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .slider {
+            -webkit-appearance: none;
+            width: 80%;
+            height: 10px;
+            border-radius: 5px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+            margin-bottom: 20px;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="is-preload landing">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a>G9 Aerospace | BBN Resources</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li>
+                        <a>Games</a>
+                        <ul>
+                            <li><a href="kerbalspaceprogram.html">Kerbal Space Program</a></li>
+                            <li><a href="minecraft.html">Minecraft</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Utilities</a>
+                        <ul>
+                            <li><a href="bbn-resources.html">BBN Resources</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Banner -->
+        <section id="banner">
+            <div class="content">
+                <header>
+                    <h2>Welcome to the BBN Resources Page!</h2>
+                    <p>Explore resources prices below<br /></p>
+                </header>
+            </div>
+        </section>
+
+        <!-- Advanced Functionalities Section -->
+        <section id="advanced-functionalities" class="spotlight style1 bottom">
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <header>
+                                <h2>BBN Resources Calculator</h2>
+                            </header>
+                        </div>
+                        <!-- Sliders for RAM, Memory, CPU, and Ports -->
+                        <div class="col-12 slider-container">
+                            <label class="slider-label">RAM: <span id="ramValue">0</span> MB</label>
+                            <input type="range" min="0" max="10000" value="0" class="slider" id="ramSlider" step="100">
+
+                            <label class="slider-label">Memory: <span id="memoryValue">0 MB</span></label>
+                            <input type="range" min="0" max="20000" value="0" class="slider" id="memorySlider" step="100">
+
+                            <label class="slider-label">CPU: <span id="cpuValue">0 %</span></label>
+                            <input type="range" min="0" max="2000" value="0" class="slider" id="cpuSlider" step="50">
+
+                            <label class="slider-label">Ports: <span id="portsValue">0 Ports</span></label>
+                            <input type="range" min="0" max="10" value="0" class="slider" id="portsSlider" step="1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#cost-section" class="goto-next scrolly">Explore now</a>
+        </section>
+
+    <!-- Cost Section -->
+<section id="cost-section" class="spotlight style2 right">
+    <div class="content">
+        <header>
+            <h2>Cost Incurred</h2>
+        </header>
+        <div class="col-12">
+            <p>
+                <strong>RAM Cost:</strong> <span id="ramCost">0</span> coins
+            </p>
+            <p>
+                <strong>Memory Cost:</strong> <span id="memoryCost">0</span> coins
+            </p>
+            <p>
+                <strong>CPU Cost:</strong> <span id="cpuCost">0</span> coins
+            </p>
+            <p>
+                <strong>Ports Cost:</strong> <span id="portsCost">0</span> coins
+            </p>
+        </div>
+        <div class="col-12">
+            <p>
+                <strong>Total Cost:</strong> <span id="totalCost">0</span> coins
+            </p>
+            <p>
+                <strong>Total Cost in Dollars:</strong> $<span id="totalCostDollars">0</span>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Additional script for calculating and updating costs -->
+<script>
+    // Function to calculate and update costs
+    function updateCosts() {
+        var ramValue = parseInt(document.getElementById('ramValue').innerHTML);
+        var memoryValue = parseInt(document.getElementById('memoryValue').innerHTML);
+        var cpuValue = parseInt(document.getElementById('cpuValue').innerHTML);
+        var portsValue = parseInt(document.getElementById('portsValue').innerHTML);
+
+        // Cost rates
+        var ramRate = 1; // 1 coin per 100 MB
+        var memoryRate = 0.25; // 0.25 coins per 100 MB
+        var cpuRate = 0.5; // 0.5 coins per 1%
+        var portsRate = 1000; // 1000 coins per port
+
+        // Calculate costs
+        var ramCost = Math.ceil(ramValue / 100) * ramRate;
+        var memoryCost = Math.ceil(memoryValue / 100) * memoryRate;
+        var cpuCost = Math.ceil(cpuValue / 1) * cpuRate;
+        var portsCost = portsValue * portsRate;
+
+        // Update cost elements
+        document.getElementById('ramCost').innerHTML = ramCost;
+        document.getElementById('memoryCost').innerHTML = memoryCost;
+        document.getElementById('cpuCost').innerHTML = cpuCost;
+        document.getElementById('portsCost').innerHTML = portsCost;
+
+        // Calculate total cost and update
+        var totalCost = ramCost + memoryCost + cpuCost + portsCost;
+        document.getElementById('totalCost').innerHTML = totalCost;
+
+        // Convert total cost to dollars (1 dollar = 100 coins)
+        var totalCostDollars = totalCost / 100;
+        document.getElementById('totalCostDollars').innerHTML = totalCostDollars.toFixed(2);
+    }
+
+    // Attach event listeners to update costs
+    document.getElementById('ramSlider').addEventListener('input', function () {
+        updateSliderValue('ramSlider', 'ramValue');
+        updateCosts();
+    });
+
+    document.getElementById('memorySlider').addEventListener('input', function () {
+        updateSliderValue('memorySlider', 'memoryValue');
+        updateCosts();
+    });
+
+    document.getElementById('cpuSlider').addEventListener('input', function () {
+        updateSliderValue('cpuSlider', 'cpuValue');
+        updateCosts();
+    });
+
+    document.getElementById('portsSlider').addEventListener('input', function () {
+        updateSliderValue('portsSlider', 'portsValue');
+        updateCosts();
+    });
+</script>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="https://www.instagram.com/g9aerospace/" class="icon brands alt fa-instagram"><span
+                            class="label">Instagram</span></a></li>
+                <li><a href="https://github.com/g9militantsYT" class="icon brands alt fa-github"><span
+                            class="label">GitHub</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; G9 Aerospace. All rights reserved.</li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Additional script for updating slider values -->
+    <script>
+        // Function to update slider values
+        function updateSliderValue(sliderId, valueId) {
+            var slider = document.getElementById(sliderId);
+            var value = document.getElementById(valueId);
+            value.innerHTML = slider.value;
+
+            // Add any additional functionality here
+        }
+
+        // Attach event listeners to update slider values
+        document.getElementById('ramSlider').addEventListener('input', function () {
+            updateSliderValue('ramSlider', 'ramValue');
+        });
+
+        document.getElementById('memorySlider').addEventListener('input', function () {
+            updateSliderValue('memorySlider', 'memoryValue');
+        });
+
+        document.getElementById('cpuSlider').addEventListener('input', function () {
+            updateSliderValue('cpuSlider', 'cpuValue');
+        });
+
+        document.getElementById('portsSlider').addEventListener('input', function () {
+            updateSliderValue('portsSlider', 'portsValue');
+        });
+    </script>
+</body>
+
+</html>
