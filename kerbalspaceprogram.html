@@ -8,25 +8,51 @@
     <meta name="author" content="G9 Aerospace" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
-        .column {
-            max-width: 33.33%;
-            box-sizing: border-box;
-            padding: 10px;
-            display: inline-block;
-            vertical-align: top;
-        }
-    
-        .column img {
-            max-width: 100%;
-            max-height: 200px;
-            height: auto;
-            object-fit: cover;
-        }
-    
-        .column a.button {
-            display: block;
-            margin-top: 10px;
-        }
+    .column {
+        width: calc(33.33% - 20px);
+        box-sizing: border-box;
+        padding: 10px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 10px;
+        text-align: center;
+        border: 3px solid #dddddd1b;
+        border-radius: 5px;
+    }
+
+    .column img {
+        max-width: 100%;
+        max-height: 200px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .column h3 {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .column p {
+        font-size: 14px;
+    }
+
+    .column a.button {
+        display: block;
+        margin-top: 10px;
+        padding: 5px 10px;
+        text-decoration: none;
+        background-color: rgb(29, 41, 61);
+        color: white;
+        border-radius: 5px;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+
     </style>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
