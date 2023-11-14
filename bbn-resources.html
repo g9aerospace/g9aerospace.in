@@ -44,14 +44,15 @@
         }
 
         .slider::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        appearance: none; /* Standard property for compatibility */
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background: #d95503;
-        cursor: pointer;
-    }
+            -webkit-appearance: none;
+            appearance: none;
+            /* Standard property for compatibility */
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #d95503;
+            cursor: pointer;
+        }
 
 
         .slider::-moz-range-thumb {
@@ -116,7 +117,8 @@
                             <input type="range" min="0" max="10000" value="0" class="slider" id="ramSlider" step="100">
 
                             <label class="slider-label">Memory: <span id="memoryValue">0 MB</span></label>
-                            <input type="range" min="0" max="20000" value="0" class="slider" id="memorySlider" step="100">
+                            <input type="range" min="0" max="20000" value="0" class="slider" id="memorySlider"
+                                step="100">
 
                             <label class="slider-label">CPU: <span id="cpuValue">0 %</span></label>
                             <input type="range" min="0" max="2000" value="0" class="slider" id="cpuSlider" step="50">
@@ -130,94 +132,94 @@
             <a href="#cost-section" class="goto-next scrolly">Explore now</a>
         </section>
 
-    <!-- Cost Section -->
-<section id="cost-section" class="spotlight style2 right">
-    <div class="content">
-        <header>
-            <h2>Cost Incurred</h2>
-        </header>
-        <div class="col-12">
-            <p>
-                <strong>RAM Cost:</strong> <span id="ramCost">0</span> coins
-            </p>
-            <p>
-                <strong>Memory Cost:</strong> <span id="memoryCost">0</span> coins
-            </p>
-            <p>
-                <strong>CPU Cost:</strong> <span id="cpuCost">0</span> coins
-            </p>
-            <p>
-                <strong>Ports Cost:</strong> <span id="portsCost">0</span> coins
-            </p>
-        </div>
-        <div class="col-12">
-            <p>
-                <strong>Total Cost:</strong> <span id="totalCost">0</span> coins
-            </p>
-            <p>
-                <strong>Total Cost in Dollars:</strong> $<span id="totalCostDollars">0</span>
-            </p>
-        </div>
-    </div>
-</section>
+        <!-- Cost Section -->
+        <section id="cost-section" class="spotlight style2 right">
+            <div class="content">
+                <header>
+                    <h2>Cost Incurred</h2>
+                </header>
+                <div class="col-12">
+                    <p>
+                        <strong>RAM Cost:</strong> <span id="ramCost">0</span> coins
+                    </p>
+                    <p>
+                        <strong>Memory Cost:</strong> <span id="memoryCost">0</span> coins
+                    </p>
+                    <p>
+                        <strong>CPU Cost:</strong> <span id="cpuCost">0</span> coins
+                    </p>
+                    <p>
+                        <strong>Ports Cost:</strong> <span id="portsCost">0</span> coins
+                    </p>
+                </div>
+                <div class="col-12">
+                    <p>
+                        <strong>Total Cost:</strong> <span id="totalCost">0</span> coins
+                    </p>
+                    <p>
+                        <strong>Total Cost in Dollars:</strong> $<span id="totalCostDollars">0</span>
+                    </p>
+                </div>
+            </div>
+        </section>
 
-<!-- Additional script for calculating and updating costs -->
-<script>
-    // Function to calculate and update costs
-    function updateCosts() {
-        var ramValue = parseInt(document.getElementById('ramValue').innerHTML);
-        var memoryValue = parseInt(document.getElementById('memoryValue').innerHTML);
-        var cpuValue = parseInt(document.getElementById('cpuValue').innerHTML);
-        var portsValue = parseInt(document.getElementById('portsValue').innerHTML);
+        <!-- Additional script for calculating and updating costs -->
+        <script>
+            // Function to calculate and update costs
+            function updateCosts() {
+                var ramValue = parseInt(document.getElementById('ramValue').innerHTML);
+                var memoryValue = parseInt(document.getElementById('memoryValue').innerHTML);
+                var cpuValue = parseInt(document.getElementById('cpuValue').innerHTML);
+                var portsValue = parseInt(document.getElementById('portsValue').innerHTML);
 
-        // Cost rates
-        var ramRate = 1; // 1 coin per 100 MB
-        var memoryRate = 0.25; // 0.25 coins per 100 MB
-        var cpuRate = 0.5; // 0.5 coins per 1%
-        var portsRate = 1000; // 1000 coins per port
+                // Cost rates
+                var ramRate = 1; // 1 coin per 100 MB
+                var memoryRate = 0.25; // 0.25 coins per 100 MB
+                var cpuRate = 0.5; // 0.5 coins per 1%
+                var portsRate = 1000; // 1000 coins per port
 
-        // Calculate costs
-        var ramCost = Math.ceil(ramValue / 100) * ramRate;
-        var memoryCost = Math.ceil(memoryValue / 100) * memoryRate;
-        var cpuCost = Math.ceil(cpuValue / 1) * cpuRate;
-        var portsCost = portsValue * portsRate;
+                // Calculate costs
+                var ramCost = Math.ceil(ramValue / 100) * ramRate;
+                var memoryCost = Math.ceil(memoryValue / 100) * memoryRate;
+                var cpuCost = Math.ceil(cpuValue / 1) * cpuRate;
+                var portsCost = portsValue * portsRate;
 
-        // Update cost elements
-        document.getElementById('ramCost').innerHTML = ramCost;
-        document.getElementById('memoryCost').innerHTML = memoryCost;
-        document.getElementById('cpuCost').innerHTML = cpuCost;
-        document.getElementById('portsCost').innerHTML = portsCost;
+                // Update cost elements
+                document.getElementById('ramCost').innerHTML = ramCost;
+                document.getElementById('memoryCost').innerHTML = memoryCost;
+                document.getElementById('cpuCost').innerHTML = cpuCost;
+                document.getElementById('portsCost').innerHTML = portsCost;
 
-        // Calculate total cost and update
-        var totalCost = ramCost + memoryCost + cpuCost + portsCost;
-        document.getElementById('totalCost').innerHTML = totalCost;
+                // Calculate total cost and update
+                var totalCost = ramCost + memoryCost + cpuCost + portsCost;
+                document.getElementById('totalCost').innerHTML = totalCost;
 
-        // Convert total cost to dollars (1 dollar = 100 coins)
-        var totalCostDollars = totalCost / 100;
-        document.getElementById('totalCostDollars').innerHTML = totalCostDollars.toFixed(2);
-    }
+                // Convert total cost to dollars (1 dollar = 100 coins)
+                var totalCostDollars = totalCost / 100;
+                document.getElementById('totalCostDollars').innerHTML = totalCostDollars.toFixed(2);
+            }
 
-    // Attach event listeners to update costs
-    document.getElementById('ramSlider').addEventListener('input', function () {
-        updateSliderValue('ramSlider', 'ramValue');
-        updateCosts();
-    });
+            // Attach event listeners to update costs
+            document.getElementById('ramSlider').addEventListener('input', function () {
+                updateSliderValue('ramSlider', 'ramValue');
+                updateCosts();
+            });
 
-    document.getElementById('memorySlider').addEventListener('input', function () {
-        updateSliderValue('memorySlider', 'memoryValue');
-        updateCosts();
-    });
+            document.getElementById('memorySlider').addEventListener('input', function () {
+                updateSliderValue('memorySlider', 'memoryValue');
+                updateCosts();
+            });
 
-    document.getElementById('cpuSlider').addEventListener('input', function () {
-        updateSliderValue('cpuSlider', 'cpuValue');
-        updateCosts();
-    });
+            document.getElementById('cpuSlider').addEventListener('input', function () {
+                updateSliderValue('cpuSlider', 'cpuValue');
+                updateCosts();
+            });
 
-    document.getElementById('portsSlider').addEventListener('input', function () {
-        updateSliderValue('portsSlider', 'portsValue');
-        updateCosts();
-    });
-</script>
+            document.getElementById('portsSlider').addEventListener('input', function () {
+                updateSliderValue('portsSlider', 'portsValue');
+                updateCosts();
+            });
+        </script>
 
 
         <!-- Footer -->
