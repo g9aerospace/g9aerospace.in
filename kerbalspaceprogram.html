@@ -126,51 +126,62 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        $(document).ready(function () {
-            // Variables to keep track of loaded entries and the number to load at a time
-            let loadedEntries = 0;
-            const entriesPerLoad = 9;
+$(document).ready(function () {
+    // Variables to keep track of loaded entries and the number to load at a time
+    let loadedEntries = 0;
+    const entriesPerLoad = 9;
 
-            // Function to load more entries
-            function loadMoreEntries() {
-                // Fetch data from the JSON file
-                $.getJSON("assets/csvjson.json", function (data) {
-                    // Dynamically generate content for the next batch
-                    let content = "";
-                    for (let i = loadedEntries; i < loadedEntries + entriesPerLoad && i < data.length; i++) {
-                        let entry = data[i];
-                        // Use a default image if "Image" is not provided
-                        let imageUrl = entry.Image || "/images/pic04.jpg";
+    // Function to load more entries
+    function loadMoreEntries() {
+        // Fetch data from the JSON file
+        $.getJSON("assets/csvjson.json", function (data) {
+            try {
+                // Dynamically generate content for the next batch
+                let content = "";
+                for (let i = loadedEntries; i < loadedEntries + entriesPerLoad && i < data.length; i++) {
+                    let entry = data[i];
+                    // Use a default image if "Image" is not provided
+                    let imageUrl = entry.Image || "/images/pic04.jpg";
 
-                        // Display KerbalX, Cinematic Trailers, and Speedbuilds as buttons
-                        content += `
-                            <div class="column">
-                                <span class="image fit"><img loading="lazy" src="${imageUrl}" alt="${entry.Title}" /></span>
-                                <h3>${entry.Title}</h3>
-                                <p>Manufacturer: ${entry.Manufacturer}</p>
-                                <a href="${entry.KerbalX}" class="button" target="_blank">KerbalX</a>
-                                <a href="${entry['Cinematic Trailers']}" class="button" target="_blank">Cinematic Trailers</a>
-                                <a href="${entry.Speedbuilds}" class="button" target="_blank">Speedbuilds</a>
-                            </div>
-                        `;
-                    }
+                    // Display KerbalX, Cinematic Trailers, and Speedbuilds as buttons
+                    content += `
+                        <div class="column">
+                            <span class="image fit"><img loading="lazy" src="${imageUrl}" alt="${entry.Title}" /></span>
+                            <h3>${entry.Title}</h3>
+                            <p>Manufacturer: ${entry.Manufacturer}</p>
+                            <a href="${entry.KerbalX}" class="button" target="_blank">KerbalX</a>
+                            <a href="${entry['Cinematic Trailers']}" class="button" target="_blank">Cinematic Trailers</a>
+                            <a href="${entry.Speedbuilds}" class="button" target="_blank">Speedbuilds</a>
+                        </div>
+                    `;
+                }
 
-                    // Increment the loaded entries count
-                    loadedEntries += entriesPerLoad;
+                // Increment the loaded entries count
+                loadedEntries += entriesPerLoad;
 
-                    // Append content to the main section
-                    $("#main .row").append(content);
-                });
+                // Append content to the main section
+                $("#main .row").append(content);
+            } catch (error) {
+                // Log any errors that occur during content generation
+                console.error("Error during content generation:", error);
             }
-
-            // Load the initial batch of entries
-            loadMoreEntries();
-
-            // Event listener for the "Load More" button
-            $("#loadMoreBtn").click(function () {
-                loadMoreEntries();
-            });
+        })
+        .fail(function(jqxhr, textStatus, error) {
+            // Log any AJAX request failures
+            const err = textStatus + ", " + error;
+            console.error("Request Failed: " + err);
         });
+    }
+
+    // Load the initial batch of entries
+    loadMoreEntries();
+
+    // Event listener for the "Load More" button
+    $("#loadMoreBtn").click(function () {
+        loadMoreEntries();
+    });
+});
+
     </script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/jquery.dropotron.min.js"></script>
