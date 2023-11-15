@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="keywords" content="G9 Aerospace, Blog, Technology, Space, Gaming">
+    <meta name="author" content="G9 Aerospace">
+    <title>G9 Aerospace | Blog</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+    <link rel="icon" type="image/png" href="images/g9aerospace.png">
+    <style>
+        /* Additional styling can be added here */
+        .blog-post {
+            margin-bottom: 20px;
+        }
+
+        .date {
+            font-style: italic;
+            color: #888;
+        }
+
+        /* Style for the blog table */
+        .blog-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .blog-table th, .blog-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .blog-table th {
+            background-color: #f2f2f2;
+        }
+
+        .read-more-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="is-preload blog">
+    <div id="page-wrapper">
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a href="#">G9 Aerospace | Blog</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="blog">Blog</a></li>
+                    <li>
+                        <a>Games</a>
+                        <ul>
+                            <li><a href="kerbalspaceprogram">Kerbal Space Program</a></li>
+                            <li><a href="minecraft">Minecraft</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Utilities</a>
+                        <ul>
+                            <li><a href="bbn-resources">BBN Resources</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Banner -->
+        <section id="banner">
+            <div class="content">
+                <header>
+                    <h2>Welcome to the Blog!</h2>
+                    <p>Explore the latest articles and updates.</p>
+                </header>
+                <span class="image"><img src="images/g9aerospace.png" alt=""></span>
+            </div>
+            <a href="#latest-posts" class="goto-next scrolly">Next</a>
+        </section>
+
+        <!-- Latest Posts Section -->
+        <section id="latest-posts" class="spotlight style1 bottom">
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <header>
+                                <h2>Latest Blog Posts</h2>
+                                <p>Stay updated with our articles.</p>
+                            </header>
+                        </div>
+                        <div class="col-12">
+                            <!-- Use a table to display blog posts -->
+                            <table class="blog-table">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Date</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="blog-posts">
+                                    <!-- Blog posts will be dynamically added here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#footer" class="goto-next scrolly">Next</a>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="https://www.instagram.com/g9aerospace/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://github.com/g9militantsYT" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; G9 Aerospace. All rights reserved.</li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Fetch and display blog data from blog.json
+        $(document).ready(function () {
+            $.getJSON("blog.json", function (data) {
+                // Iterate through blog posts and append them to the #blog-posts table
+                $.each(data, function (index, post) {
+                    $("#blog-posts").append(
+                        "<tr class='blog-post'>" +
+                            "<td>" + post.title + "</td>" +
+                            "<td>" + post.date + "</td>" +
+                            "<td><a href='blog/" + post.title.replace(/\s+/g, '-').toLowerCase() + "' class='read-more-btn'>Read More</a></td>" +
+                        "</tr>"
+                    );
+                });
+            });
+        });
+    </script>
+</body>
+</html>
