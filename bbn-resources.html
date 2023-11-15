@@ -54,7 +54,6 @@
             cursor: pointer;
         }
 
-
         .slider::-moz-range-thumb {
             width: 25px;
             height: 25px;
@@ -62,11 +61,59 @@
             background: #4CAF50;
             cursor: pointer;
         }
+
+        /* Styles for the disclaimer modal popup */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #555555;
+            margin: 5% auto;
+            padding: 5px;
+            width: 80%;
+        }
+
+        .close {
+            color: #ffffff;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body class="is-preload landing">
     <div id="page-wrapper">
+
+        <!-- Disclaimer Popup -->
+        <div id="disclaimerModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="hideDisclaimerModal()">&times;</span>
+                <p>
+                    This website is not affiliated with BBN Hosting. For updated data, please contact them via their
+                    Discord server!
+                    The author shall not be held responsible for any outdated/incorrect/missing data!
+                </p>
+            </div>
+        </div>
 
         <!-- Header -->
         <header id="header">
@@ -222,6 +269,52 @@
             });
         </script>
 
+        <!-- Additional script for updating slider values -->
+        <script>
+            // Function to update slider values
+            function updateSliderValue(sliderId, valueId) {
+                var slider = document.getElementById(sliderId);
+                var value = document.getElementById(valueId);
+                value.innerHTML = slider.value;
+
+                // Add any additional functionality here
+            }
+
+            // Attach event listeners to update slider values
+            document.getElementById('ramSlider').addEventListener('input', function () {
+                updateSliderValue('ramSlider', 'ramValue');
+            });
+
+            document.getElementById('memorySlider').addEventListener('input', function () {
+                updateSliderValue('memorySlider', 'memoryValue');
+            });
+
+            document.getElementById('cpuSlider').addEventListener('input', function () {
+                updateSliderValue('cpuSlider', 'cpuValue');
+            });
+
+            document.getElementById('portsSlider').addEventListener('input', function () {
+                updateSliderValue('portsSlider', 'portsValue');
+            });
+        </script>
+
+        <!-- Additional script for showing/hiding modal popup -->
+        <script>
+            // Function to show the modal popup
+            function showDisclaimerModal() {
+                document.getElementById('disclaimerModal').style.display = 'block';
+            }
+
+            // Function to hide the modal popup
+            function hideDisclaimerModal() {
+                document.getElementById('disclaimerModal').style.display = 'none';
+            }
+
+            // Show the modal popup when the page loads (you can adjust the timing if needed)
+            window.onload = function () {
+                showDisclaimerModal();
+            };
+        </script>
 
         <!-- Footer -->
         <footer id="footer">
@@ -247,35 +340,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-
-    <!-- Additional script for updating slider values -->
-    <script>
-        // Function to update slider values
-        function updateSliderValue(sliderId, valueId) {
-            var slider = document.getElementById(sliderId);
-            var value = document.getElementById(valueId);
-            value.innerHTML = slider.value;
-
-            // Add any additional functionality here
-        }
-
-        // Attach event listeners to update slider values
-        document.getElementById('ramSlider').addEventListener('input', function () {
-            updateSliderValue('ramSlider', 'ramValue');
-        });
-
-        document.getElementById('memorySlider').addEventListener('input', function () {
-            updateSliderValue('memorySlider', 'memoryValue');
-        });
-
-        document.getElementById('cpuSlider').addEventListener('input', function () {
-            updateSliderValue('cpuSlider', 'cpuValue');
-        });
-
-        document.getElementById('portsSlider').addEventListener('input', function () {
-            updateSliderValue('portsSlider', 'portsValue');
-        });
-    </script>
 </body>
 
 </html>
