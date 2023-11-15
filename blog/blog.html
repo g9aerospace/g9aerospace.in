@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="keywords" content="G9 Aerospace, Blog, Technology, Space, Gaming">
     <meta name="author" content="G9 Aerospace">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
-    <link rel="icon" type="image/png" href="images/g9aerospace.png">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css"></noscript>
+    <link rel="icon" type="image/png" href="../images/g9aerospace.png">
     <style>
         /* Additional styling can be added here */
         .blog-post {
@@ -38,7 +38,7 @@
         }
 
         .read-more-btn {
-            background-color: #4CAF50;
+            background-color: #cbcbcb44;
             color: white;
             padding: 8px 16px;
             text-align: center;
@@ -58,22 +58,22 @@
             <h1 id="logo"><a>G9 Aerospace | Blog</a></h1>
             <nav id="nav">
                 <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="blog">Blog</a></li>
+                    <li><a href="../home">Home</a></li>
+                    <li><a href="../blog/blog">Blog</a></li>
                     <li>
                         <a>Games</a>
                         <ul>
-                            <li><a href="kerbalspaceprogram">Kerbal Space Program</a></li>
-                            <li><a href="minecraft">Minecraft</a></li>
+                            <li><a href="../kerbalspaceprogram">Kerbal Space Program</a></li>
+                            <li><a href="../minecraft">Minecraft</a></li>
                         </ul>
                     </li>
                     <li>
                         <a>Utilities</a>
                         <ul>
-                            <li><a href="bbn-resources">BBN Resources</a></li>
+                            <li><a href="../bbn-resources">BBN Resources</a></li>
                         </ul>
                     </li>
-                    <li><a href="blog">Blog</a></li>
+                    <li><a href="blog/blog">Blog</a></li>
                 </ul>
             </nav>
         </header>
@@ -85,7 +85,7 @@
                     <h2>Welcome to the Blog!</h2>
                     <p>Explore the latest articles and updates.</p>
                 </header>
-                <span class="image"><img src="images/g9aerospace.png" alt=""></span>
+                <span class="image"><img src="../images/g9aerospace.png" alt=""></span>
             </div>
             <a href="#latest-posts" class="goto-next scrolly">Next</a>
         </section>
@@ -135,25 +135,25 @@
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/jquery.dropotron.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
     <script>
         // Fetch and display blog data from blog.json
         $(document).ready(function () {
-            $.getJSON("blog.json", function (data) {
+            $.getJSON("../blog.json", function (data) {
                 // Iterate through blog posts and append them to the #blog-posts table
                 $.each(data, function (index, post) {
                     $("#blog-posts").append(
                         "<tr class='blog-post'>" +
                             "<td>" + post.title + "</td>" +
                             "<td>" + post.date + "</td>" +
-                            "<td><a href='blog/" + post.title.replace(/\s+/g, '-').toLowerCase() + "' class='read-more-btn'>Read More</a></td>" +
+                            "<td><a href='" + post.title.replace(/\s+/g, '-').toLowerCase() + "' class='read-more-btn'>Read More</a></td>" +
                         "</tr>"
                     );
                 });
