@@ -1,17 +1,58 @@
-.wrapper {
-  margin: 0 auto;
-  padding: 30px 40px;
-}
+/* Updated footer.module.css */
 
-.anchor {
+.footer {
+  background-color: var(--footer-background);
   color: white;
-  display: block;
-  font-size: 0.8rem;
-  text-align: center;
-  text-decoration: none;
-  line-height: 1.5;
+  padding: 30px;
 }
 
-.anchor:hover {
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonContainer {
+  margin-bottom: 10px;
+}
+
+.email {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.rightSection {
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin: 0 15px; /* Adjust spacing between links */
+}
+
+.link:hover {
   color: var(--qwik-light-blue);
+}
+
+.line {
+  border-bottom: 1px solid white;
+  margin: 20px 0;
+}
+
+.authorMessage {
+  text-align: center;
+  font-size: 0.9rem;
 }
