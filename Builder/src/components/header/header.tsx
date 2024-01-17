@@ -7,7 +7,7 @@ export default component$(() => {
     <header class={styles.header}>
       <div class={styles.wrapper}>
         <div class={styles.left}>
-          <img src={logoSvg} alt="Logo" class={styles.logo} />
+        <img src={logoSvg} alt="Logo" class={styles.logo} width="360" height="360" />
           G9 Aerospace
         </div>
 
