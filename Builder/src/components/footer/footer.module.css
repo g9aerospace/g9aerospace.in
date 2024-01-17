@@ -2,8 +2,9 @@
 
 .footer {
   background-color: var(--footer-background);
-  color: white;
+  color: var(--text-color);
   padding: 30px;
+  text-align: center;
 }
 
 .container {
@@ -15,14 +16,15 @@
 .leftSection {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .buttonContainer {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .email {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-bottom: 10px;
 }
 
@@ -33,26 +35,27 @@
 .navigation {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .link {
-  color: white;
+  color: var(--qwik-light-blue);
   text-decoration: none;
-  font-size: 0.9rem;
-  margin: 0 15px; /* Adjust spacing between links */
+  font-size: 1rem;
+  margin: 0 20px;
+  transition: color 0.3s ease-in-out;
 }
 
 .link:hover {
-  color: var(--qwik-light-blue);
+  color: var(--qwik-light-purple);
 }
 
 .line {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--qwik-dirty-black);
   margin: 20px 0;
 }
 
 .authorMessage {
-  text-align: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  color: #a4a1a1;
 }

@@ -14,9 +14,9 @@
   --qwik-dirty-black: #1d2033;
 
   --text-color: #ffffff;
-  --main-background: #1c224a;
-  --header-background: var(--main-background);
-  --footer-background: #0d0c25;
+  --main-background: #101010;
+  --header-background: #000000;
+  --footer-background: #000000;
 }
 
 /* SHELL ---------------------------------------- */

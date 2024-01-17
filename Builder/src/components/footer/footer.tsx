@@ -9,14 +9,16 @@ export default component$(() => {
       <div class={styles.container}>
         <div class={styles.leftSection}>
           <div class={styles.buttonContainer}>
-            <a href="https://www.buymeacoffee.com/g9aerospace">
+            <a href="https://www.buymeacoffee.com/g9aerospace" target="_blank" rel="noopener noreferrer">
               <img
-                src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=g9aerospace&button_colour=5F7FFF&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"
+                src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=g9aerospace&button_colour=var(--qwik-light-blue)&font_colour=var(--text-color)&font_family=Poppins&outline_colour=var(--qwik-dirty-black)&coffee_colour=var(--qwik-light-purple)"
                 alt="Buy me a coffee"
               />
             </a>
           </div>
-          <p class={styles.email}>Contact us: <a href="mailto:info@g9aerospace.in">info@g9aerospace.in</a></p>
+          <p class={styles.email}>
+            Contact us: <a href="mailto:info@g9aerospace.in">info@g9aerospace.in</a>
+          </p>
         </div>
         <div class={styles.rightSection}>
           <nav class={styles.navigation}>
