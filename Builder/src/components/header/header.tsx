@@ -1,12 +1,11 @@
 import { component$ } from "@builder.io/qwik";
 import styles from "./header.module.css";
-import logoSvg from "./g9aerospace.svg"; // Import your SVG file
+import logoSvg from "../icons/g9aerospace.svg"; // Import your SVG file
 
 export default component$(() => {
   return (
     <header class={styles.header}>
       <div class={styles.wrapper}>
-        {/* Updated left section with SVG image */}
         <div class={styles.left}>
           <img src={logoSvg} alt="Logo" class={styles.logo} />
           G9 Aerospace
