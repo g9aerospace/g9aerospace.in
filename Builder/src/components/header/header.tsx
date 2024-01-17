@@ -17,8 +17,15 @@ export default component$(() => {
             <span>Games</span>
             {/* Dropdown content */}
             <div class={styles.dropdownContent}>
-              <a href="/minecraft">Minecraft</a>
-              <a href="/kerbal-space-program">Kerbal Space Program</a>
+              <a href="https://bricks-network.xyz/" target="Bricks Network">Minecraft</a>
+              <a href="https://kerbalx.com/G9_Militants" target="KerbalX">Kerbal Space Program</a>
+            </div>
+          </li>
+          <li>
+            <span>Projects</span>
+            <div class={styles.dropdownContent}>
+              <a href="https://github.com/g9militantsYT/Minecraft-Server-Showcase" target="Github">Showcase Bot</a>
+              <a href="https://github.com/g9militantsYT/Phoenix" target="Github">Phoenix</a>
             </div>
           </li>
         </ul>
