@@ -33,7 +33,7 @@ export default component$(() => {
       </section>
       <div class={styles.line}></div>
       <div class={styles.authorMessage}>
-        Made with ♡ by G9 Aerospace
+        G9 Aerospace | 2024
       </div>
     </footer>
   );
