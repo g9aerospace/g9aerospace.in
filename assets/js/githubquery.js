@@ -16,7 +16,7 @@ function displayGitHubRepos(username, container) {
                 repoCard.append('<h3>' + repo.name + '</h3>');
 
                 // Display repository description
-                repoCard.append('<p>' + (repo.description || 'No description available') + '</p>');
+                repoCard.append('<p>' + (repo.description || '') + '</p>');
 
                 // Display number of stars
                 repoCard.append('<p>Stars: ' + repo.stargazers_count + '</p>');

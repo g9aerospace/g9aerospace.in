@@ -16,8 +16,8 @@
     <style>
     .repo-grid {
         display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px; /* Set the gap between cells to 20px */
+        grid-template-columns: repeat(3, 200px); /* Each cell is 200px wide */
         justify-content: center;
         margin: 20px;
     }
@@ -27,7 +27,10 @@
         padding: 15px;
         text-align: center;
         box-sizing: border-box;
+        width: 100%; /* Ensure each cell takes up the full width of the column */
+        max-width: 200px; /* Set the maximum width of each cell to 200px */
     }
+
 
     .repo-button {
         display: inline-block;
