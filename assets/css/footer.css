@@ -1,0 +1,56 @@
+/* Reset some default styles for the footer */
+footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Slight box shadow for depth */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Apply styling to the copyright text */
+.footer-copyright {
+    font-size: 14px;
+}
+
+/* Style the navigation menu in the footer */
+.footer-nav {
+    display: flex;
+}
+
+/* Style the navigation links in the footer */
+.footer-nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for navigation links in the footer */
+.footer-nav a:hover {
+    background-color: #555; /* Slightly darker background on hover */
+}
+
+/* Style the iframe for the GitHub Sponsor button */
+.footer-sponsor {
+    border: 0;
+    border-radius: 6px;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .footer-nav {
+        margin-top: 10px;
+    }
+
+    .footer-nav a {
+        margin: 0 10px;
+    }
+}
