@@ -28,7 +28,6 @@
 .repo-link {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #044977;
     color: #fff;
     text-decoration: none;
     border-radius: 3px;
@@ -37,7 +36,7 @@
 
 /* Hover effect for repo link button */
 .repo-link:hover {
-    background-color: #025287;
+    background-color: #fbfeff4f;
     color: #fff;
 }
 
