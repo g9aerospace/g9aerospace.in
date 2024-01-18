@@ -11,10 +11,10 @@
     <meta property="og:description" content="G9 Aerospace's personal website">
     <meta property="og:image" content="https://i.imgur.com/yjQKNRf.png">
     <meta property="og:url" content="https://test.g9aerospace.in">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="icon" href="assets/images/g9aerospace.png" type="image/png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" href="../assets/images/g9aerospace.png" type="image/png">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <title>G9 Aerospace | Home</title>
+    <title>Home</title>
     <script>
         // Function to fetch and include HTML content
         function includeHTML(filename, container) {
@@ -25,8 +25,8 @@
 
         // Include header and footer
         $(document).ready(function () {
-            includeHTML('assets/header.html', 'header');
-            includeHTML('assets/footer.html', 'footer');
+            includeHTML('../assets/header.html', 'header');
+            includeHTML('../assets/footer.html', 'footer');
         });
     </script>
 </head>

@@ -10,7 +10,7 @@
     <meta name="author" content="G9 Aerospace">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="icon" href="../assets/images/g9aerospace.png" type="image/png">
-    <title>G9 Aerospace | Privacy Policy</title>
+    <title>Privacy Policy</title>
 </head>
 
 <body>

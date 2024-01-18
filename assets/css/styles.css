@@ -91,9 +91,10 @@ nav li:hover > ul {
 /* Body */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 10px 100;
+    padding: 20px;
     background-color: #181818; /* Black background color */
+    color: aliceblue;
 }
 
 /* Footer */
