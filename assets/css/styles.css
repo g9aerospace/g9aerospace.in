@@ -74,7 +74,7 @@ nav li:hover > ul {
 /* Body */
 body {
     font-family: Arial, sans-serif;
-    margin: 10px 100;
+    margin: 10px 100px;
     padding: 20px;
     background: linear-gradient(to right, #000, #111); /* Dark gradient background */
     color: #fff; /* White text color */
