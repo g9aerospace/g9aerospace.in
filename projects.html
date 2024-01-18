@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="G9 Aerospace's projects">
+    <meta name="author" content="G9 Aerospace">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="icon" href="assets/images/g9aerospace.png" type="image/png">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // GitHub API endpoint for my repositories
+            var githubApiUrl = 'https://api.github.com/users/g9militantsYT/repos';
+
+            // Fetch the latest 5 repositories
+            $.get(githubApiUrl + '?sort=created&per_page=5', function (data) {
+                // Create and populate the table
+                var table = '<table class="project-table">';
+                table += '<tr><th>Name</th><th>Description</th><th>Stars</th><th>Repository</th></tr>';
+
+                for (var i = 0; i < data.length; i++) {
+                    var repo = data[i];
+                    table += '<tr>';
+                    table += '<td>' + (repo.name || '') + '</td>';
+                    table += '<td>' + (repo.description || '') + '</td>';
+                    table += '<td>' + (repo.stargazers_count || '') + '</td>';
+                    table += '<td><a class="repo-link" href="' + (repo.html_url || '') + '" target="_blank">&#x1F517; View Repo</a></td>';
+                    table += '</tr>';
+                }
+
+                table += '</table>';
+
+                // Append the table to the page
+                $('#projects').html(table);
+            });
+        });
+    </script>
+    <title>Projects</title>
+    <script>
+        // Function to fetch and include HTML content
+        function includeHTML(filename, container) {
+            $.get(filename, function (data) {
+                $(container).replaceWith(data);
+            });
+        }
+
+        // Include header and footer
+        $(document).ready(function () {
+            includeHTML('assets/header.html', 'header');
+            includeHTML('assets/footer.html', 'footer');
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Include the header -->
+    <header id="header">
+        <!-- Header content will be loaded dynamically here -->
+    </header>
+
+    <!-- Content of the website goes here -->
+    <main>
+        <h1>Latest Projects</h1>
+        <div id="projects" class="table-container">
+            <!-- Projects table will be loaded dynamically here -->
+        </div>
+    </main>
+
+    <!-- Include the footer -->
+    <footer id="footer">
+        <!-- Footer content will be loaded dynamically here -->
+    </footer>
+</body>
+
+</html>
