@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Your Website Title</title>
+    <script>
+        // Function to fetch and include HTML content
+        function includeHTML(filename, container) {
+            $.get(filename, function (data) {
+                $(container).replaceWith(data);
+            });
+        }
+
+        // Include header and footer
+        $(document).ready(function () {
+            includeHTML('assets/header.html', 'header');
+            includeHTML('assets/footer.html', 'footer');
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Include the header -->
+    <header id="header">
+        <!-- Header content will be loaded dynamically here -->
+    </header>
+
+    <!-- Content of your website goes here -->
+    <main>
+        <h1>Welcome to Your Website</h1>
+        <p>This is a simple HTML website with a header and footer.</p>
+    </main>
+
+    <!-- Include the footer -->
+    <footer id="footer">
+        <!-- Footer content will be loaded dynamically here -->
+    </footer>
+</body>
+
+</html>
