@@ -1,22 +1,29 @@
 /* Reset some default styles for the footer */
 footer {
-    background-color: #333; /* Dark background color */
+    background-color: #262525; /* Dark black background color */
     color: #fff; /* White text color */
     padding: 20px;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Slight box shadow for depth */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    margin-top: 20px; /* Add space between content and footer */
 }
 
 /* Apply styling to the copyright text */
 .footer-copyright {
     font-size: 14px;
+    background-color: #2a2929;
+    padding: 10px; /* Add padding for better separation */
+    border-radius: 6px; /* Round the corners */
 }
 
 /* Style the navigation menu in the footer */
 .footer-nav {
     display: flex;
+    background-color: #1f1f1f;
+    margin-left: auto; /* Push navigation to the right */
 }
 
 /* Style the navigation links in the footer */
@@ -24,30 +31,36 @@ footer {
     text-decoration: none;
     color: #fff;
     margin: 0 15px;
-    transition: background-color 0.3s ease;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    background-color: #1d1d1d;
+    padding: 10px; /* Add padding for better separation */
+    border-radius: 6px; /* Round the corners */
 }
 
 /* Hover effect for navigation links in the footer */
 .footer-nav a:hover {
-    background-color: #555; /* Slightly darker background on hover */
+    color: #ffd700; /* Change color on hover */
+    background-color: #3e3c3c;
 }
 
 /* Style the iframe for the GitHub Sponsor button */
 .footer-sponsor {
     border: 0;
     border-radius: 6px;
+    margin-left: 15px; /* Add space between navigation and sponsor button */
 }
 
 /* Media Query for Responsive Design */
 @media screen and (max-width: 768px) {
     footer {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 15px;
+        align-items: center;
     }
 
     .footer-nav {
         margin-top: 10px;
+        margin-left: 0; /* Center navigation in mobile view */
     }
 
     .footer-nav a {
