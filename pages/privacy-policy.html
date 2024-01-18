@@ -1,0 +1,53 @@
+<!-- pages/privacy-policy.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for G9 Aerospace's personal website">
+    <meta name="author" content="G9 Aerospace">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" href="../assets/images/g9aerospace.png" type="image/png">
+    <title>G9 Aerospace | Privacy Policy</title>
+</head>
+
+<body>
+    <!-- Include the header -->
+    <header id="header">
+        <!-- Header content will be loaded dynamically here -->
+    </header>
+
+    <!-- Content of the privacy policy goes here -->
+    <main>
+        <h1>Privacy Policy</h1>
+        <p>Your privacy is important to us. This Privacy Policy explains how G9 Aerospace collects, uses, and protects your personal information.</p>
+
+        <!-- Add your privacy policy content here -->
+
+    </main>
+
+    <!-- Include the footer -->
+    <footer id="footer">
+        <!-- Footer content will be loaded dynamically here -->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        // Function to fetch and include HTML content
+        function includeHTML(filename, container) {
+            $.get(filename, function (data) {
+                $(container).replaceWith(data);
+            });
+        }
+
+        // Include header and footer
+        $(document).ready(function () {
+            includeHTML('../assets/header.html', '#header');
+            includeHTML('../assets/footer.html', '#footer');
+        });
+    </script>
+</body>
+
+</html>
