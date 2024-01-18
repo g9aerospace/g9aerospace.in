@@ -84,15 +84,15 @@ body {
 /* Footer */
 footer {
     background: linear-gradient(to right, #000, #333); /* Dark gradient background */
-    color: #fff; /* White text color */
+    color: #fff;
     padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin-top: 20px; /* Add space between content and footer */
-    border-radius: 3px; /* Rounded corners */
+    margin-top: 20px;
+    border-radius: 3px;
 }
 
 /* Apply styling to the copyright text */
