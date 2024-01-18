@@ -2,11 +2,12 @@
 header {
     margin: 0;
     padding: 15px 20px;
-    background-color: #000; /* Black background color */
+    background: linear-gradient(to right, #000, #333); /* Dark gradient background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 3px; /* Rounded corners */
 }
 
 /* Apply styling to the logo */
@@ -22,6 +23,7 @@ nav {
     border: 1px solid #555;
     border-radius: 5px;
     overflow: hidden; /* Clearfix for floated elements */
+    border-radius: 3px; /* Rounded corners */
 }
 
 /* Style the main navigation list */
@@ -37,13 +39,15 @@ nav a {
     text-decoration: none;
     color: #fff;
     padding: 15px 20px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for color change */
     display: block;
+    border-radius: 3px; /* Rounded corners */
 }
 
 /* Hover effect for navigation links */
 nav a:hover {
     background-color: #555; /* Slightly darker background on hover */
+    color: #3498db; /* Blue text on hover */
 }
 
 /* Style the submenu */
@@ -53,6 +57,7 @@ nav ul ul {
     background-color: #333;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    border-radius: 3px; /* Rounded corners */
 }
 
 /* Style the submenu links */
@@ -66,40 +71,19 @@ nav li:hover > ul {
     flex-direction: column;
 }
 
-/* Media Query for Responsive Design */
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px;
-    }
-
-    .logo {
-        margin-bottom: 10px;
-    }
-
-    nav {
-        margin-top: 10px;
-        border: none;
-    }
-
-    nav a {
-        padding: 10px 15px;
-    }
-}
-
 /* Body */
 body {
     font-family: Arial, sans-serif;
     margin: 10px 100;
     padding: 20px;
-    background-color: #181818; /* Black background color */
-    color: aliceblue;
+    background: linear-gradient(to right, #000, #111); /* Dark gradient background */
+    color: #fff; /* White text color */
+    border-radius: 3px; /* Rounded corners */
 }
 
 /* Footer */
 footer {
-    background-color: #000; /* Black background color */
+    background: linear-gradient(to right, #000, #333); /* Dark gradient background */
     color: #fff; /* White text color */
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
@@ -108,6 +92,7 @@ footer {
     align-items: center;
     position: relative;
     margin-top: 20px; /* Add space between content and footer */
+    border-radius: 3px; /* Rounded corners */
 }
 
 /* Apply styling to the copyright text */
@@ -115,7 +100,7 @@ footer {
     font-size: 14px;
     background-color: #2a2929;
     padding: 10px; /* Add padding for better separation */
-    border-radius: 6px; /* Round the corners */
+    border-radius: 3px; /* Rounded corners */
 }
 
 /* Style the navigation menu in the footer */
@@ -129,29 +114,49 @@ footer {
 .footer-nav a {
     text-decoration: none;
     color: #fff;
-    margin: 0 15px;
+    margin: 10px 15px;
     font-size: 14px;
-    transition: color 0.3s ease;
-    background-color: #1d1d1d;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transition for color change */
     padding: 10px; /* Add padding for better separation */
-    border-radius: 6px; /* Round the corners */
+    border-radius: 3px; /* Rounded corners */
 }
 
 /* Hover effect for navigation links in the footer */
 .footer-nav a:hover {
-    color: #ffd700; /* Change color on hover */
-    background-color: #3e3c3c;
+    color: #3498db; /* Blue text on hover */
+    background-color: #3e3c3c; /* Slightly darker background on hover */
 }
 
 /* Style the iframe for the GitHub Sponsor button */
 .footer-sponsor {
     border: 0;
-    border-radius: 6px;
-    margin-left: 15px; /* Add space between navigation and sponsor button */
+    border-radius: 3px; /* Rounded corners */
+    margin: 10px 15px; /* Add equal space above and below the sponsor button */
 }
 
 /* Media Query for Responsive Design */
 @media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        border-radius: 3px; /* Rounded corners */
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        margin-top: 10px;
+        border: none;
+        border-radius: 3px; /* Rounded corners */
+    }
+
+    nav a {
+        padding: 10px 15px;
+    }
+
     footer {
         flex-direction: column;
         align-items: center;
