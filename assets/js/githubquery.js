@@ -1,13 +1,13 @@
 // assets/js/githubquery.js
 
-// Function to fetch and display GitHub repositories in a grid
+// Function to fetch and display GitHub repositories in a 3x2 grid
 function displayGitHubRepos(username, container) {
     $.ajax({
         url: 'https://api.github.com/users/' + username + '/repos',
         type: 'GET',
         dataType: 'json',
         success: function (data) {
-            var reposGrid = $('<div class="grid">');
+            var reposGrid = $('<div class="repo-grid">');  // Ensure the class name is "repo-grid"
             for (var i = 0; i < Math.min(data.length, 6); i++) {
                 var repo = data[i];
                 var repoCard = $('<div class="repo-card">');
