@@ -2,8 +2,8 @@
 header {
     margin: 0;
     padding: 15px 20px;
-    background-color: #333; /* Dark background color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight box shadow for depth */
+    background-color: #000; /* Black background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,16 +88,17 @@ nav li:hover > ul {
     }
 }
 
-/*Body */
+/* Body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #181818; /* Black background color */
 }
 
-/*Footer*/
+/* Footer */
 footer {
-    background-color: #262525; /* Dark black background color */
+    background-color: #000; /* Black background color */
     color: #fff; /* White text color */
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
