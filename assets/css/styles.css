@@ -1,29 +1,34 @@
+/* Add a viewport meta tag to ensure proper rendering on mobile devices */
+meta {
+    viewport: width=device-width, initial-scale=1.0;
+}
+
 /* Header */
 header {
     margin: 0;
-    padding: 15px 20px;
-    background: linear-gradient(to right, #000, #333); /* Dark gradient background */
+    padding: 15px;
+    background: linear-gradient(to right, #000, #333);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 3px; /* Rounded corners */
+    border-radius: 3px;
 }
 
 /* Apply styling to the logo */
 .logo {
     font-size: 28px;
     font-weight: bold;
-    color: #fff; /* White text color */
+    color: #fff;
     text-transform: uppercase;
 }
 
 /* Style the navigation menu */
 nav {
-    border: 1px solid #555;
-    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
     overflow: hidden; /* Clearfix for floated elements */
-    border-radius: 3px; /* Rounded corners */
 }
 
 /* Style the main navigation list */
