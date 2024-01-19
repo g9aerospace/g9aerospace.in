@@ -79,7 +79,7 @@ nav li:hover > ul {
 /* Body */
 body {
     font-family: Arial, sans-serif;
-    margin: 10px 100px;
+    margin: 10px; /* Adjust margin for better use of screen area */
     padding: 20px;
     background: linear-gradient(to right, #000, #111); /* Dark gradient background */
     color: #fff; /* White text color */
@@ -143,7 +143,7 @@ footer {
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center; /* Center items in mobile view */
         padding: 15px;
         border-radius: 3px; /* Rounded corners */
     }
@@ -164,7 +164,7 @@ footer {
 
     footer {
         flex-direction: column;
-        align-items: center;
+        align-items: center; /* Center items in mobile view */
     }
 
     .footer-nav {
@@ -174,5 +174,9 @@ footer {
 
     .footer-nav a {
         margin: 0 10px;
+    }
+
+    body {
+        margin: 10px; /* Adjust margin for better use of screen area */
     }
 }
