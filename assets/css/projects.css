@@ -7,6 +7,7 @@
     margin: 20px 0;
     background-color: rgb(67, 67, 67);
     border: 2px solid #555;
+    overflow-x: auto; /* Add horizontal scroll for small screens */
 }
 
 /* Style the table header */
@@ -15,7 +16,6 @@
     color: #fff;
     padding: 15px;
     text-align: left;
-    
 }
 
 /* Style the table rows */
@@ -44,4 +44,11 @@
 .table-container {
     display: flex;
     justify-content: center;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+    .project-table {
+        overflow-x: auto;
+    }
 }
