@@ -139,6 +139,13 @@ footer {
     margin: 10px 15px; /* Add equal space above and below the sponsor button */
 }
 
+/* Style the social media icons in the footer */
+.social-icon {
+    width: 24px; /* Adjust the width of the icons */
+    height: 24px; /* Adjust the height of the icons */
+    margin: 10px 15px; /* Add space between the icons */
+}
+
 /* Media Query for Responsive Design */
 @media screen and (max-width: 768px) {
     header {
@@ -174,6 +181,10 @@ footer {
 
     .footer-nav a {
         margin: 0 10px;
+    }
+
+    .social-icon {
+        margin: 10px 0; /* Adjust space between social icons in mobile view */
     }
 
     body {
