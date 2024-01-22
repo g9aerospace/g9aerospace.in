@@ -88,12 +88,13 @@ body {
 
 /* Footer */
 footer {
-    background: linear-gradient(to right, #000, #333); /* Dark gradient background */
+    background: linear-gradient(to right, #000, #333);
     color: #fff;
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     position: relative;
     margin-top: 20px;
@@ -104,14 +105,15 @@ footer {
 .footer-copyright {
     font-size: 14px;
     background-color: #2a2929;
-    padding: 10px; /* Add padding for better separation */
-    border-radius: 3px; /* Rounded corners */
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
 }
 
-/* Style the navigation menu in the footer */
 .footer-nav {
     display: flex;
     background-color: #1f1f1f;
+    border-radius: 3px;
     margin-left: auto; /* Push navigation to the right */
 }
 
@@ -121,29 +123,30 @@ footer {
     color: #fff;
     margin: 10px 15px;
     font-size: 14px;
-    transition: color 0.3s ease, background-color 0.3s ease; /* Transition for color change */
-    padding: 10px; /* Add padding for better separation */
-    border-radius: 3px; /* Rounded corners */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 10px;
+    border-radius: 3px;
 }
 
 /* Hover effect for navigation links in the footer */
 .footer-nav a:hover {
-    color: #3498db; /* Blue text on hover */
-    background-color: #3e3c3c; /* Slightly darker background on hover */
+    color: #3498db;
+    background-color: #3e3c3c;
 }
 
 /* Style the iframe for the GitHub Sponsor button */
 .footer-sponsor {
     border: 0;
-    border-radius: 3px; /* Rounded corners */
-    margin: 10px 15px; /* Add equal space above and below the sponsor button */
+    border-radius: 3px;
+    margin: 10px 15px;
 }
 
 /* Style the social media icons in the footer */
 .social-icon {
-    width: 24px; /* Adjust the width of the icons */
-    height: 24px; /* Adjust the height of the icons */
-    margin: 10px 15px; /* Add space between the icons */
+    width: 24px;
+    height: 24px;
+    margin: 10px 15px;
+    margin-left: auto; /* Push social icons to the right */
 }
 
 /* Media Query for Responsive Design */

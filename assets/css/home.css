@@ -58,30 +58,6 @@
         margin-bottom: 10px;
     }
 
-    nav {
-        margin-top: 10px;
-        border: none;
-        border-radius: 3px; /* Rounded corners */
-    }
-
-    nav a {
-        padding: 10px 15px;
-    }
-
-    footer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-nav {
-        margin-top: 10px;
-        margin-left: 0; /* Center navigation in mobile view */
-    }
-
-    .footer-nav a {
-        margin: 0 10px;
-    }
-
     /* Adjust styles for buttons in smaller screens */
     .portfolio-button {
         padding: 8px 16px;
