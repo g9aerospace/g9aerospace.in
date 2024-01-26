@@ -43,16 +43,24 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #fff;
-    padding: 15px 20px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for color change */
-    display: block;
-    border-radius: 3px; /* Rounded corners */
+    margin: 10px 15px;
+    font-size: 14px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 10px;
+    border-radius: 3px;
 }
 
-/* Hover effect for navigation links */
-nav a:hover {
-    background-color: #555; /* Slightly darker background on hover */
-    color: #3498db; /* Blue text on hover */
+/* Equal space above and below the buttons */
+.footer-nav .footer-sponsor,
+.footer-nav a[href="/privacy-policy"],
+.footer-nav a[href="/terms-of-service"] {
+    margin: 15px 15px;
+}
+
+/* Hover effect for navigation links in the footer */
+.footer-nav a:hover {
+    color: #3498db;
+    background-color: #3e3c3c;
 }
 
 /* Style the submenu */
@@ -115,23 +123,6 @@ footer {
     background-color: #1f1f1f;
     border-radius: 3px;
     margin-top: 10px;
-}
-
-/* Style the navigation links in the footer */
-.footer-nav a {
-    text-decoration: none;
-    color: #fff;
-    margin: 10px 15px;
-    font-size: 14px;
-    transition: color 0.3s ease, background-color 0.3s ease;
-    padding: 10px;
-    border-radius: 3px;
-}
-
-/* Hover effect for navigation links in the footer */
-.footer-nav a:hover {
-    color: #3498db;
-    background-color: #3e3c3c;
 }
 
 /* Style the iframe for the GitHub Sponsor button */
