@@ -6,6 +6,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 5px;
 }
 
 .title {
@@ -39,6 +40,7 @@ nav a {
     padding: 10px;
     display: block;
     transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
 }
 
 nav a:hover {
@@ -54,6 +56,8 @@ nav ul ul {
     left: 0;
     background-color: #333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 nav li:hover > ul {
