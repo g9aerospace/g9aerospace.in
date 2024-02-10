@@ -6,6 +6,7 @@ footer {
     text-align: center;
     clear: both;
     border-top: var(--border-width) solid var(--link-text-color);
+    border-radius: 5px;
 }
 
 /* Navigation Styling */
