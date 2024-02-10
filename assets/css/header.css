@@ -67,7 +67,7 @@ nav a:hover::before {
 }
 
 nav a:hover {
-    background: linear-gradient(to right, var(--darker-gray), var(--dark-gray));
+
     color: var(--blue);
 }
 
