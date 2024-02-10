@@ -63,4 +63,19 @@
         padding: 8px 16px;
         margin-top: 8px;
     }
+
+    /* Make the portfolio grid responsive for smaller screens */
+    .portfolio-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .portfolio-item {
+        flex: none; /* Allow items to shrink individually */
+    }
+    
+    .portfolio-icon {
+        max-width: 100%;
+        height: auto;
+    }
 }
