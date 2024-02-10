@@ -17,7 +17,7 @@
 }
 
 .portfolio-item {
-    background-color: #1f1e1e;
+    background-color: rgba(83, 87, 92, 0.216);
     padding: 20px;
     border-radius: 5px;
     flex: 1;
@@ -51,7 +51,7 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 15px;
-        border-radius: 3px; /* Rounded corners */
+        border-radius: 5px; /* Rounded corners */
     }
 
     .logo {
@@ -66,12 +66,13 @@
 
     /* Make the portfolio grid responsive for smaller screens */
     .portfolio-grid {
-        flex-direction: column;
-        gap: 15px;
+        display: block;
     }
 
     .portfolio-item {
-        flex: none; /* Allow items to shrink individually */
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        background-color: rgba(83, 87, 92, 0.216);
     }
     
     .portfolio-icon {
@@ -79,3 +80,4 @@
         height: auto;
     }
 }
+
