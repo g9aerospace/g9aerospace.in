@@ -159,3 +159,48 @@ nav ul ul li {
         transform: translateY(0);
     }
 }
+
+/* Mobile First Approach */
+@media only screen and (max-width: 768px) {
+    header {
+        background: var(--darker-gray); /* Use a solid background for better visibility */
+        padding: 10px;
+        text-align: center; /* Center align header content */
+    }
+
+    .title {
+        font-size: 24px; /* Reduce font size for better mobile appearance */
+    }
+
+    nav {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+        transform: translateX(0);
+    }
+
+    nav ul ul {
+        position: static; /* Remove absolute positioning for dropdowns */
+        display: none;
+        background: var(--darker-gray); /* Match the header background */
+        box-shadow: none; /* Remove box shadow */
+        margin-top: 10px; /* Add some spacing between dropdowns */
+    }
+
+    nav a::before {
+        width: 0; /* Remove underline effect on mobile */
+    }
+
+    .right-nav {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .right-nav a {
+        margin: 10px 0;
+        transform: scale(1);
+    }
+}
