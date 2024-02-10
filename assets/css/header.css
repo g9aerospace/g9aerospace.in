@@ -1,15 +1,24 @@
 /* Header Styling */
 header {
-    background-color: var(--header-bg-color);
-    color: var(--text-color);
-    padding: var(--padding-unit);
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /* Navigation (nav) Styling */
 nav {
-    background-color: var(--primary-bg-color);
-    color: var(--link-text-color);
-    padding: var(--padding-unit);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 nav ul {
@@ -17,20 +26,61 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
 }
 
-nav ul li {
-    display: inline-block;
-    margin-right: var(--padding-unit);
-    padding-right: var(--padding-unit);
-    border-right: var(--border-width) solid var(--link-text-color);
-    transition: background-color 0.3s ease;
+nav li {
+    margin: 0 15px;
+    position: relative;
 }
 
-nav ul li:last-child {
-    margin-right: 0;
-    border-right: none;
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+nav a:hover {
+    background-color: #555;
+    color: #ffcc00;
+}
 
+/* Dropdown Styling */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav li:hover > ul {
+    display: block;
+}
+
+nav ul ul li {
+    width: auto;
+    text-align: left;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
