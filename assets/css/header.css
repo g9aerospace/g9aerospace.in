@@ -8,13 +8,14 @@
 /* Header Styling */
 header {
     background: linear-gradient(to right, var(--darker-gray), var(--dark-gray));
+    background-size: 200% 100%;
     color: #fff;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
-    animation: headerAnimation 1s ease-in-out infinite alternate;
+    animation: headerAnimation 5s ease-in-out infinite alternate;
 }
 
 .title {
@@ -67,7 +68,6 @@ nav a:hover::before {
 }
 
 nav a:hover {
-
     color: var(--blue);
 }
 
@@ -132,11 +132,20 @@ nav ul ul li {
 
 /* Animations */
 @keyframes headerAnimation {
-    0%, 100% {
-        transform: translateY(0);
+    0% {
+        background-position: 0 0;
+    }
+    25% {
+        background-position: 20% 0;
     }
     50% {
-        transform: translateY(-5px);
+        background-position: 40% 0;
+    }
+    75% {
+        background-position: 60% 0;
+    }
+    100% {
+        background-position: 80% 0;
     }
 }
 
