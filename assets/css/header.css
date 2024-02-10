@@ -77,7 +77,7 @@ nav ul ul {
     position: absolute;
     top: 100%;
     left: 0;
-    background: linear-gradient(to right, var(--darker-gray), var(--dark-gray));
+    background: #302f2f96;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 5px;
     animation: dropdownAnimation 0.5s ease-in-out;
@@ -111,7 +111,7 @@ nav ul ul li {
 /* Responsive Styling */
 @media only screen and (max-width: 768px) {
     header {
-        animation: none; /* Remove animation on smaller screens */
+        animation: none;
     }
 
     nav li {
