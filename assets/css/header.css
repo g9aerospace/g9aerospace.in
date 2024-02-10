@@ -8,10 +8,10 @@ header {
     align-items: center;
 }
 
-/* Logo Styling */
-.logo {
+.title {
     font-size: 24px;
     font-weight: bold;
+    color: rgb(18, 93, 190);
 }
 
 /* Navigation (nav) Styling */
