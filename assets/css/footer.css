@@ -7,3 +7,50 @@ footer {
     clear: both;
     border-top: var(--border-width) solid var(--link-text-color);
 }
+
+/* Navigation Styling */
+nav.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Social Media Icons Styling */
+.social-icon {
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Adjust the size as needed */
+    margin: 0 10px; /* Add margin for spacing */
+}
+
+/* GitHub Sponsorship Button Styling */
+.footer-sponsor {
+    width: 114px; /* Adjust the width as needed */
+    height: 32px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add margin for spacing */
+}
+
+/* Navigation Links Styling */
+nav.footer-nav a {
+    margin: 0 10px; /* Add margin for spacing */
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    nav.footer-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icon {
+        margin: 10px 0; /* Adjust the margin for spacing */
+    }
+
+    .footer-sponsor {
+        margin-bottom: 10px; /* Adjust the margin for spacing */
+    }
+
+    nav.footer-nav a {
+        margin: 5px 0; /* Adjust the margin for spacing */
+    }
+}
