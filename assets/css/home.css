@@ -24,8 +24,8 @@
 }
 
 .portfolio-icon {
-    max-width: 100px; /* Set the maximum width for the icons */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100px;
+    height: auto;
 }
 
 /* Portfolio Buttons */
@@ -36,12 +36,12 @@
     color: #fff;
     background-color: #35769f7a;
     border-radius: 3px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for color change */
+    transition: background-color 0.3s ease, color 0.3s ease;
     margin-top: 10px;
 }
 
 .portfolio-button:hover {
-    background-color: #13374e; /* Darker background on hover */
+    background-color: #13374e;
     color: #fff;
 }
 
