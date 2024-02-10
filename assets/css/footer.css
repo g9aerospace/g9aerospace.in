@@ -18,16 +18,17 @@ nav.footer-nav {
 
 /* Social Media Icons Styling */
 .social-icon {
-    width: 30px; /* Adjust the size as needed */
-    height: 30px; /* Adjust the size as needed */
-    margin: 0 10px; /* Add margin for spacing */
+    width: 30px; 
+    height: 30px; 
+    margin: 0 10px;
 }
 
 /* GitHub Sponsorship Button Styling */
 .footer-sponsor {
-    width: 114px; /* Adjust the width as needed */
-    height: 32px; /* Adjust the height as needed */
-    margin-right: 10px; /* Add margin for spacing */
+    width: 114px; 
+    height: 32px; 
+    margin-right: 10px; 
+    border: none;
 }
 
 /* Navigation Links Styling */
@@ -43,14 +44,14 @@ nav.footer-nav a {
     }
 
     .social-icon {
-        margin: 10px 0; /* Adjust the margin for spacing */
+        margin: 10px 0; 
     }
 
     .footer-sponsor {
-        margin-bottom: 10px; /* Adjust the margin for spacing */
+        margin-bottom: 10px; 
     }
 
     nav.footer-nav a {
-        margin: 5px 0; /* Adjust the margin for spacing */
+        margin: 5px 0; 
     }
 }
