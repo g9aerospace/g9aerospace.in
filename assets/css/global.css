@@ -1,0 +1,82 @@
+:root {
+    --primary-bg-color: #333;
+    --text-color: #fff;
+    --heading-text-color: #0b5bbe;
+    --base-font: 'Arial', sans-serif;
+    --padding-unit: 20px;
+    --border-width: 0.5px;
+    --link-color: #007bff;
+    --email-color: #28a745; 
+
+    --header-bg-color: #232323;
+    --footer-bg-color: #1c1c1c;
+    --link-text-color: var(--text-color);
+    --nav-hover-bg-color: #555;
+    --body-bg-color: #121212;
+    --section-bg-color: #1e1e1e;
+}
+
+/* Body Styling */
+body {
+    font-family: var(--base-font);
+    margin: 0; /* Adjusted to 0 */
+    padding: 0; /* Adjusted to 0 */
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-text-color);
+}
+
+/* Links Styling */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Email Addresses Styling */
+a[href^="mailto:"] {
+    color: var(--email-color);
+}
+
+/* Section Styling */
+section {
+    background-color: var(--section-bg-color);
+    padding: var(--padding-unit);
+    margin: var(--padding-unit) 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: var(--padding-unit);
+        border: none;
+    }
+}

@@ -16,30 +16,17 @@
     <meta property="og:type" content="website">
 
     <meta property="theme-color" content="#2596be">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="icon" href="assets/images/g9aerospace.png" type="image/png">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <title>404 Not Found</title>
-    <script>
-        // Function to fetch and include HTML content
-        function includeHTML(filename, container) {
-            $.get(filename, function (data) {
-                $(container).replaceWith(data);
-            });
-        }
-
-        // Include header and footer
-        $(document).ready(function () {
-            includeHTML('assets/header.html', 'header');
-            includeHTML('assets/footer.html', 'footer');
-        });
-    </script>
 </head>
 
 <body>
-    <!-- Include the header -->
-    <header id="header">
-        <!-- Header content will be loaded dynamically here -->
+    <!-- Header -->
+    <header id="header-container">
     </header>
 
     <!-- Content of the 404 page goes here -->
@@ -51,10 +38,11 @@
         </div>
     </main>
 
-    <!-- Include the footer -->
-    <footer id="footer">
-        <!-- Footer content will be loaded dynamically here -->
+    <!-- Footer -->
+    <footer id="footer-container">
     </footer>
+
+    <script src="assets/js/global.js"></script>
 </body>
 
 </html>
