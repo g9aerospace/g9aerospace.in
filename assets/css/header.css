@@ -1,18 +1,26 @@
+/* Define Colors as Variables */
+:root {
+    --darker-gray: #1b1b1b;
+    --dark-gray: #45434391;
+    --blue: rgb(18, 93, 190);
+}
+
 /* Header Styling */
 header {
-    background-color: #333;
+    background: linear-gradient(to right, var(--darker-gray), var(--dark-gray));
     color: #fff;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
+    animation: headerAnimation 1s ease-in-out infinite alternate;
 }
 
 .title {
     font-size: 38px;
     font-weight: bold;
-    color: rgb(18, 93, 190);
+    color: var(--blue);
 }
 
 /* Navigation (nav) Styling */
@@ -31,6 +39,7 @@ nav ul {
 nav li {
     margin: 0 15px;
     position: relative;
+    transition: transform 0.3s ease-in-out;
 }
 
 nav a {
@@ -38,13 +47,28 @@ nav a {
     color: #fff;
     padding: 10px;
     display: block;
-    transition: background-color 0.3s ease, color 0.3s ease;
     border-radius: 5px;
+    position: relative;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::before {
+    width: 100%;
 }
 
 nav a:hover {
-    background-color: #555;
-    color: #ffcc00;
+    background: linear-gradient(to right, var(--darker-gray), var(--dark-gray));
+    color: var(--blue);
 }
 
 /* Dropdown Styling */
@@ -53,9 +77,10 @@ nav ul ul {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #333;
+    background: linear-gradient(to right, var(--darker-gray), var(--dark-gray));
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 5px;
+    animation: dropdownAnimation 0.5s ease-in-out;
 }
 
 nav li:hover > ul {
@@ -76,25 +101,22 @@ nav ul ul li {
 
 .right-nav a {
     margin-left: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.right-nav a:hover {
+    transform: scale(1.1);
 }
 
 /* Responsive Styling */
 @media only screen and (max-width: 768px) {
     header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav {
-        margin-top: 15px;
-    }
-
-    nav ul {
-        flex-direction: column;
+        animation: none; /* Remove animation on smaller screens */
     }
 
     nav li {
         margin: 10px 0;
+        transform: translateX(0);
     }
 
     .right-nav {
@@ -104,5 +126,27 @@ nav ul ul li {
 
     .right-nav a {
         margin-left: 0;
+        transform: scale(1);
+    }
+}
+
+/* Animations */
+@keyframes headerAnimation {
+    from {
+        transform: translateY(-5px);
+    }
+    to {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes dropdownAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
