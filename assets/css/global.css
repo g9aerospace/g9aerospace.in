@@ -19,8 +19,8 @@
 /* Body Styling */
 body {
     font-family: var(--base-font);
-    margin: 0; /* Adjusted to 0 */
-    padding: 0; /* Adjusted to 0 */
+    margin: 20px;
+    padding: 30px;
     background-color: var(--body-bg-color);
     color: var(--text-color);
 }
@@ -48,11 +48,9 @@ a[href^="mailto:"] {
 section {
     background-color: var(--section-bg-color);
     padding: var(--padding-unit);
-    margin: var(--padding-unit) 0;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
-
     animation: fadeInUp 1s ease forwards;
 }
 
