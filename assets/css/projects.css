@@ -5,7 +5,7 @@
     margin: 20px 0;
     background-color: rgb(67, 67, 67);
     border: 2px solid #555;
-    overflow-x: auto; /* Add horizontal scroll for small screens */
+    overflow-x: auto;
 }
 
 /* Style the table header */
@@ -48,10 +48,10 @@
 @media only screen and (max-width: 600px) {
     .project-table th,
     .project-table td {
-        padding: 10px; /* Adjust padding for smaller screens */
+        padding: 10px; 
     }
 
     .repo-link {
-        padding: 8px 12px; /* Adjust padding for smaller screens */
+        padding: 8px 12px;
     }
 }

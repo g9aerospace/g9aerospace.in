@@ -77,8 +77,8 @@ nav ul ul {
     position: absolute;
     top: 100%;
     left: 0;
-    background: #302f2f96;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #302f2f84;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
     margin-top: 0px;
     animation: dropdownAnimation 0.5s ease-in-out;
 }
