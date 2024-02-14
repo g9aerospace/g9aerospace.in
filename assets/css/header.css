@@ -61,7 +61,7 @@ nav a::before {
     height: 2px;
     background-color: #fff;
     transition: width 0.3s ease-in-out;
-}
+}n
 
 nav a:hover::before {
     width: 100%;
