@@ -9,6 +9,11 @@ footer {
     border-radius: 5px;
 }
 
+.footer-copyright {
+    color: darkgray;
+    font-size: 12px;
+}
+
 /* Navigation Styling */
 nav.footer-nav {
     display: flex;
