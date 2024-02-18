@@ -32,6 +32,11 @@ body {
     animation: spaceAnimation 60s linear infinite;
 }
 
+main {
+    margin-top: 10px;
+    background-color: #58585830;
+    padding: var(--padding-unit);
+}
 /* Space Animation */
 @keyframes spaceAnimation {
     0% {
