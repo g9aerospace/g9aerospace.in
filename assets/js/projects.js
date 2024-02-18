@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var cardContent = '<div class="card-content">';
             cardContent += '<h3>' + (repo.name || '') + '</h3>';
             cardContent += '<p>' + (repo.description || '') + '</p>';
-            cardContent += '<p>Stars: ' + (repo.stargazers_count || '') + '</p>';
+            cardContent += '<p>Stars: ' + (repo.stargazers_count !== null && repo.stargazers_count !== undefined ? repo.stargazers_count : '0') + '</p>';
             cardContent += '<a class="repo-link" href="' + (repo.html_url || '') + '" target="_blank">View Repository</a>';
             cardContent += '</div>';
             card.innerHTML = cardContent;
