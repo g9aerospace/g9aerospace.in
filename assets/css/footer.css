@@ -24,7 +24,7 @@ nav.footer-nav {
 
 /* Social Media Icons Styling */
 .social-icon {
-    width: 25px;
+    width: auto;
     height: 25px;
     margin: 0 5px;
 }
