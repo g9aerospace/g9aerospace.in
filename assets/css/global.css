@@ -9,7 +9,9 @@
     --email-color: #28a745;
 
     --header-bg-color: #232323;
-    --footer-bg-color: #1c1c1c;
+    --darker-gray: #1b1a1a76;
+    --dark-gray: #302e2e7a;
+    --footer-bg-color: var(--darker-gray);
     --link-text-color: var(--text-color);
     --nav-hover-bg-color: #555;
     --body-bg-color: #121212;
