@@ -6,7 +6,7 @@
     --padding-unit: 20px;
     --border-width: 0.5px;
     --link-color: #007bff;
-    --email-color: #28a745; 
+    --email-color: #28a745;
 
     --header-bg-color: #232323;
     --footer-bg-color: #1c1c1c;
@@ -14,6 +14,9 @@
     --nav-hover-bg-color: #555;
     --body-bg-color: #121212;
     --section-bg-color: #1e1e1e;
+
+    --stars-color: #ffffff;
+    --stars-density: 50;
 }
 
 /* Body Styling */
@@ -21,8 +24,20 @@ body {
     font-family: var(--base-font);
     margin: 20px;
     padding: 30px;
-    background-color: var(--body-bg-color);
+    background: var(--body-bg-color) url('/assets/images/space-background.jpg') fixed;
+    background-size: cover;
     color: var(--text-color);
+    animation: spaceAnimation 60s linear infinite;
+}
+
+/* Space Animation */
+@keyframes spaceAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 1000px 1000px;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
