@@ -1,30 +1,36 @@
-/* Style the project table */
-.project-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background-color: rgb(67, 67, 67);
+/* Style the project cards container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style the project card */
+.project-card {
+    width: 300px;
+    margin: 20px;
+    background-color: rgba(49, 49, 49, 0.462);
     border: 2px solid #555;
-    overflow-x: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-/* Style the table header */
-.project-table th {
-    background-color: #2d2d2d;
-    color: #fff;
+/* Hover effect for the project card */
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Style the card content */
+.card-content {
     padding: 15px;
-    text-align: left;
 }
 
-/* Style the table rows */
-.project-table td {
-    padding: 15px;
-    border: 1px solid #555;
-}
-
-/* Style the repo link button */
+/* Style the repo link button within the card */
 .repo-link {
-    display: inline-block;
+    display: block;
+    margin-top: 15px;
     padding: 10px 15px;
     color: #fff;
     text-decoration: none;
@@ -32,26 +38,8 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Hover effect for repo link button */
+/* Hover effect for the repo link button */
 .repo-link:hover {
     background-color: #fbfeff4f;
     color: #fff;
-}
-
-/* Center the table */
-.table-container {
-    display: flex;
-    justify-content: center;
-}
-
-/* Media query for smaller screens (e.g., phones) */
-@media only screen and (max-width: 600px) {
-    .project-table th,
-    .project-table td {
-        padding: 10px; 
-    }
-
-    .repo-link {
-        padding: 8px 12px;
-    }
 }

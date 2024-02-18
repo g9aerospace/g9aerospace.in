@@ -10,38 +10,62 @@
     <meta property="og:description" content="G9 Aerospace's Projects">
     <meta property="og:image" content="https://i.imgur.com/yjQKNRf.png">
     <meta property="og:url" content="https://g9aerospace.in">
-    <meta property="theme-color" content="#2596be">   
+    <meta property="theme-color" content="#2596be">
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/projects.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/cards.css">
     <link rel="icon" href="assets/images/g9aerospace.png" type="image/png">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
-        $(document).ready(function () {
+        document.addEventListener('DOMContentLoaded', function () {
+            // Load Header
+            const headerContainer = document.getElementById('header-container');
+            fetch('assets/common/header.html')
+                .then(response => response.text())
+                .then(html => {
+                    headerContainer.innerHTML = html;
+                })
+                .catch(error => console.error('Error loading header:', error));
+
+            // Load Footer
+            const footerContainer = document.getElementById('footer-container');
+            fetch('assets/common/footer.html')
+                .then(response => response.text())
+                .then(html => {
+                    footerContainer.innerHTML = html;
+                })
+                .catch(error => console.error('Error loading footer:', error));
+
             // GitHub API endpoint for my repositories
             var githubApiUrl = 'https://api.github.com/users/g9militantsYT/repos';
 
-            // Fetch the latest 5 repositories
-            $.get(githubApiUrl + '?sort=created&per_page=5', function (data) {
-                // Create and populate the table
-                var table = '<table class="project-table">';
-                table += '<tr><th>Name</th><th>Description</th><th>Stars</th><th>Repository</th></tr>';
+            // Fetch all repositories
+            $.get(githubApiUrl, function (data) {
+                // Create and populate the project cards
+                var cardContainer = document.getElementById('projects');
+                cardContainer.innerHTML = ''; // Clear previous content
 
                 for (var i = 0; i < data.length; i++) {
                     var repo = data[i];
-                    table += '<tr>';
-                    table += '<td>' + (repo.name || '') + '</td>';
-                    table += '<td>' + (repo.description || '') + '</td>';
-                    table += '<td>' + (repo.stargazers_count || '') + '</td>';
-                    table += '<td><a class="repo-link" href="' + (repo.html_url || '') + '" target="_blank"> &#10169;</a></td>';
-                    table += '</tr>';
+
+                    // Create a project card
+                    var card = document.createElement('div');
+                    card.className = 'project-card';
+
+                    // Populate the card content
+                    var cardContent = '<div class="card-content">';
+                    cardContent += '<h3>' + (repo.name || '') + '</h3>';
+                    cardContent += '<p>' + (repo.description || '') + '</p>';
+                    cardContent += '<p>Stars: ' + (repo.stargazers_count || '') + '</p>';
+                    cardContent += '<a class="repo-link" href="' + (repo.html_url || '') + '" target="_blank">View Repository</a>';
+                    cardContent += '</div>';
+                    card.innerHTML = cardContent;
+
+                    // Append the card to the container
+                    cardContainer.appendChild(card);
                 }
-
-                table += '</table>';
-
-                // Append the table to the page
-                $('#projects').html(table);
             });
         });
     </script>
@@ -56,8 +80,8 @@
     <!-- Content of the website goes here -->
     <main>
         <h1>Latest Projects</h1>
-        <div id="projects" class="table-container">
-            <!-- Projects table will be loaded dynamically here -->
+        <div id="projects" class="card-container">
+            <!-- Project cards will be loaded dynamically here -->
         </div>
     </main>
 
