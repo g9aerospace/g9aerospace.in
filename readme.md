@@ -1,11 +1,17 @@
-# G9 Aerospace Website
+# G9 Aerospace Website (Old Repository)
 
-Welcome to the GitHub repository for the G9 Aerospace website. This repository contains the source code and assets for the website, which is accessible at [https://g9aerospace.in/](https://g9aerospace.in/).
+Welcome to the GitHub repository for the old version of the G9 Aerospace website. This repository contains the source code and assets for the outdated version of the website, which was accessible at [https://g9aerospace.in/](https://g9aerospace.in/).
+
+**Note:** The project has moved to a new repository, and the latest version of the website can now be found at [https://github.com/g9militantsYT/g9aerospace.in/](https://github.com/g9militantsYT/g9aerospace.in/).
 
 ## Overview
 
-- **Website:** [https://g9aerospace.in/](https://g9aerospace.in/)
-- **GitHub Repository:** [https://github.com/g9militantsYT/g9aerospace.in/](https://github.com/g9militantsYT/g9aerospace.in/)
+- **Latest Website:** [https://g9aerospace.in/](https://g9aerospace.in/)
+- **New GitHub Repository:** [https://github.com/g9militantsYT/g9aerospace.in/](https://github.com/g9militantsYT/g9aerospace.in/)
+
+## Important Notice
+
+The development and maintenance of the G9 Aerospace website have transitioned to a new repository. Please visit the [latest repository](https://github.com/g9militantsYT/g9aerospace.in/) for the most up-to-date version of the website.
 
 ## Repository Stats
 
@@ -15,20 +21,15 @@ Welcome to the GitHub repository for the G9 Aerospace website. This repository c
 
 ## Description
 
-This repository is used by github pages for my personal website :)
+This repository was used by GitHub Pages for my personal website in its previous version.
 
 ## Contributing
 
-I welcome contributions from the community. If you'd like to contribute to the project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them.
-4. Submit a pull request.
+If you'd like to contribute to the latest version of the project, please visit the [new repository](https://github.com/g9militantsYT/g9aerospace.in/) and follow the contribution guidelines.
 
 ## Issues
 
-If you encounter any issues or have suggestions for improvements, please [open an issue](https://github.com/g9militantsYT/g9aerospace.in/issues).
+For any issues related to the old version or suggestions for improvements, please [refer to the new repository](https://github.com/g9militantsYT/g9aerospace.in/issues).
 
 ## License
 
@@ -36,4 +37,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Thank you for visiting the g9aerospace.in repository! I appreciate your interest and contributions. If you have any questions or feedback, feel free to reach out. Happy coding!
+Thank you for your interest and contributions. If you have any questions or feedback, feel free to reach out. Happy coding!
