@@ -1,84 +1,93 @@
-/* Footer Styling */
+/* Reset some default styles for the footer */
 footer {
+    padding: 30px;
     background-color: var(--footer-bg-color);
-    color: var(--text-color);
-    padding: 15px;
-    margin-top: 10px;
+    color: var(--footer-text-color);
     text-align: center;
-    clear: both;
-    border-radius: 5px;
 }
 
-.footer-copyright {
-    color: darkgray;
-    font-size: 12px;
-}
-
-/* Navigation Styling */
-nav.footer-nav {
+.footer-nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
-/* Social Media Icons Styling */
-.social-icon {
-    width: auto;
-    height: 25px;
-    margin: 0 5px;
+/* Style navigation links in the footer */
+.footer-nav a {
+    color: var(--link-text-color);
+    text-decoration: none;
+    margin: 10px;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
 }
 
-/* GitHub Sponsorship Button Styling */
+.footer-nav a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Style the GitHub sponsor button */
 .footer-sponsor {
-    width: 10%;
-    height: 32px;
-    margin: 10px 0;
-    border: none;
+    margin-top: 20px;
+    border: none !important;
 }
 
-/* Navigation Links Styling */
-nav.footer-nav a {
-    margin: 5px 8px;
+/* Style the social media icons */
+.footer-nav .social-icon {
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-nav .social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Style the fan-made website disclaimer */
+.footer p {
+    margin-bottom: 20px;
+    font-style: italic;
+    color: var(--footer-text-color);
+}
+
+/* Style the copyright information */
+.footer-copyright {
     font-size: 14px;
+    opacity: 0.8;
+    margin-top: 20px;
 }
 
-/* Responsive Design */
-@media only screen and (max-width: 600px) {
-    nav.footer-nav {
+/* Add fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.footer-nav,
+.footer-sponsor,
+.footer p,
+.footer-copyright {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Center all text content within the footer */
+.footer-nav,
+.footer-sponsor,
+.footer p,
+.footer-copyright {
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-nav {
         flex-direction: column;
         align-items: center;
-    }
-
-    .social-icon {
-        margin: 5px;
-    }
-
-    .footer-sponsor {
-        margin-bottom: 10px;
-    }
-
-    nav.footer-nav a {
-        margin: 5px 0;
-    }
-
-    /* Advanced Mobile Styling */
-    footer {
-        padding: 10px;
-    }
-
-    nav.footer-nav {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 10px;
-    }
-
-    .footer-sponsor {
-        width: auto;
-        max-width: 200px;
-    }
-
-    nav.footer-nav a {
-        font-size: 12px;
     }
 }
