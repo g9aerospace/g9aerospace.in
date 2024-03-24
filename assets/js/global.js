@@ -16,4 +16,11 @@ document.addEventListener('DOMContentLoaded', function () {
             footerContainer.innerHTML = html;
         })
         .catch(error => console.error('Error loading footer:', error));
+
+    // Parallax Effect
+    window.addEventListener('scroll', function() {
+        const parallax = document.querySelector('body');
+        let scrollPosition = window.pageYOffset;
+        parallax.style.backgroundPositionY = -scrollPosition * 0.2 + 'px'; // Adjust the speed here (0.3 is the multiplier)
+    });
 });
