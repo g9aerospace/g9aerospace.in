@@ -35,14 +35,20 @@
     border-radius: 3px;
     transition: background-color 0.3s ease, color 0.3s ease;
     margin-top: 10px;
+    justify-content: center; 
+    align-items: center;
 }
 
 .portfolio-item button {
-    background-color: transparent;
+    background-color: #ffffff0c;
     border: none;
     cursor: pointer;
     color: #fff;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
+
 
 .portfolio-button:hover {
     background-color: #13374e;
