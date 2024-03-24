@@ -37,6 +37,13 @@
     margin-top: 10px;
 }
 
+.portfolio-item button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
 .portfolio-button:hover {
     background-color: #13374e;
     color: #fff;
