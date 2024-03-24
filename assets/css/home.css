@@ -2,6 +2,7 @@
 .portfolio-section {
     margin-top: 30px;
     background-color: rgba(0, 0, 0, 0);
+    border-radius: var(--border-large-radius);
 }
 
 /* Portfolio Grid */
@@ -16,6 +17,7 @@
     padding: 20px;
     border-radius: 5px;
     flex: 1;
+    border-radius: var(--border-large-radius);
 }
 
 .portfolio-icon {
