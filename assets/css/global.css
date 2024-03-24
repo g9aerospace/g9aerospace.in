@@ -76,6 +76,26 @@ body .email {
     color: var(--email-color);
 }
 
+/*Scrollbar */
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #0099ff;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #00ccff;
+}
+
 /* Responsive design */
 @media screen and (max-width: 768px) {
     .container {
