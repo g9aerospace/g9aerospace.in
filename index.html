@@ -47,6 +47,46 @@
             
             <br>
 
+        <!-- Creations Grid -->
+        <h3>Creations</h3>
+        <div class="portfolio-grid" id="creations-grid">
+        </div>
+
+        <script>
+        // Fetch JSON data
+        fetch('assets/creations.json')
+            .then(response => response.json())
+            .then(data => {
+            const creationsGrid = document.getElementById('creations-grid');
+            data.forEach(item => {
+                // Create HTML elements for each item
+                const creationItem = document.createElement('div');
+                creationItem.classList.add('portfolio-item');
+
+                const creationButton = document.createElement('button');
+                creationButton.textContent = item.name;
+                creationButton.addEventListener('click', () => {
+                window.location.href = item.link;
+                });
+
+                // Apply CSS styles to make the button transparent
+                creationButton.style.backgroundColor = 'transparent';
+                creationButton.style.border = 'none';
+                creationButton.style.cursor = 'pointer';
+                creationButton.style.color = '#fff';
+
+                // Append elements to the creation item
+                creationItem.appendChild(creationButton);
+
+                // Append creation item to the creations grid
+                creationsGrid.appendChild(creationItem);
+            });
+            })
+            .catch(error => console.error('Error fetching creations:', error));
+        </script>
+
+            <br>
+
             <!-- Hosts Grid -->
             <h3>Hosting Services</h3>
             <div class="portfolio-grid">
