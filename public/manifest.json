@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "G9 Aerospace",
+  "short_name": "G9 Aerospace",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#267bfc",
+  "description": "Personal website of G9 Aerospace"
+}

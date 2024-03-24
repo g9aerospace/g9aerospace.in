@@ -1,0 +1,121 @@
+/* Footer Styles */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #000000;
+  color: white;
+  padding: 20px; /* Adjusted padding for better mobile experience */
+  animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Row Styles */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* Column Styles */
+.column {
+  flex: 1;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header Styles */
+.aboutUs h4,
+.contact h4,
+.privacyTerms h4,
+.partnerships h4 {
+  color: #267bfc;
+}
+
+/* Copyright Box Styles */
+.copyrightBox {
+  width: 100%;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border: 2px solid #267bfc;
+  border-radius: 5px;
+  animation: fadeIn 1s ease-in-out;
+  text-align: center;
+}
+
+/* Link Styles */
+a {
+  color: rgba(0, 66, 207, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Social Icons Animation */
+.socialIcons a {
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+  padding: 6px;
+  padding-top: 18px; /* Adjusted padding for better mobile experience */
+  border-radius: 2px;
+}
+
+/* Responsive Styles for Phones */
+@media only screen and (max-width: 600px) {
+  .footer {
+    padding: 10px; /* Adjusted padding for smaller screens */
+  }
+
+  .column {
+    flex: 1;
+    margin-bottom: 10px;
+  }
+
+  .socialIcons a {
+    padding-top: 12px; /* Adjusted padding for smaller screens */
+  }
+
+  .g9AerospaceIcon {
+    right: 5px; /* Adjusted right padding for smaller screens */
+  }
+
+  /* Adjusted font sizes for better readability on smaller screens */
+  .aboutUs h4,
+  .contact h4,
+  .privacyTerms h4,
+  .partnerships h4 {
+    font-size: 16px;
+  }
+
+  /* Smaller font size for copyright text on smaller screens */
+  .copyrightBox p {
+    font-size: 12px;
+  }
+
+  /* Adjusted padding for social icons on smaller screens */
+  .socialIcons a {
+    padding: 4px;
+  }
+}
