@@ -1,5 +1,6 @@
 /* Reset some default styles for the footer */
 footer {
+    margin-top: 30px;
     padding: 30px;
     background-color: var(--footer-bg-color);
     color: var(--footer-text-color);

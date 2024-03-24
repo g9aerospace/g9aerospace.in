@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
 :root {
     --primary-bg-color: #000000;
     --header-bg-color: #3031323c;
@@ -28,9 +30,19 @@
 body {
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
-    margin: var(--margin-large-width);
-    padding: var(--padding-large-width);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 30px;
     font-family: var(--font-family);
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--padding-medium-width);
 }
 
 /* Apply the Red Hat font to specific elements as needed */
@@ -41,6 +53,8 @@ h1, h2, h3, p, a {
 /* Apply link colors and email color to body text */
 body a {
     color: var(--link-text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 body a:hover {
@@ -50,4 +64,11 @@ body a:hover {
 /* Apply email color to specific elements if needed */
 body .email {
     color: var(--email-color);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 var(--padding-small-width);
+    }
 }
