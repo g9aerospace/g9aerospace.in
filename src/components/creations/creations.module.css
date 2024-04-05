@@ -1,0 +1,25 @@
+/* creations.module.css */
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .logo {
+    width: 200px; /* Adjust the width as needed */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
