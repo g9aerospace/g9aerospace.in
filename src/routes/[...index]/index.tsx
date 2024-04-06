@@ -1,8 +1,8 @@
 import { component$ } from "@builder.io/qwik";
 import { DocumentHead, routeLoader$ } from "@builder.io/qwik-city";
 import {
-  getContent,
-  RenderContent,
+  fetchOneEntry,
+  Content,
   getBuilderSearchParams,
 } from "@builder.io/sdk-qwik";
 import { CUSTOM_COMPONENTS } from "../../components/builder-registry";
@@ -12,14 +12,14 @@ import { CUSTOM_COMPONENTS } from "../../components/builder-registry";
 
 // Use the `useBuilderContent` route loader to get your content from Builder.
 // `routeLoader$()` takes an async function to fetch content
-// from Builder with using `getContent()`.
+// from Builder with using `fetchOneEntry()`.
 export const useBuilderContent = routeLoader$(async ({ url, error }) => {
   const isPreviewing = url.searchParams.has("builder.preview");
 
   // Fetch Builder.io Visual CMS content using the Qwik SDK.
   // The public API key is set in the .env file at the root
   // https://www.builder.io/c/docs/using-your-api-key
-  const builderContent = await getContent({
+  const builderContent = await fetchOneEntry({
     model: "page",
     apiKey: import.meta.env.PUBLIC_BUILDER_API_KEY,
     options: getBuilderSearchParams(url.searchParams),
@@ -41,10 +41,10 @@ export const useBuilderContent = routeLoader$(async ({ url, error }) => {
 export default component$(() => {
   const builderContent = useBuilderContent();
 
-  // RenderContent component uses the `content` prop to render
+  // Content component uses the `content` prop to render
   // the page, specified by the API Key, at the current URL path.
   return (
-    <RenderContent
+    <Content
       model="page"
       content={builderContent.value}
       apiKey={import.meta.env.PUBLIC_BUILDER_API_KEY}
