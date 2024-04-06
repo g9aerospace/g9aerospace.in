@@ -1,6 +1,5 @@
 import type { RegisteredComponent } from "@builder.io/sdk-qwik";
 import Counter from "./counter/counter";
-import Creations from "./creations/creations";
 import Input from "./input/input";
 
 /**
@@ -17,16 +16,6 @@ export const CUSTOM_COMPONENTS: RegisteredComponent[] = [
   {
     component: Counter,
     name: "Counter",
-    inputs: [
-      {
-        name: "initialValue",
-        type: "number",
-      },
-    ],
-  },
-  {
-    component: Creations,
-    name: "Creations",
     inputs: [
       {
         name: "initialValue",
