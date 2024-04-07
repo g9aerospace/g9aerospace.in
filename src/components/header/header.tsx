@@ -1,12 +1,7 @@
-import { $, component$, useOnDocument, useSignal } from "@builder.io/qwik";
+import { component$} from "@builder.io/qwik";
 import styles from "./header.module.css";
 
 export default component$(() => {
-const isInitialised = useSignal(false)
-
-useOnDocument('DOMContentLoaded', $(() => {
-  isInitialised.value = true
-}))
 
   const aquaLogoUrl = "https://github.com/g9militantsYT/g9aerospace.in-old/blob/main/assets/images/g9aerospace.png?raw=true";
 
