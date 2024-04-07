@@ -7,6 +7,9 @@ import {
 } from "@builder.io/sdk-qwik";
 import { CUSTOM_COMPONENTS } from "../../components/builder-registry";
 
+export const BUILDER_PUBLIC_API_KEY = import.meta.env.PUBLIC_BUILDER_API_KEY;
+export const MODEL = 'page';
+
 // This page is a catch-all for all routes that don't have a pre-defined route.
 // Using a catch-all route allows you to dynamically create new pages in Builder.
 
@@ -19,12 +22,17 @@ export const useBuilderContent = routeLoader$(async ({ url, error }) => {
   // Fetch Builder.io Visual CMS content using the Qwik SDK.
   // The public API key is set in the .env file at the root
   // https://www.builder.io/c/docs/using-your-api-key
+  
   const builderContent = await fetchOneEntry({
-    model: "page",
-    apiKey: import.meta.env.PUBLIC_BUILDER_API_KEY,
-    options: getBuilderSearchParams(url.searchParams),
+    model: MODEL,
+    apiKey: BUILDER_PUBLIC_API_KEY,
+    apiVersion: "v3",
+    options: {
+      ...getBuilderSearchParams(url.searchParams),
+      cachebust: true,
+    },
     userAttributes: {
-      urlPath: url.pathname,
+      urlPath: url.pathname || "/",
     },
   });
 
@@ -44,12 +52,15 @@ export default component$(() => {
   // Content component uses the `content` prop to render
   // the page, specified by the API Key, at the current URL path.
   return (
-    <Content
-      model="page"
-      content={builderContent.value}
-      apiKey={import.meta.env.PUBLIC_BUILDER_API_KEY}
-      customComponents={CUSTOM_COMPONENTS}
-    />
+    <div>
+      <Content
+        model={MODEL}
+        content={builderContent.value}
+        apiKey={BUILDER_PUBLIC_API_KEY}
+        customComponents={CUSTOM_COMPONENTS}
+        apiVersion="v3"
+      />
+    </div>
   );
 });
 
