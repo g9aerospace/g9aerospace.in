@@ -28,8 +28,16 @@ export const CUSTOM_COMPONENTS: RegisteredComponent[] = [
     inputs: [
       { name: 'Title', type: 'text' },
       { name: 'Description', type: 'text' },
-      { name: 'Theme Color', type: 'color' },
-      { name: 'link', type: 'url' },
+      { name: 'Color', type: 'text' },
+      { name: 'Author', type: 'text' },
+      { name: 'Keywords', type: 'text' },
+      { name: 'Open Graph Title', type: 'text' },
+      { name: 'Open Graph Description', type: 'text' },
+      { name: 'Open Graph Image', type: 'url' },
+      { name: 'Twitter Title', type: 'text' },
+      { name: 'Twitter Description', type: 'text' },
+      { name: 'Twitter Image', type: 'url' },
+      { name: 'Twitter Card Type', type: 'text' },
     ],
-  },
+  }
 ];
