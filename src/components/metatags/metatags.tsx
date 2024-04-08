@@ -35,8 +35,9 @@ export default component$<MetaTagsProps>((props: MetaTagsProps) => {
     TwitterTitle: props.Title,
     TwitterDescription: props.Description,
     TwitterImage: "https://github.com/g9militantsYT/g9aerospace.in/blob/main/assets/images/g9aerospace.png?raw=true",
-    TwitterCardType: "summary_large_image",
+    TwitterCardType: "summary",
   };
+  
 
   // Merge default values with provided props
   const mergedProps = { ...defaultValues, ...props };
