@@ -3,7 +3,6 @@ import { component$ } from "@builder.io/qwik";
 interface MetaTagsProps {
   Title: string;
   Description: string;
-  Color: string;
   Link: string;
   Author?: string;
   Keywords?: string;
@@ -24,7 +23,6 @@ export default component$<MetaTagsProps>((props: MetaTagsProps) => {
   const defaultValues: Partial<MetaTagsProps> = {
     Title: "G9 Aerospace",
     Description: "My personal website",
-    Color: "2463422",
     Author: "G9 Aerospace",
     Keywords: "g9 aerospace, website",
     Viewport: "width=device-width, initial-scale=1.0",
@@ -46,7 +44,6 @@ export default component$<MetaTagsProps>((props: MetaTagsProps) => {
   const metaTags = [
     { name: "title", content: mergedProps.Title },
     { name: "description", content: mergedProps.Description },
-    { name: "color", content: mergedProps.Color },
     { name: "author", content: mergedProps.Author },
     { name: "keywords", content: mergedProps.Keywords },
     { name: "viewport", content: mergedProps.Viewport },

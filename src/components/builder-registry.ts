@@ -28,7 +28,6 @@ export const CUSTOM_COMPONENTS: RegisteredComponent[] = [
     inputs: [
       { name: 'Title', type: 'text' },
       { name: 'Description', type: 'text' },
-      { name: 'Color', type: 'text' },
       { name: 'Author', type: 'text' },
       { name: 'Keywords', type: 'text' },
       { name: 'Open Graph Title', type: 'text' },
