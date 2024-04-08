@@ -54,14 +54,16 @@
   color: #267bfc;
 }
 
+.sponsor {
+  margin-right: 8px;
+}
+
 /* Copyright Box Styles */
 .copyrightBox {
   width: 100%;
   color: white;
   padding: 10px;
   margin-top: 20px;
-  border: 2px solid #267bfc;
-  border-radius: 5px;
   animation: fadeIn 1s ease-in-out;
   text-align: center;
 }
@@ -80,6 +82,11 @@ a {
   padding: 6px;
   padding-top: 18px; /* Adjusted padding for better mobile experience */
   border-radius: 2px;
+}
+
+.socialIcons a:hover {
+  background-color: rgba(246, 246, 246, 0.126);
+  border-radius: 50%;
 }
 
 /* Responsive Styles for Phones */

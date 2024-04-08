@@ -39,7 +39,7 @@ export default component$(() => {
             <div class={styles.socialIcons}>
 
               {/* GitHub Sponsorship Button */}
-              <iframe
+              <iframe class={styles.sponsor}
                 src="https://github.com/sponsors/g9militantsYT/button"
                 title="Sponsor g9militantsYT"
                 height="32"
