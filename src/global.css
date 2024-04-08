@@ -1,7 +1,7 @@
 /* GLOBAL VARIABLES -------------------------------- */
 :root {
   --qwik-dark-blue: #004080;
-  --qwik-light-blue: #0e5e9e;
+  --qwik-light-blue: #2f7cbb;
   --qwik-light-purple: #8a61d2;
   --qwik-dark-purple: #4a2695;
   --qwik-dirty-black: #0a0c17;
@@ -43,6 +43,7 @@ body {
   color: var(--text-color);
   line-height: inherit;
   margin: 2px;
+  width: 99.05%;
 }
 
 main {
@@ -101,8 +102,9 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
-  color: var(--qwik-light-blue);
+  text-decoration: none;
+  color: #2090ec;
+  cursor: pointer;
 }
 
 code {
