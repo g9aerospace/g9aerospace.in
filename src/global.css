@@ -44,6 +44,7 @@ body {
   line-height: inherit;
   margin: 2px;
   width: 99.05%;
+  overflow-x: hidden;
 }
 
 main {
