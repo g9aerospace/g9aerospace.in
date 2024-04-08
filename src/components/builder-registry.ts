@@ -1,6 +1,6 @@
 import type { RegisteredComponent } from "@builder.io/sdk-qwik";
 import Counter from "./counter/counter";
-
+import MetaTags from "./metatags/metatags";
 /**
  * This array is used to integrate custom components within Builder.
  * https://www.builder.io/c/docs/custom-components-intro
@@ -20,6 +20,16 @@ export const CUSTOM_COMPONENTS: RegisteredComponent[] = [
         name: "initialValue",
         type: "number",
       },
+    ],
+  },
+  {
+    component: MetaTags,
+    name: "MetaTags",
+    inputs: [
+      { name: 'Title', type: 'text' },
+      { name: 'Description', type: 'text' },
+      { name: 'Theme Color', type: 'color' },
+      { name: 'link', type: 'url' },
     ],
   },
 ];
