@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+// eslint-disable-next-line @typescript-eslint/consistent-type-imports
 import { DocumentHead, routeLoader$ } from "@builder.io/qwik-city";
 import {
   fetchOneEntry,

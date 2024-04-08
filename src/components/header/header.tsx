@@ -9,7 +9,7 @@ export default component$(() => {
     <header class={`${styles.header} ${styles.animatedBackground}`}>
       <div class={styles.wrapper}>
         <div class={styles.logo}>
-          <img src={aquaLogoUrl} alt="Aqua Logo" class={styles.animatedLogo} />
+          <img src={aquaLogoUrl} alt="Aqua Logo" class={styles.animatedLogo} width="100" height="100" />
         </div>
         <ul class={styles.navList}>
           <li><a href="/">Home</a></li>
