@@ -1,7 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
 interface MetaTagsProps {
-  Title: string;
   Description: string;
   Link: string;
   Author?: string;
@@ -9,10 +8,8 @@ interface MetaTagsProps {
   Viewport?: string;
   Robots?: string;
   CanonicalLink?: string;
-  OpenGraphTitle?: string;
   OpenGraphDescription?: string;
   OpenGraphImage?: string;
-  TwitterTitle?: string;
   TwitterDescription?: string;
   TwitterImage?: string;
   TwitterCardType?: string;
@@ -21,16 +18,13 @@ interface MetaTagsProps {
 export default component$<MetaTagsProps>((props: MetaTagsProps) => {
   // Default values for meta tags
   const defaultValues: Partial<MetaTagsProps> = {
-    Title: "G9 Aerospace",
     Description: "My personal website",
     Author: "G9 Aerospace",
     Keywords: "g9 aerospace, website",
     Viewport: "width=device-width, initial-scale=1.0",
     Robots: "index,follow",
-    OpenGraphTitle: props.Title,
     OpenGraphDescription: props.Description,
     OpenGraphImage: "https://github.com/g9militantsYT/g9aerospace.in/blob/main/assets/images/g9aerospace.png?raw=true",
-    TwitterTitle: props.Title,
     TwitterDescription: props.Description,
     TwitterImage: "https://github.com/g9militantsYT/g9aerospace.in/blob/main/assets/images/g9aerospace.png?raw=true",
     TwitterCardType: "summary",
@@ -42,17 +36,14 @@ export default component$<MetaTagsProps>((props: MetaTagsProps) => {
 
   // Define meta tags using the input values
   const metaTags = [
-    { name: "title", content: mergedProps.Title },
     { name: "description", content: mergedProps.Description },
     { name: "author", content: mergedProps.Author },
     { name: "keywords", content: mergedProps.Keywords },
     { name: "viewport", content: mergedProps.Viewport },
     { name: "robots", content: mergedProps.Robots },
     { rel: "canonical", href: mergedProps.CanonicalLink },
-    { property: "og:title", content: mergedProps.OpenGraphTitle },
     { property: "og:description", content: mergedProps.OpenGraphDescription },
     { property: "og:image", content: mergedProps.OpenGraphImage },
-    { name: "twitter:title", content: mergedProps.TwitterTitle },
     { name: "twitter:description", content: mergedProps.TwitterDescription },
     { name: "twitter:image", content: mergedProps.TwitterImage },
     { name: "twitter:card", content: mergedProps.TwitterCardType },
