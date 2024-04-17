@@ -6,8 +6,9 @@ import eranodes from "../../../media/eranodes.png";
 import legacynodes from "../../../media/legacynodes.png";
 import dimehosting from "../../../media/dimehosting.png";
 import destinynodes from "../../../media/destinynodes.png";
+import bricksnetwork from "../../../media/bricks-network.png";
 
-const hosts = [
+const orgs = [
   {
     name: "BBN",
     iconPath: bbn,
@@ -28,16 +29,20 @@ const hosts = [
     name: "DestinyNodes",
     iconPath: destinynodes,
   },
+  {
+    name: "Bricks Network",
+    iconpath: bricksnetwork,
+  },
 ];
 
 // Define the Qwik component
 export default component$(() => {
   return (
     <div class="container">
-      <ul class={styles.hostList}>
-        {hosts.map((host, index) => (
-          <li key={index} class={styles.hostItem}>
-            <img src={host.iconPath} alt={`${host.name} Icon`} class={styles.hostIcon} />
+      <ul class={styles.orgList}>
+        {orgs.map((org, index) => (
+          <li key={index} class={styles.orgItem}>
+            <img src={org.iconPath} alt={`${org.name} Icon`} class={styles.orgIcon} />
           </li>
         ))}
       </ul>
