@@ -5,6 +5,7 @@ import Hero from "../components/starter/hero/hero";
 import Infobox from "../components/starter/infobox/infobox";
 import Starter from "../components/starter/next-steps/next-steps";
 import Hosts from "../components/starter/hosts/hosts";
+import Carousel from "~/components/starter/carousel/carousel";
 
 export default component$(() => {
   return (
@@ -15,6 +16,8 @@ export default component$(() => {
       <div role="presentation" class="ellipsis"></div>
       <div role="presentation" class="ellipsis ellipsis-purple"></div>
 
+      <Carousel />
+      
       <div class="container container-center container-spacing-xl">
         <h3>
           You can count on these <span class="highlight">Hosts</span>
