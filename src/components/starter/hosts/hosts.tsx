@@ -53,13 +53,11 @@ export default component$(() => {
             <div class={styles.hostInfo}>
               <h4>{host.name}</h4>
               <p>
-                Website:
                 <a href={host.website} target="_blank" rel="noopener noreferrer">
                   <img src={websiteicon} alt="Website Icon" class={styles.websiteIcon} /> {/* Replace "path_to_website_icon" with the path to the website icon */}
                 </a>
               </p>
               <p>
-                Discord:
                 <a href={host.discordLink} target="_blank" rel="noopener noreferrer">
                   <img src={discordicon} alt="Discord Icon" class={styles.discordIcon}/> {/* Replace "path_to_discord_icon" with the path to the Discord icon */}
                 </a>
