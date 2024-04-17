@@ -8,7 +8,7 @@ export default component$(() => {
       <div class={["container", styles.wrapper]}>
         <div class={styles.logo}>
           <a href="/" title="qwik">
-            <QwikLogo height={50} width={143} />
+            <QwikLogo height={100} width={100} />
           </a>
         </div>
         <ul>
