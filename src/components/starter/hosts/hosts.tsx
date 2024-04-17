@@ -1,82 +1,73 @@
 import { component$ } from "@builder.io/qwik";
 import styles from "./hosts.module.css";
-import ImgThunder from "../../../media/su27-2.png?jsx";
 
+import websiteicon from "../../../media/website-icon.png"
+import discordicon from "../../../media/discord-icon.png"
+import bbn from "../../../media/bbn.png";
+import eranodes from "../../../media/eranodes.png";
+import legacynodes from "../../../media/legacynodes.png";
+import dimehosting from "../../../media/dimehosting.png";
+import destinynodes from "../../../media/destinynodes.png";
+
+const hosts = [
+  {
+    name: "BBN",
+    iconPath: bbn,
+    website: "https://bbn.one/",
+    discordLink: "https://discord.gg/bbn-hosting-757966278936756345",
+  },
+  {
+    name: "EraNodes",
+    iconPath: eranodes,
+    website: "https://client.eranodes.xyz/",
+    discordLink: "https://discord.gg/8YdG2p3etY",
+  },
+  {
+    name: "LegacyNodes",
+    iconPath: legacynodes,
+    website: "https://dash.legacynodes.com/home",
+    discordLink: "https://discord.gg/cCDcCSm3y2",
+  },
+  {
+    name: "DimeHosting",
+    iconPath: dimehosting,
+    website: "https://dash.dimehosting.xyz/",
+    discordLink: "https://discord.gg/3MjvwQmReM",
+  },
+  {
+    name: "DestinyNodes",
+    iconPath: destinynodes,
+    website: "https://discord.com/invite/hnueYjdSgA",
+    discordLink: "https://discord.gg/3MjvwQmReM",
+  },
+];
+
+// Define the Qwik component
 export default component$(() => {
   return (
-    <div class={["container", styles.hero]}>
-      <ImgThunder class={styles["hero-image"]} alt="Image thunder" />
-      <h1>
-        So <span class="highlight">fantastic</span>
-        <br />
-        to have <span class="highlight">you</span> here
-      </h1>
-      <p>Have fun exploring my website!</p>
-      <div class={styles["button-group"]}>
-        <button
-          onClick$={async () => {
-            const defaults = {
-              spread: 360,
-              ticks: 70,
-              gravity: 0,
-              decay: 0.95,
-              startVelocity: 30,
-              colors: ["006ce9", "ac7ff4", "18b6f6", "713fc2", "ffffff"],
-              origin: {
-                x: 0.5,
-                y: 0.35,
-              },
-            };
-
-            function loadConfetti() {
-              return new Promise<(opts: any) => void>((resolve, reject) => {
-                if ((globalThis as any).confetti) {
-                  return resolve((globalThis as any).confetti as any);
-                }
-                const script = document.createElement("script");
-                script.src =
-                  "https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js";
-                script.onload = () =>
-                  resolve((globalThis as any).confetti as any);
-                script.onerror = reject;
-                document.head.appendChild(script);
-                script.remove();
-              });
-            }
-
-            const confetti = await loadConfetti();
-
-            function shoot() {
-              confetti({
-                ...defaults,
-                particleCount: 80,
-                scalar: 1.2,
-              });
-
-              confetti({
-                ...defaults,
-                particleCount: 60,
-                scalar: 0.75,
-              });
-            }
-
-            setTimeout(shoot, 0);
-            setTimeout(shoot, 100);
-            setTimeout(shoot, 200);
-            setTimeout(shoot, 300);
-            setTimeout(shoot, 400);
-          }}
-        >
-          Time to celebrate
-        </button>
-        <a
-          href="https://qwik.dev/docs"
-          target="_blank"
-          class="button button-dark"
-        >
-          Explore the docs
-        </a>
-      </div>
+    <div class="container">
+      <ul class={styles.hostList}>
+        {hosts.map((host, index) => (
+          <li key={index} class={styles.hostItem}>
+            <img src={host.iconPath} alt={`${host.name} Icon`} class={styles.hostIcon} />
+            <div class={styles.hostInfo}>
+              <h4>{host.name}</h4>
+              <p>
+                Website:
+                <a href={host.website} target="_blank" rel="noopener noreferrer">
+                  <img src={websiteicon} alt="Website Icon" class={styles.websiteIcon} /> {/* Replace "path_to_website_icon" with the path to the website icon */}
+                </a>
+              </p>
+              <p>
+                Discord:
+                <a href={host.discordLink} target="_blank" rel="noopener noreferrer">
+                  <img src={discordicon} alt="Discord Icon" class={styles.discordIcon}/> {/* Replace "path_to_discord_icon" with the path to the Discord icon */}
+                </a>
+              </p>
+            </div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 });

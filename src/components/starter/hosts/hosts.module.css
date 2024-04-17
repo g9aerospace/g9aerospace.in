@@ -1,43 +1,92 @@
-.hero {
+.container {
+  margin: 0 auto;
+  max-width: 100%;
   display: flex;
-  vertical-align: middle;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  height: 450px;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
 }
 
-.hero-image {
-  width: 100%;
-  position: absolute;
-  height: auto;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0.2;
-  pointer-events: none;
-}
-
-.hero p {
-  color: white;
-  margin: 0;
-  font-size: 1rem;
-}
-
-.button-group {
+.hostList {
+  list-style: none;
+  padding: 0;
   display: flex;
-  flex-direction: row;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-@media screen and (min-width: 768px) {
-  .hero {
-    gap: 60px;
-    height: 500px;
-  }
+.hostItem {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px;
+  padding-top: 15px;
+  width: calc(18% - 18px);
+  transition: transform 0.3s ease;
+  background-color: #00000044;
+}
 
-  .hero p {
-    font-size: 1.3rem;
-  }
+.hostItem:hover {
+  transform: translateY(-5px);
+}
+
+.hostInfo {
+  padding: 20px;
+}
+
+.hostIcon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  display: block;
+  transition: transform 0.3s ease;
+  border-radius: 10%;
+}
+
+.hostItem:hover .hostIcon {
+  transform: scale(1.1);
+}
+
+.linkButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.linkButton:hover {
+  background-color: #0056b3;
+}
+
+.linkButton:focus {
+  outline: none;
+}
+
+.websiteIcon {
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+  margin-right: 5px; /* Add spacing between icon and text */
+}
+
+.discordIcon {
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+  margin-right: 5px; /* Add spacing between icon and text */
+}
+
+/* Optional: Style the headings */
+h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Optional: Style the paragraphs */
+p {
+  margin: 0;
+  margin-bottom: 10px;
 }
