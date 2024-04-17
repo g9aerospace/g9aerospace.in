@@ -13,13 +13,15 @@ export default component$(({ value = 50 }: { value?: number }) => {
             <stop offset="1000%" stop-color="#AC7FF4" />
           </linearGradient>
         </defs>
+
         <circle
           r="56"
           cx="60"
           cy="60"
           stroke-width="8"
           style="fill: #000; stroke: #0000"
-        />
+        ></circle>
+
         <circle
           r="56"
           cx="60"
@@ -28,7 +30,7 @@ export default component$(({ value = 50 }: { value?: number }) => {
           style={`transform: rotate(-87.9537deg); stroke-dasharray: ${
             safeValue * 3.51
           }, 351.858; fill:none; transform-origin:50% 50%; stroke-linecap:round; stroke:url(#gradient)`}
-        />
+        ></circle>
       </svg>
       <span class={styles.value}>{safeValue}</span>
     </div>

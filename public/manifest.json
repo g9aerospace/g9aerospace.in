@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "G9 Aerospace",
-  "short_name": "G9 Aerospace",
+  "name": "qwik-project-name",
+  "short_name": "Welcome to Qwik",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#267bfc",
-  "description": "Personal website of G9 Aerospace"
+  "background_color": "#fff",
+  "description": "A Qwik project app."
 }

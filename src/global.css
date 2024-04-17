@@ -1,120 +1,46 @@
-/* GLOBAL VARIABLES -------------------------------- */
+/**
+ * WHAT IS THIS FILE?
+ *
+ * Globally applied styles. No matter which components are in the page or matching route,
+ * the styles in here will be applied to the Document, without any sort of CSS scoping.
+ *
+ */
+
 :root {
-  --qwik-dark-blue: #004080;
-  --qwik-light-blue: #2f7cbb;
-  --qwik-light-purple: #8a61d2;
-  --qwik-dark-purple: #4a2695;
-  --qwik-dirty-black: #0a0c17;
-
-  --text-color: #d9d9d9;
-  --main-background: #03070a;
-  --header-background: #000000;
-  --footer-background: #000000;
+  --qwik-dark-blue: #006ce9;
+  --qwik-light-blue: #18b6f6;
+  --qwik-light-purple: #ac7ff4;
+  --qwik-dark-purple: #713fc2;
+  --qwik-dirty-black: #1d2033;
+  --qwik-dark-background: #151934;
+  --qwik-dark-text: #ffffff;
 }
 
-/* SHELL ---------------------------------------- */
 html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background: var(--footer-background);
-  /* SCROLLBAR STYLING ------------------------------- */
-  scrollbar-color: var(--qwik-dark-blue) var(--qwik-dirty-black);
-  scrollbar-width: thin;
-}
-
-/* For Webkit browsers like Chrome and Safari */
-body::-webkit-scrollbar {
-  width: 6px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: var(--qwik-dark-blue);
-  background-image: linear-gradient(to bottom, var(--qwik-dark-blue), var(--qwik-dirty-black));
-  border-radius: 6px;
-}
-
-body::-webkit-scrollbar-track {
-  background-color: var(--qwik-dirty-black);
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
 }
 
 body {
   padding: 0;
   margin: 0;
-  color: var(--text-color);
   line-height: inherit;
-  margin: 2px;
-  width: 99.05%;
-  overflow-x: hidden;
-}
-
-main {
-  background: var(--main-background);
-}
-
-/* HEADINGS ------------------------------------- */
-h1,
-h2,
-h3 {
-  color: white;
-  margin: 0;
-}
-
-h1 {
-  font-size: 3.2rem;
-  text-align: center;
-}
-
-h1 .highlight,
-h3 .highlight {
-  color: var(--qwik-light-blue);
-}
-
-h2 {
-  font-weight: 400;
-  font-size: 2.4rem;
-}
-
-h2 .highlight {
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 2rem;
-}
-
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: 5rem;
-  }
-
-  h2 {
-    font-size: 3.4rem;
-  }
-
-  h3 {
-    font-size: 3rem;
-  }
-}
-
-/* TAGS ----------------------------------------- */
-a {
-  text-decoration: none;
-  color: var(--qwik-light-blue);
-}
-
-a:hover {
-  text-decoration: none;
-  color: #2090ec;
-  cursor: pointer;
-}
-
-code {
-  background: rgba(230, 230, 230, 0.3);
-  border-radius: 4px;
-  padding: 2px 6px;
-}
-
-ul {
-  margin: 0;
-  padding-left: 20px;
 }
