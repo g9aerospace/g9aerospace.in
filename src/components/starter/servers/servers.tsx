@@ -3,42 +3,29 @@ import styles from "./servers.module.css";
 
 import websiteicon from "../../../media/website-icon.png"
 import discordicon from "../../../media/discord-icon.png"
-import bbn from "../../../media/bbn.png";
-import eranodes from "../../../media/eranodes.png";
-import legacynodes from "../../../media/legacynodes.png";
-import dimehosting from "../../../media/dimehosting.png";
-import destinynodes from "../../../media/destinynodes.png";
+
+import bricksnetwork from "../../../media/bricks-network.png";
+import dragonnetwork from "../../../media/dragon-network.png";
+import craftersgg from "../../../media/craftersgg.png";
 
 const servers = [
   {
-    name: "BBN",
-    iconPath: bbn,
-    website: "https://bbn.one/",
-    discordLink: "https://discord.gg/bbn-hosting-757966278936756345",
+    name: "Bricks Network",
+    iconPath: bricksnetwork,
+    website: "https://bricks-network.xyz",
+    discordLink: "https://discord.gg/uRuPDJ5j",
   },
   {
-    name: "EraNodes",
-    iconPath: eranodes,
-    website: "https://client.eranodes.xyz/",
-    discordLink: "https://discord.gg/8YdG2p3etY",
+    name: "Dragon Network",
+    iconPath: dragonnetwork,
+    website: "https://https://dragonnetwork.digital",
+    discordLink: "https://discord.gg/ukzxwAujZM",
   },
   {
-    name: "LegacyNodes",
-    iconPath: legacynodes,
-    website: "https://dash.legacynodes.com/home",
-    discordLink: "https://discord.gg/cCDcCSm3y2",
-  },
-  {
-    name: "DimeHosting",
-    iconPath: dimehosting,
-    website: "https://dash.dimehosting.xyz/",
-    discordLink: "https://discord.gg/3MjvwQmReM",
-  },
-  {
-    name: "DestinyNodes",
-    iconPath: destinynodes,
-    website: "https://discord.com/invite/hnueYjdSgA",
-    discordLink: "https://discord.gg/3MjvwQmReM",
+    name: "CraftersGG",
+    iconPath: craftersgg,
+    website: "https://craftersgg.site/",
+    discordLink: "https://discord.gg/CwWbWm5FKq",
   },
 ];
 
