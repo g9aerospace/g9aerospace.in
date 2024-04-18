@@ -5,6 +5,7 @@ import Hero from "../components/starter/hero/hero";
 import Infobox from "../components/starter/infobox/infobox";
 import Starter from "../components/starter/next-steps/next-steps";
 import Hosts from "../components/starter/hosts/hosts";
+import Servers from "../components/starter/servers/servers";
 
 export default component$(() => {
   return (
@@ -20,6 +21,13 @@ export default component$(() => {
           You can count on these <span class="highlight">Hosts</span>
         </h3>
         <Hosts />
+      </div>
+
+      <div class="container container-center container-spacing-xl">
+        <h3>
+          You can play on these <span class="highlight">Servers</span>
+        </h3>
+        <Servers />
       </div>
 
       <div class="container container-flex">

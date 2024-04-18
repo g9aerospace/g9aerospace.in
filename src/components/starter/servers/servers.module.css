@@ -1,0 +1,92 @@
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.serverList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.serverItem {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px;
+  padding-top: 15px;
+  width: calc(18% - 18px);
+  transition: transform 0.3s ease;
+  background-color: #00000044;
+}
+
+.serverItem:hover {
+  transform: translateY(-5px);
+}
+
+.serverInfo {
+  padding: 20px;
+}
+
+.serverIcon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  display: block;
+  transition: transform 0.3s ease;
+  border-radius: 10%;
+}
+
+.serverItem:hover .serverIcon {
+  transform: scale(1.1);
+}
+
+.linkButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.linkButton:hover {
+  background-color: #0056b3;
+}
+
+.linkButton:focus {
+  outline: none;
+}
+
+.websiteIcon {
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+  margin-right: 5px; /* Add spacing between icon and text */
+}
+
+.discordIcon {
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+  margin-right: 5px; /* Add spacing between icon and text */
+}
+
+/* Optional: Style the headings */
+h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Optional: Style the paragraphs */
+p {
+  margin: 0;
+  margin-bottom: 10px;
+}
