@@ -6,6 +6,7 @@ import Infobox from "../components/starter/infobox/infobox";
 import Starter from "../components/starter/next-steps/next-steps";
 import Hosts from "../components/starter/hosts/hosts";
 import Servers from "../components/starter/servers/servers";
+import Creations from "../components/starter/creations/creations";
 
 export default component$(() => {
   return (
@@ -28,6 +29,13 @@ export default component$(() => {
           You can play on these <span class="highlight">Servers</span>
         </h3>
         <Servers />
+      </div>
+
+      <div class="container container-center container-spacing-xl">
+        <h3>
+          You can check out these <span class="highlight">Creations</span>
+        </h3>
+        <Creations />
       </div>
 
       <div class="container container-flex">
