@@ -1,0 +1,44 @@
+/* creations.module.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .creationList {
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .creationItem {
+    background-color: #0000001a;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .creationItem .content {
+    padding: 20px;
+  }
+  
+  .creationItem .name {
+    font-weight: bold;
+  }
+  
+  .creationItem h4 {
+    margin-top: 0;
+  }
+  
+  .creationItem p {
+    margin-bottom: 10px;
+  }
+  
+  .websiteIcon,
+  .discordIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  

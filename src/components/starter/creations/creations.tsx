@@ -31,18 +31,20 @@ export default component$(() => {
     <div class="container">
       <ul class={styles.creationList}>
         {organisations.map((creation, index) => (
-          <li key={index} class={styles.creationItem}>
-            <div class={styles.creationInfo}>
-              <h4>{creation.name}</h4>
-              <a>{creation.organisation}</a>
+          <li key={index} class={`${styles.creationItem} card`}>
+            <div class="name">{creation.name}</div>
+            <div class="content">
+              <h4>{creation.organisation}</h4>
               <p>
                 <a href={creation.website} target="_blank" rel="noopener noreferrer">
-                  <img src={websiteicon} alt="Website Icon" class={styles.websiteIcon} /> {/* Replace "path_to_website_icon" with the path to the website icon */}
+                  <img src={websiteicon} alt="Website Icon" class={`${styles.websiteIcon} websiteIcon`} />
+                  {creation.website}
                 </a>
               </p>
               <p>
                 <a href={creation.discordLink} target="_blank" rel="noopener noreferrer">
-                  <img src={discordicon} alt="Discord Icon" class={styles.discordIcon}/> {/* Replace "path_to_discord_icon" with the path to the Discord icon */}
+                  <img src={discordicon} alt="Discord Icon" class={`${styles.discordIcon} discordIcon`} />
+                  {creation.discordLink}
                 </a>
               </p>
             </div>
@@ -52,3 +54,4 @@ export default component$(() => {
     </div>
   );
 });
+
