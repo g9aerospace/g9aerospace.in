@@ -70,11 +70,11 @@ export default component$(() => {
           Time to celebrate
         </button>
         <a
-          href="https://qwik.dev/docs"
+          href="https://www.youtube.com/@G9AEROSPACEYT"
           target="_blank"
           class="button button-dark"
         >
-          Explore the docs
+          Youtube 
         </a>
       </div>
     </div>

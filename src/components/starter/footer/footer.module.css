@@ -1,14 +1,12 @@
-/* Footer Styles */
 .footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   background: linear-gradient(to bottom, #0e1521bb, #000000);
-  color: white;
-  padding: 20px; /* Adjusted padding for better mobile experience */
+  color: rgb(165, 165, 165);
+  padding: 20px;
 }
 
-/* Row Styles */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -16,18 +14,16 @@
   width: 100%;
 }
 
-/* Column Styles */
 .column {
   flex: 1;
   margin-bottom: 20px;
 }
 
-/* Header Styles */
 .aboutUs h4,
 .contact h4,
 .privacyTerms h4,
 .partnerships h4 {
-  color: #267bfc;
+  color: #3066b7;
 }
 
 .sponsor {
@@ -44,8 +40,14 @@
 }
 
 /* Link Styles */
-a {
-  color: rgba(0, 66, 207, 0.8);
+footer a {
+  color: rgba(24, 128, 203, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: rgba(2, 187, 255, 0.8);
   text-decoration: none;
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }

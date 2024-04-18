@@ -5,7 +5,6 @@ import Hero from "../components/starter/hero/hero";
 import Infobox from "../components/starter/infobox/infobox";
 import Starter from "../components/starter/next-steps/next-steps";
 import Hosts from "../components/starter/hosts/hosts";
-import Carousel from "~/components/starter/carousel/carousel";
 
 export default component$(() => {
   return (
@@ -15,8 +14,6 @@ export default component$(() => {
 
       <div role="presentation" class="ellipsis"></div>
       <div role="presentation" class="ellipsis ellipsis-purple"></div>
-
-      <Carousel />
       
       <div class="container container-center container-spacing-xl">
         <h3>
@@ -72,26 +69,26 @@ export default component$(() => {
             <ul>
               <li>
                 <span>Questions or just want to say hi? </span>
-                <a href="https://qwik.dev/chat" target="_blank">
+                <a href="https://qwik.dev/chat" target="_blank" rel="noopener">
                   Chat on discord!
                 </a>
               </li>
               <li>
                 <span>Follow </span>
-                <a href="https://twitter.com/QwikDev" target="_blank">
+                <a href="https://twitter.com/QwikDev" target="_blank" rel="noopener" >
                   @QwikDev
                 </a>
                 <span> on Twitter</span>
               </li>
               <li>
                 <span>Open issues and contribute on </span>
-                <a href="https://github.com/BuilderIO/qwik" target="_blank">
+                <a href="https://github.com/BuilderIO/qwik" target="_blank" rel="noopener">
                   GitHub
                 </a>
               </li>
               <li>
                 <span>Watch </span>
-                <a href="https://qwik.dev/media/" target="_blank">
+                <a href="https://qwik.dev/media/" target="_blank" rel="noopener">
                   Presentations, Podcasts, Videos, etc.
                 </a>
               </li>
