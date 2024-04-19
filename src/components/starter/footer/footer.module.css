@@ -6,6 +6,8 @@
   color: rgb(165, 165, 165);
   padding: 20px;
   width: 100%;
+  margin-top: 50px;
+  margin-bottom: 0px;
 }
 
 .row {
@@ -66,7 +68,6 @@ footer a:hover {
   background-color: rgba(246, 246, 246, 0.126);
   border-radius: 50%;
 }
-
 /* Responsive Styles for Phones */
 @media only screen and (max-width: 600px) {
   .footer {

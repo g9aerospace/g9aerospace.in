@@ -12,7 +12,6 @@ export default component$(() => {
         <br />
         for <span class="highlight">BBN </span>hosting?
       </h1>
-      <p>Check out this page</p>
       <Calculator />
     </div>
 
