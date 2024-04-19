@@ -21,11 +21,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "G9 Aerospace",
+  title: "BBN Resource Calculator",
   meta: [
     {
       name: "description",
-      content: "Welcome to G9 Aerospace's Portfolio website!",
+      content: "Use this calculator to calculate the coins you require for the resources you wish to acquire",
     },
   ],
 };
