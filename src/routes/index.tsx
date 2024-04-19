@@ -2,8 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import Hero from "../components/starter/hero/hero";
-import Infobox from "../components/starter/infobox/infobox";
-import Starter from "../components/starter/next-steps/next-steps";
+import Carousel from "../components/starter/carousel/carousel";
 import Hosts from "../components/starter/hosts/hosts";
 import Servers from "../components/starter/servers/servers";
 import Creations from "../components/starter/creations/creations";
@@ -12,7 +11,7 @@ export default component$(() => {
   return (
     <>
       <Hero />
-      <Starter />
+      <Carousel />
 
       <div role="presentation" class="ellipsis"></div>
       <div role="presentation" class="ellipsis ellipsis-purple"></div>
