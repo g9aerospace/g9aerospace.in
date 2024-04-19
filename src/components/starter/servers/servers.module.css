@@ -8,21 +8,22 @@
 
 .serverList {
   list-style: none;
-  padding: 0;
+  padding: var(--section-padding);
   display: flex;
   flex-wrap: wrap;
-  justify-content:center
+  justify-content:center;
+  background-color: var(--section-background-color);
+  border-radius: var(--section-border-radius);
 }
 
 .serverItem {
-  border: 1px solid #ccc;
-  border-radius: 5px;
   overflow: hidden;
   margin: 10px;
-  padding-top: 15px;
   width: calc(18% - 18px);
   transition: transform 0.3s ease;
-  background-color: #00000044;
+  background-color: var(--item-background-color); 
+  border-radius: var(--item-border-radius);
+  padding: var(--item-padding);
 }
 
 .serverItem:hover {

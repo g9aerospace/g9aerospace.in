@@ -8,21 +8,23 @@
 
 .hostList {
   list-style: none;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  padding: var(--section-padding);
+  background-color: var(--section-background-color);
+  border-radius: var(--section-border-radius);
 }
 
 .hostItem {
-  border: 1px solid #ccc;
-  border-radius: 5px;
   overflow: hidden;
   margin: 10px;
-  padding-top: 15px;
-  width: calc(18% - 18px);
+  width: calc(15% - 16px);
   transition: transform 0.3s ease;
-  background-color: #00000044;
+  background-color: var(--item-background-color); 
+  border-radius: var(--item-border-radius);
+  padding: var(--item-padding);
 }
 
 .hostItem:hover {

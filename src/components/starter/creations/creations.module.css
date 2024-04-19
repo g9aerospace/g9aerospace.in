@@ -1,44 +1,51 @@
 /* creations.module.css */
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .creationList {
-    list-style-type:none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .creationItem {
-    background-color: #0000001a;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  .creationItem .content {
-    padding: 20px;
-  }
-  
-  .creationItem .name {
-    font-weight: bold;
-  }
-  
-  .creationItem h4 {
-    margin-top: 0;
-  }
-  
-  .creationItem p {
-    margin-bottom: 10px;
-  }
-  
-  .websiteIcon,
-  .discordIcon {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-  }
-  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.creationList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  list-style-type: none;
+  padding: var(--section-padding);
+  border-radius: var(--section-border-radius);
+  margin: 0;
+  background-color: var(--section-background-color);
+}
+
+.creationItem {
+  background-color: var(--item-background-color); 
+  border-radius: var(--item-border-radius);
+  padding: var(--item-padding);
+  margin-bottom: 20px;
+  color: var(--item-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-width: 2px;
+}
+
+.creationItem .content {
+  padding: 20px;
+}
+
+.creationItem .name {
+  font-weight: bold;
+}
+
+.creationItem h4 {
+  margin-top: 0;
+}
+
+.creationItem p {
+  margin-bottom: 10px;
+}
+
+.websiteIcon,
+.githubIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}

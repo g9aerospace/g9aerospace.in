@@ -14,6 +14,14 @@
   --qwik-dirty-black: #1d2033;
   --qwik-dark-background: #151934;
   --qwik-dark-text: #ffffff;
+
+  --section-border-radius: 3px;
+  --section-background-color: #ffffff17;
+  --section-padding: 30px 50px;
+
+  --item-background-color: #0000002e;
+  --item-border-radius: var(var(--section-border-radius));
+  --item-padding: 10px 20px;
 }
 
 html {
