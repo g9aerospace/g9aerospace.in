@@ -215,7 +215,7 @@ button.button-small {
 
 /* SCROLLBAR ------------------------------------ */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-track {
@@ -223,12 +223,12 @@ button.button-small {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
+  background: #353535;
+  border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #4f5d84;
 }
 
 /* BUTTONS -------------------------------------- */

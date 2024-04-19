@@ -75,7 +75,7 @@ export default component$(() => {
 
         <div class={styles.copyrightBox}>
           <div class={styles.copyright}>
-            <p>&copy; 2024 G9 Aerospace. All rights reserved.</p>
+            <p>&copy; 2024 G9 Aerospace. All rights reserved</p>
           </div>
         </div>
       </div>
