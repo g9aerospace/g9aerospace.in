@@ -68,27 +68,62 @@
   outline: none;
 }
 
+.cta {
+  align-items: center;
+  justify-content: center;
+}
+
 .websiteIcon {
-  width: 20px; /* Adjust size as needed */
-  height: 20px; /* Adjust size as needed */
-  margin-right: 5px; /* Add spacing between icon and text */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 5px
+}
+
+.websiteIcon:hover {
+  background-color: #ffffff2c;
 }
 
 .discordIcon {
-  width: 20px; /* Adjust size as needed */
-  height: 20px; /* Adjust size as needed */
-  margin-right: 5px; /* Add spacing between icon and text */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 5px
 }
 
-/* Optional: Style the headings */
+.discordIcon:hover {
+  background-color: #ffffff2c;
+}
+
 h4 {
   margin: 0;
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-/* Optional: Style the paragraphs */
 p {
   margin: 0;
   margin-bottom: 10px;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+  .hostItem {
+    width: calc(20% - 25px);
+  }
+  
+  .hostIcon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2px;
+    padding-bottom: 0px;
+  }
+
+  .hostName {
+    font-size: 12px;
+  }
+
+  h4 {
+    font-size: 5px;
+  }
 }

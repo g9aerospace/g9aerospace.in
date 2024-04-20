@@ -1,0 +1,32 @@
+[
+    {
+      "name": "BBN",
+      "iconPath": "src/media/bbn.png",
+      "website": "https://bbn.one/",
+      "discordLink": "https://discord.gg/bbn-hosting-757966278936756345"
+    },
+    {
+      "name": "EraNodes",
+      "iconPath": "src/media/eranodes.png",
+      "website": "https://client.eranodes.xyz/",
+      "discordLink": "https://discord.gg/8YdG2p3etY"
+    },
+    {
+      "name": "LegacyNodes",
+      "iconPath": "src/media/legacynodes.png",
+      "website": "https://dash.legacynodes.com/home",
+      "discordLink": "https://discord.gg/cCDcCSm3y2"
+    },
+    {
+      "name": "DimeHosting",
+      "iconPath": "src/media/dimehosting.png",
+      "website": "https://dash.dimehosting.xyz/",
+      "discordLink": "https://discord.gg/3MjvwQmReM"
+    },
+    {
+      "name": "DestinyNodes",
+      "iconPath": "src/media/destinynodes.png",
+      "website": "https://discord.com/invite/hnueYjdSgA",
+      "discordLink": "https://discord.gg/3MjvwQmReM"
+    }
+  ]
