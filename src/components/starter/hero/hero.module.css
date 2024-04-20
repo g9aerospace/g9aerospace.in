@@ -10,13 +10,37 @@
 }
 
 .hero-image {
-  width: 100%;
+  width: 110vw;
   position: absolute;
   height: auto;
   object-fit: cover;
   z-index: -1;
   opacity: 0.2;
   pointer-events: none;
+  animation: moveBackground 8s linear infinite;
+}
+
+@keyframes moveBackground {
+  0%, 100% {
+    margin-left: 0;
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    margin-left: -40px; /* Move left 40px in 3 seconds */
+    transform: translateX(0) rotate(-10deg);
+  }
+  50% {
+    margin-left: -20px; /* Move right 20px in 2 seconds */
+    transform: translateX(0) rotate(5deg);
+  }
+  60% {
+    margin-left: -10px; /* Move left 10px in 1 second */
+    transform: translateX(0) rotate(-2.5deg);
+  }
+  75% {
+    margin-left: 20px; /* Move right 30px in 2 seconds */
+    transform: translateX(0) rotate(5deg);
+  }
 }
 
 .hero p {
