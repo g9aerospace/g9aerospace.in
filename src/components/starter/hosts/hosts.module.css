@@ -23,7 +23,7 @@
   width: calc(15% - 16px);
   transition: transform 0.3s ease;
   background-color: var(--item-background-color); 
-  border-radius: var(--item-border-radius);
+  border-radius: var(--small-border-radius);
   padding: var(--item-padding);
 }
 
@@ -32,13 +32,13 @@
 }
 
 .hostInfo {
-  padding: 20px;
+  padding: 10px auto 5px;
 }
 
 .hostIcon {
   width: 100px;
   height: 100px;
-  margin: 0 auto 20px;
+  margin: 10px auto 10px;
   display: block;
   transition: transform 0.3s ease;
   border-radius: 10%;
@@ -48,24 +48,8 @@
   transform: scale(1.1);
 }
 
-.linkButton {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-
-.linkButton:hover {
-  background-color: #0056b3;
-}
-
-.linkButton:focus {
-  outline: none;
+.hostIcon:hover {
+  background-color: var(--hover-background-color);
 }
 
 .cta {
@@ -81,24 +65,19 @@
 }
 
 .websiteIcon:hover {
-  background-color: #ffffff2c;
+  background-color: var(--hover-background-color);
 }
 
 .discordIcon {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  padding: 5px
+  padding: 5px;
+  background-color: none;
 }
 
 .discordIcon:hover {
-  background-color: #ffffff2c;
-}
-
-h4 {
-  margin: 0;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  background-color: var(--hover-background-color);
 }
 
 p {

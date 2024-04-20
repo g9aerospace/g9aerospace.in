@@ -12,17 +12,21 @@ export default component$(() => {
       <ul class={styles.hostList}>
         {hostsData.map((host, index) => (
           <li key={index} class={styles.hostItem}>
-            <img src={host.iconPath} alt={`${host.name} Icon`} class={styles.hostIcon} />
+            {/* Use simple href with lowercase host name and target="_blank" */}
+            <a href={`/${host.name.toLowerCase()}`} target="_blank" rel="noopener noreferrer" class={styles.hostLink}>
+              <img src={host.iconPath} alt={`${host.name} Icon`} class={styles.hostIcon} />
+            </a>
             <div class={styles.hostInfo}>
               <p class={styles.hostName}>{host.name}</p>
-                <p class={styles.cta}>
-                  <a href={host.website} target="_blank" rel="noopener noreferrer">
-                    <img src={websiteicon} alt="Website Icon" class={styles.websiteIcon} />
-                  </a>
-                  <a href={host.discordLink} target="_blank" rel="noopener noreferrer">
-                    <img src={discordicon} alt="Discord Icon" class={styles.discordIcon}/>
-                  </a>
-                </p>
+              <p class={styles.cta}>
+                {/* Links for website and Discord icons */}
+                <a href={host.website} target="_blank" rel="noopener noreferrer">
+                  <img src={websiteicon} alt="Website Icon" class={styles.websiteIcon} />
+                </a>
+                <a href={host.discordLink} target="_blank" rel="noopener noreferrer">
+                  <img src={discordicon} alt="Discord Icon" class={styles.discordIcon}/>
+                </a>
+              </p>
             </div>
           </li>
         ))}

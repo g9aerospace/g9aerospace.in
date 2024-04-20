@@ -15,13 +15,19 @@
   --qwik-dark-background: #151934;
   --qwik-dark-text: #ffffff;
 
-  --section-border-radius: 3px;
+  --section-border-radius: var(--medium-border-radius);
   --section-background-color: #ffffff17;
-  --section-padding: 30px 50px;
+  --section-padding: 20px 30px;
 
   --item-background-color: #0000002e;
   --item-border-radius: var(var(--section-border-radius));
   --item-padding: 10px 20px;
+
+  --small-border-radius: 3px;
+  --medium-border-radius: 8px;
+  --large-border-radius: 15px;
+  
+  --hover-background-color:  #ffffff11;
 }
 
 html {
@@ -30,25 +36,12 @@ html {
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
-  font-family:
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    Arial,
-    "Noto Sans",
-    sans-serif,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Noto Color Emoji";
+  font-family: 'Red Hat Text', sans-serif;
 }
 
 body {
   padding: 0;
   margin: 0;
   line-height: inherit;
+  font-family: 'Red Hat Text', sans-serif;
 }
