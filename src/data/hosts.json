@@ -1,7 +1,7 @@
 [
     {
       "name": "BBN",
-      "iconPath": "../../../media/bbn.png",
+      "iconPath": "bbn",
       "website": "https://bbn.one/",
       "discordLink": "https://discord.gg/bbn-hosting-757966278936756345"
     },
