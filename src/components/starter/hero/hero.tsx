@@ -69,7 +69,7 @@ export default component$(() => {
           // Open website in new tab after animation
           setTimeout(() => {
             window.open("https://www.youtube.com/@G9AEROSPACEYT", "_blank");
-          }, 2000); // Adjust the delay time as needed
+          }, 990); // Adjust the delay time as needed
         }}
       >
         Youtube
