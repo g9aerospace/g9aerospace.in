@@ -1,25 +1,25 @@
 [
     {
       "name": "BBN",
-      "iconPath": "bbn",
+      "iconPath": "src/media/bbn.png",
       "website": "https://bbn.one/",
       "discordLink": "https://discord.gg/bbn-hosting-757966278936756345"
     },
     {
       "name": "EraNodes",
-      "iconPath": "../../media/eranodes.png",
+      "iconPath": "src/media/eranodes.png",
       "website": "https://client.eranodes.xyz/",
       "discordLink": "https://discord.gg/8YdG2p3etY"
     },
     {
       "name": "LegacyNodes",
-      "iconPath": "../media/legacynodes.png",
+      "iconPath": "src/media/legacynodes.png",
       "website": "https://dash.legacynodes.com/home",
       "discordLink": "https://discord.gg/cCDcCSm3y2"
     },
     {
       "name": "DimeHosting",
-      "iconPath": "https://github.com/g9militantsYT/g9aerospace.in/blob/eaca0d5c3e733e1307f7e404da014ad0d5d2d659/src/media/dimehosting.png",
+      "iconPath": "src/media/dimehosting.png",
       "website": "https://dash.dimehosting.xyz/",
       "discordLink": "https://discord.gg/3MjvwQmReM"
     },

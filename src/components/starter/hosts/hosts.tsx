@@ -5,8 +5,6 @@ import websiteicon from "../../../media/website-icon.png";
 import discordicon from "../../../media/discord-icon.png";
 import hostsData from "../../../data/hosts.json";
 
-import bbn from "../../../media/bbn.png"
-
 // Define the Qwik component
 export default component$(() => {
   return (
