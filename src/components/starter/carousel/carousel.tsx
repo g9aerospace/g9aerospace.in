@@ -11,7 +11,7 @@ import craftersgg from "../../../media/craftersgg.png"
 import dragonnetwork from "../../../media/dragon-network.png";
 import vypergroup from "../../../media/vypergroup.png"
 
-const images = [bbn, eranodes, vypergroup, legacynodes, dimehosting, destinynodes, craftersgg, dragonnetwork, vypergroup];
+const images = [bbn, eranodes, vypergroup, legacynodes, dimehosting, destinynodes, craftersgg, dragonnetwork];
 // Define the Qwik component for the carousel
 export default component$(() => {
 
