@@ -1,19 +1,19 @@
 [
     {
       "name": "BBN",
-      "iconPath": "src/media/bbn.png",
+      "iconPath": "../../../media/bbn.png",
       "website": "https://bbn.one/",
       "discordLink": "https://discord.gg/bbn-hosting-757966278936756345"
     },
     {
       "name": "EraNodes",
-      "iconPath": "src/media/eranodes.png",
+      "iconPath": "../../media/eranodes.png",
       "website": "https://client.eranodes.xyz/",
       "discordLink": "https://discord.gg/8YdG2p3etY"
     },
     {
       "name": "LegacyNodes",
-      "iconPath": "src/media/legacynodes.png",
+      "iconPath": "../media/legacynodes.png",
       "website": "https://dash.legacynodes.com/home",
       "discordLink": "https://discord.gg/cCDcCSm3y2"
     },
