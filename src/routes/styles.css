@@ -124,12 +124,18 @@ a.button,
 button {
   background: var(--qwik-light-blue);
   border: none;
-  border-radius: 8px;
+  border-radius: var(--medium-border-radius);
   color: white;
   cursor: pointer;
   font-size: 0.8rem;
   padding: 15px 20px;
   text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--qwik-dark-blue);
+  transition: background-color 0.3s ease;
 }
 
 a.button.button-dark,

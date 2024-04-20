@@ -25,7 +25,7 @@ export default component$(() => {
 
   return (
     <div class={styles.container}>
-      <h1>Resource Calculator</h1>
+      <h3>Resource Calculator</h3>
       <div class={styles["input-group"]}>
         {/* Number of Servers */}
         <label for="numServers">Number of Servers:</label>
@@ -33,12 +33,12 @@ export default component$(() => {
       </div>
       <div class={styles["input-group"]}>
         {/* Memory */}
-        <label for="memory">Memory (GB):</label>
+        <label for="memory">Memory (MB):</label>
         <input type="text" id="memory" placeholder="Enter memory (x100 will be applied)" pattern="\d*" />
       </div>
       <div class={styles["input-group"]}>
         {/* Disk */}
-        <label for="disk">Disk (GB):</label>
+        <label for="disk">Disk (MB):</label>
         <input type="text" id="disk" placeholder="Enter disk space (x100 will be applied)" pattern="\d*" />
       </div>
       <div class={styles["input-group"]}>

@@ -12,8 +12,9 @@ export default component$(() => {
         <br />
         for <span class="highlight">BBN </span>hosting?
       </h1>
-      <Calculator />
+
     </div>
+    <Calculator />
     </>
   );
 });
