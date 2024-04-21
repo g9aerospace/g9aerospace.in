@@ -1,11 +1,11 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
-import Hero from "../components/starter/hero/hero";
-import Carousel from "../components/starter/carousel/carousel";
-import Hosts from "../components/starter/hosts/hosts";
-import Servers from "../components/starter/servers/servers";
-import Creations from "../components/starter/creations/creations";
+import Hero from "../components/hero/hero";
+import Carousel from "../components/carousel/carousel";
+import Hosts from "../components/hosts/hosts";
+import Servers from "../components/servers/servers";
+import Creations from "../components/creations/creations";
 
 export default component$(() => {
   return (

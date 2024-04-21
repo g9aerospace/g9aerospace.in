@@ -1,15 +1,15 @@
 import { component$ } from "@builder.io/qwik";
 import styles from "./hosts.module.css";
-import websiteicon from "../../../media/website-icon.png";
-import discordicon from "../../../media/discord-icon.png";
-import hostsData from "../../../data/hosts.json";
+import websiteicon from "../../media/website-icon.png";
+import discordicon from "../../media/discord-icon.png";
+import hostsData from "../../data/hosts.json";
 
 // Import host icons
-import bbnIcon from "../../../media/bbn.png";
-import eranodesIcon from "../../../media/eranodes.png";
-import legacynodesIcon from "../../../media/legacynodes.png";
-import dimehostingIcon from "../../../media/dimehosting.png";
-import destinynodesIcon from "../../../media/destinynodes.png";
+import bbnIcon from "../../media/bbn.png";
+import eranodesIcon from "../../media/eranodes.png";
+import legacynodesIcon from "../../media/legacynodes.png";
+import dimehostingIcon from "../../media/dimehosting.png";
+import destinynodesIcon from "../../media/destinynodes.png";
 
 // Define the Qwik component
 export default component$(() => {

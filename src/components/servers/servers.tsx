@@ -1,13 +1,13 @@
 import { component$ } from "@builder.io/qwik";
 import styles from "./servers.module.css";
-import websiteicon from "../../../media/website-icon.png";
-import discordicon from "../../../media/discord-icon.png";
-import serversData from "../../../data/servers.json";
+import websiteicon from "../../media/website-icon.png";
+import discordicon from "../../media/discord-icon.png";
+import serversData from "../../data/servers.json";
 
 // Import server icons
-import bricksnetworkIcon from "../../../media/bricks-network.png"
-import craftersggIcon from "../../../media/craftersgg.png"
-import dragonnetworkIcon from "../../../media/dragon-network.png"
+import bricksnetworkIcon from "../../media/bricks-network.png"
+import craftersggIcon from "../../media/craftersgg.png"
+import dragonnetworkIcon from "../../media/dragon-network.png"
 
 
 // Define the Qwik component

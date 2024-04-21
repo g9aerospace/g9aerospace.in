@@ -1,8 +1,8 @@
 import { component$ } from "@builder.io/qwik";
 import styles from "./creations.module.css";
 
-import websiteicon from "../../../media/website-icon.png"
-import githubIcon from "../../../media/discord-icon.png"
+import websiteicon from "../../media/website-icon.png"
+import githubIcon from "../../media/discord-icon.png"
 
 const creations = [
   {
