@@ -25,6 +25,10 @@
   font-size: 1rem;
 }
 
+.calculatorContainer {
+  padding-top: 30px;
+}
+
 .button-group {
   display: flex;
   flex-direction: row;

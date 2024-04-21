@@ -1,52 +1,35 @@
 import { component$ } from "@builder.io/qwik";
 import styles from "./servers.module.css";
+import websiteicon from "../../../media/website-icon.png";
+import discordicon from "../../../media/discord-icon.png";
+import serversData from "../../../data/servers.json";
 
-import websiteicon from "../../../media/website-icon.png"
-import discordicon from "../../../media/discord-icon.png"
+// Import server icons
+import bricksnetworkIcon from "../../../media/bricks-network.png"
+import craftersggIcon from "../../../media/craftersgg.png"
+import dragonnetworkIcon from "../../../media/dragon-network.png"
 
-import bricksnetwork from "../../../media/bricks-network.png";
-import dragonnetwork from "../../../media/dragon-network.png";
-import craftersgg from "../../../media/craftersgg.png";
-
-const servers = [
-  {
-    name: "Bricks Network",
-    iconPath: bricksnetwork,
-    website: "https://bricks-network.xyz",
-    discordLink: "https://discord.gg/uRuPDJ5j",
-  },
-  {
-    name: "Dragon Network",
-    iconPath: dragonnetwork,
-    website: "https://dragonnetwork.digital",
-    discordLink: "https://discord.gg/ukzxwAujZM",
-  },
-  {
-    name: "CraftersGG",
-    iconPath: craftersgg,
-    website: "https://craftersgg.site/",
-    discordLink: "https://discord.gg/CwWbWm5FKq",
-  },
-];
 
 // Define the Qwik component
 export default component$(() => {
   return (
     <div class="container">
       <ul class={styles.serverList}>
-        {servers.map((server, index) => (
+        {serversData.map((server, index) => (
           <li key={index} class={styles.serverItem}>
-            <img src={server.iconPath} alt={`${server.name} Icon`} class={styles.serverIcon} />
+            {/* Use simple href with lowercase server name and target="_blank" */}
+            <a class={styles.serverLink}>
+              {getserverIcon(server.name)}
+            </a>
             <div class={styles.serverInfo}>
-              <h4>{server.name}</h4>
-              <p>
+              <p class={styles.serverName}>{server.name}</p>
+              <p class={styles.cta}>
+                {/* Links for website and Discord icons */}
                 <a href={server.website} target="_blank" rel="noopener noreferrer">
-                  <img src={websiteicon} alt="Website Icon" class={styles.websiteIcon} /> {/* Replace "path_to_website_icon" with the path to the website icon */}
+                  <img src={websiteicon} alt="Website Icon" class={styles.websiteIcon} width="50" height="50" />
                 </a>
-              </p>
-              <p>
                 <a href={server.discordLink} target="_blank" rel="noopener noreferrer">
-                  <img src={discordicon} alt="Discord Icon" class={styles.discordIcon}/> {/* Replace "path_to_discord_icon" with the path to the Discord icon */}
+                  <img src={discordicon} alt="Discord Icon" class={styles.discordIcon} width="50" height="50" />
                 </a>
               </p>
             </div>
@@ -56,3 +39,17 @@ export default component$(() => {
     </div>
   );
 });
+
+// Function to get the appropriate server icon based on the server name
+function getserverIcon(serverName: string) {
+  switch (serverName) {
+    case "Bricks Network":
+      return <img src={bricksnetworkIcon} alt="Bricks Network Icon" class={styles.serverIcon} />;
+    case "CraftersGG":
+      return <img src={craftersggIcon} alt="Craftersgg Icon" class={styles.serverIcon} />;      
+    case "Dragon Network":
+      return <img src={dragonnetworkIcon} alt="Dragon Network Icon" class={styles.serverIcon} />;
+    default:
+      return null;
+  }
+}

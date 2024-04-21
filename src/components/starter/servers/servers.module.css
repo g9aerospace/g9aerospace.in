@@ -1,17 +1,10 @@
-.container {
-  margin: 0 auto;
-  max-width: 100%;
+.serverList {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.serverList {
-  list-style: none;
+  align-items: center;
   padding: var(--section-padding);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:center;
   background-color: var(--section-background-color);
   border-radius: var(--section-border-radius);
 }
@@ -19,10 +12,10 @@
 .serverItem {
   overflow: hidden;
   margin: 10px;
-  width: calc(18% - 18px);
+  width: calc(15% - 16px);
   transition: transform 0.3s ease;
   background-color: var(--item-background-color); 
-  border-radius: var(--item-border-radius);
+  border-radius: var(--small-border-radius);
   padding: var(--item-padding);
 }
 
@@ -31,13 +24,13 @@
 }
 
 .serverInfo {
-  padding: 20px;
+  padding: 10px auto 5px;
 }
 
 .serverIcon {
   width: 100px;
   height: 100px;
-  margin: 0 auto 20px;
+  margin: 10px auto 10px;
   display: block;
   transition: transform 0.3s ease;
   border-radius: 10%;
@@ -47,47 +40,55 @@
   transform: scale(1.1);
 }
 
-.linkButton {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-
-.linkButton:hover {
-  background-color: #0056b3;
-}
-
-.linkButton:focus {
-  outline: none;
+.cta {
+  align-items: center;
+  justify-content: center;
 }
 
 .websiteIcon {
-  width: 20px; /* Adjust size as needed */
-  height: 20px; /* Adjust size as needed */
-  margin-right: 5px; /* Add spacing between icon and text */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 5px
+}
+
+.websiteIcon:hover {
+  background-color: var(--hover-background-color);
 }
 
 .discordIcon {
-  width: 20px; /* Adjust size as needed */
-  height: 20px; /* Adjust size as needed */
-  margin-right: 5px; /* Add spacing between icon and text */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: none;
 }
 
-/* Optional: Style the headings */
-h4 {
-  margin: 0;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+.discordIcon:hover {
+  background-color: var(--hover-background-color);
 }
 
-/* Optional: Style the paragraphs */
 p {
   margin: 0;
   margin-bottom: 10px;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+  .serverList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .serverItem {
+    width: calc(80% - 16px);
+    height: min-content;
+    margin: 5px auto 3px;
+  }
+
+  .serverIcon {
+      width: 50px;
+      height: 50px;
+    }
 }
