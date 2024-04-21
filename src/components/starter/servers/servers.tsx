@@ -18,7 +18,7 @@ export default component$(() => {
         {serversData.map((server, index) => (
           <li key={index} class={styles.serverItem}>
             {/* Use simple href with lowercase server name and target="_blank" */}
-            <a href={`/${server.name.toLowerCase()}`} target="_blank" rel="noopener noreferrer" class={styles.serverLink}>
+            <a class={styles.serverLink}>
               {getserverIcon(server.name)}
             </a>
             <div class={styles.serverInfo}>

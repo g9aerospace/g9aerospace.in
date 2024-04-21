@@ -40,10 +40,6 @@
   transform: scale(1.1);
 }
 
-.serverIcon:hover {
-  background-color: var(--hover-background-color);
-}
-
 .cta {
   align-items: center;
   justify-content: center;
