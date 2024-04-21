@@ -1,51 +1,40 @@
-/* creations.module.css */
+/* src\components\creations\creations.module.css */
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.creationList {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  list-style-type: none;
-  padding: var(--section-padding);
-  border-radius: var(--section-border-radius);
-  margin: 0;
-  background-color: var(--section-background-color);
-}
-
-.creationItem {
-  background-color: var(--item-background-color); 
-  border-radius: var(--item-border-radius);
-  padding: var(--item-padding);
-  margin-bottom: 20px;
-  color: var(--item-color);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-width: 2px;
-}
-
-.creationItem .content {
-  padding: 20px;
-}
-
-.creationItem .name {
-  font-weight: bold;
-}
-
-.creationItem h4 {
-  margin-top: 0;
-}
-
-.creationItem p {
-  margin-bottom: 10px;
-}
-
-.websiteIcon,
-.githubIcon {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-}
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .creationsList {
+    display: grid; /* Change display to grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Dynamically adjust column width */
+    gap: 20px; /* Add gap between grid items */
+    list-style: none;
+    padding: 0;
+  }
+  
+  .creationItem {
+    /* Remove margin and padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .creationName {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 10px;
+  }
+  
+  .creationOrganisation {
+    font-style: italic;
+    margin: 0 0 10px;
+  }
+  
+  .creationLink {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
