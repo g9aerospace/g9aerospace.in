@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import styles from "./hero.module.css";
-import ImgThunder from "../../../media/su27-2.png?jsx";
+import ImgThunder from "../../media/su27-2-transparent.png?jsx";
 
 export default component$(() => {
   return (

@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import styles from "./bbn.module.css";
-import Calculator from "../../../components/starter/bbn-resource-calculator/bbn-resource-calculator";
+import Calculator from "../../../components/bbn-resource-calculator/bbn-resource-calculator";
 
 export default component$(() => {
 

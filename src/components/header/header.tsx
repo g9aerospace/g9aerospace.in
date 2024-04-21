@@ -1,6 +1,6 @@
 import { component$} from "@builder.io/qwik";
 import styles from "./header.module.css";
-import g9aerospacelogo from "../../../media/g9aerospace.png";
+import g9aerospacelogo from "../../media/g9aerospace.png";
 export default component$(() => {
 
   return (
