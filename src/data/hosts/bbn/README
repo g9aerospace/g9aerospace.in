@@ -1,0 +1,47 @@
+# Resource Costs Configuration
+
+This JSON file (`resources.json`) contains configuration data for the costs associated with server resources used in the application.
+
+## JSON Structure
+
+The JSON file consists of the following properties:
+
+- **`server`**: Represents the cost per server in coins.
+- **`memory`**: Represents the cost per MB of memory in coins.
+- **`disk`**: Represents the cost per MB of disk space in coins.
+- **`cpu`**: Represents the cost per percentage of CPU in coins.
+
+Example JSON structure:
+
+```json
+{
+  "server": 50,
+  "memory": 1,
+  "disk": 0.25,
+  "cpu": 1
+}
+```
+
+## Implementation in Code
+
+In the application code, these cost values are imported from the `resources.json` file and used in the resource calculator component to calculate the total cost based on user input.
+
+### Calculation Logic
+
+- The cost of each resource (servers, memory, disk, CPU) is calculated by multiplying the corresponding input value by the cost defined in the JSON file.
+- The total cost is then calculated by summing up the costs of all resources.
+
+```javascript
+const { server, memoryCostPerMB, diskCostPerMB, cpuCostPerPercent } = costs;
+
+const serverCost = numServers * server;
+const memoryCost = memory * memoryCostPerMB;
+const diskCost = disk * diskCostPerMB;
+const cpuCost = cpu * cpuCostPerPercent;
+
+const totalCost = serverCost + memoryCost + diskCost + cpuCost;
+```
+
+### Usage
+
+Ensure that the `resources.json` file is properly maintained with accurate cost values reflecting the current pricing structure of server resources.
