@@ -24,6 +24,8 @@ body {
   color: var(--qwik-dark-text);
   overflow-x: hidden;
   margin-left: 200px;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 /* HEADINGS ------------------------------------- */
@@ -222,11 +224,12 @@ button.button-small {
 
 /* SCROLLBAR ------------------------------------ */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 8px;
+  z-index: 1000;
 }
 
 ::-webkit-scrollbar-track {
-  background: #000;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -235,7 +238,11 @@ button.button-small {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #4f5d84;
+  background: #2e374a;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #5797ff;
 }
 
 /* BUTTONS -------------------------------------- */
