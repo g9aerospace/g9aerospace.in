@@ -86,7 +86,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "BBN Resource Calculator",
+  title: "G9 Aerospace - BBN Calculator",
   meta: [
     {
       name: "description",
