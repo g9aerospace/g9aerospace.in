@@ -24,6 +24,7 @@
   margin-bottom: 0px;
   position: relative;
   height: 130px;
+  transition: border 0.2s ease, transform 0.3s ease;
 }
 
 .logo img {
@@ -35,12 +36,14 @@
 .logo:hover img {
   border: 7px solid grey;
   transform: scale(1.1);
+  transition: border 0.2s ease, transform 0.3s ease;
 }
 
 .logo:before {
   content: "";
   display: block;
   padding-top: 100%;
+  transition: border 0.2s ease, transform 0.3s ease;
 }
 
 .title {
@@ -115,17 +118,16 @@
   color: #fff;
 }
 
+.dropbtn:hover {
+  color: #2198e7;
+}
+
 .dropbtn a {
   color: #fff;
 }
 
 .dropbtn a:hover {
   color: #2198e7;
-}
-
-.dropbtn:hover {
-  color: #2198e7;
-  background-color: transparent;
 }
 
 .dropdownContent {
