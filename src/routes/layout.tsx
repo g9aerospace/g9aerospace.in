@@ -2,7 +2,7 @@ import { component$, Slot, useStyles$ } from "@builder.io/qwik";
 import { routeLoader$ } from "@builder.io/qwik-city";
 import type { RequestHandler } from "@builder.io/qwik-city";
 
-import Header from "../components/header/sidebar";
+import Header from "../components/sidebar/sidebar";
 import Footer from "../components/footer/footer";
 
 import styles from "./styles.css?inline";

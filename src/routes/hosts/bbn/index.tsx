@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import styles from "./bbn.module.css"
-import ImgThunder from "../../media/bbn.png?jsx"
+import ImgThunder from "../../../media/bbn.png?jsx"
 
 export default component$(() => {
   return (
@@ -197,7 +197,7 @@ export default component$(() => {
 
         // Open website in new tab after animation
         setTimeout(() => {
-          window.open("/bbn/resource-calculator", "_blank");
+          window.open("/hosts/bbn/resource-calculator", "_blank");
         }, 2000); // Adjust the delay time as needed        
       }}
     >
