@@ -12,7 +12,7 @@ export default component$(() => {
         <div class={styles.logo}>
           <img src={g9aerospacelogo} alt="G9Aerospace Icon" width="100" height="100" />
         </div>
-        <a class={styles.title}>G9Aerospace</a>
+        <a class={styles.title}>G9 Aerospace</a>
         <div class={styles.sections}>
           {/* Other Sections */}
           <div class={styles.section}>
@@ -26,7 +26,7 @@ export default component$(() => {
             <ul class={styles.navList}>
               {/* Hosts Section */}
               <div class={styles.dropdown}>
-                <button class={styles.dropbtn}>Hosts</button>
+                <button class={styles.dropbtn}><a id="dropbtn" href="/#hosts">Hosts</a></button>
                 <div class={styles.dropdownContent}>
                   {hostsData.map(host => (
                     <a key={host.name} href={`/hosts/${host.name.toLowerCase()}`} class={styles.dropdownItem}>{host.name}</a>
@@ -35,7 +35,7 @@ export default component$(() => {
               </div>
               {/* Servers Section */}
               <div class={styles.dropdown}>
-                <button class={styles.dropbtn}>Servers</button>
+                <button class={styles.dropbtn}><a id="dropbtn" href="/">Servers</a></button>
                 <div class={styles.dropdownContent}>
                   {serversData.map(server => (
                     <a key={server.name} href={`/servers/${server.name.toLowerCase()}`} class={styles.dropdownItem}>{server.name}</a>
