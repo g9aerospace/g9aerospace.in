@@ -211,7 +211,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "G9 Aerospace - BBN Hosting",
+  title: "BBN Hosting",
   meta: [
     {
       name: "description",

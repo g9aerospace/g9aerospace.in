@@ -63,7 +63,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "G9 Aerospace - Terms of Service",
+  title: "Terms of Service",
   meta: [
     {
       name: "description",
