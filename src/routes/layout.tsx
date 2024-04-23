@@ -3,7 +3,6 @@ import { routeLoader$ } from "@builder.io/qwik-city";
 import type { RequestHandler } from "@builder.io/qwik-city";
 
 import Header from "../components/sidebar/sidebar";
-import Footer from "../components/footer/footer";
 
 import styles from "./styles.css?inline";
 
@@ -32,7 +31,6 @@ export default component$(() => {
       <main>
         <Slot />
       </main>
-      <Footer />
     </>
   );
 });

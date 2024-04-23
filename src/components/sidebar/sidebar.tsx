@@ -55,6 +55,24 @@ export default component$(() => {
           </div>
         </div>
       </div>
+
+      <div class={styles.socialIcons}>
+          <a href="https://www.instagram.com/g9aerospace/" target="_blank" rel="noopener">
+            <img src="https://img.icons8.com/?size=256&id=Xy10Jcu1L2Su&format=png" alt="Instagram" />
+          </a>
+          <a href="https://www.youtube.com/@G9AEROSPACEYT" target="_blank" rel="noopener">
+            <img src="https://img.icons8.com/?size=256&id=19318&format=png" alt="Youtube" />
+          </a>
+          <a href="https://github.com/g9militantsYT" target="_blank" rel="noopener">
+            <img src="https://img.icons8.com/?size=256&id=52539&format=png" alt="GitHub" />
+          </a>
+          <a href="https://discord.gg/gfzDMS7tQD" target="_blank" rel="noopener">
+            <img src="https://img.icons8.com/?size=256&id=30998&format=png" alt="Discord" />
+          </a>
+          <a href="https://steamcommunity.com/id/g9aerospace/" target="_blank" rel="noopener">
+            <img src="https://img.icons8.com/?size=256&id=zNqjI8XKkCv0&format=png" alt="Steam" />
+          </a>
+      </div>
     </aside>
   );
 });
