@@ -224,11 +224,12 @@ button.button-small {
 
 /* SCROLLBAR ------------------------------------ */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 8px;
+  z-index: 1000;
 }
 
 ::-webkit-scrollbar-track {
-  background: #000;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
