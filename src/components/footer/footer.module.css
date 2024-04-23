@@ -4,7 +4,6 @@
   justify-content: space-around;
   background: linear-gradient(to bottom, #090e17bb, #000000);
   color: rgb(165, 165, 165);
-  padding: 20px;
   width: 100%;
   margin-top: 50px;
   margin-bottom: 0px;
@@ -14,7 +13,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 100%;
+  width: 90%;
 }
 
 .column {

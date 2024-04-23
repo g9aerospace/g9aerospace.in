@@ -12,6 +12,7 @@ export default component$(() => {
         <div class={styles.logo}>
           <img src={g9aerospacelogo} alt="G9Aerospace Icon" width="100" height="100" />
         </div>
+        <a class={styles.title}>G9Aerospace</a>
         <div class={styles.sections}>
           {/* Other Sections */}
           <div class={styles.section}>
@@ -49,6 +50,7 @@ export default component$(() => {
             <ul class={styles.navList}>
               <li><a href="/privacy-policy">Privacy Policy</a></li>
               <li><a href="/terms-of-service">Terms of Service</a></li>
+              <li><a href="/cookies">Cookies Policy</a></li>
             </ul>
           </div>
         </div>
