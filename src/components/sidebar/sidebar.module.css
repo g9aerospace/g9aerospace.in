@@ -69,7 +69,7 @@
 .dropbtn {
   background-color: transparent;
   color: #fff;
-  padding: 10px 0px;
+  padding: 3px 0px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -82,6 +82,7 @@
 .dropbtn:hover {
   color: #2198e7;
   background-color: transparent;
+  cursor: not-allowed;
 }
 
 .dropdownContent {
