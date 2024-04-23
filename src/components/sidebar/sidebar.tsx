@@ -2,10 +2,9 @@ import { component$ } from "@builder.io/qwik";
 import styles from "./sidebar.module.css";
 import g9aerospacelogo from "../../media/g9aerospace.png";
 import hostsData from "../../data/hosts.json";
-import serversData from "../../data/servers.json"
+import serversData from "../../data/servers.json";
 
 export default component$(() => {
-
   return (
     <aside class={styles.sidebar}>
       <div class={styles.wrapper}>
@@ -13,6 +12,7 @@ export default component$(() => {
           <img src={g9aerospacelogo} alt="G9Aerospace Icon" width="100" height="100" />
         </div>
         <a class={styles.title}>G9 Aerospace</a>
+        <hr class={styles.separator} />
         <div class={styles.sections}>
           {/* Other Sections */}
           <div class={styles.section}>
@@ -35,7 +35,7 @@ export default component$(() => {
               </div>
               {/* Servers Section */}
               <div class={styles.dropdown}>
-                <button class={styles.dropbtn}><a id="dropbtn" href="/">Servers</a></button>
+                <button class={styles.dropbtn}><a id="dropbtn" href="/#servers">Servers</a></button>
                 <div class={styles.dropdownContent}>
                   {serversData.map(server => (
                     <a key={server.name} href={`/servers/${server.name.toLowerCase()}`} class={styles.dropdownItem}>{server.name}</a>
