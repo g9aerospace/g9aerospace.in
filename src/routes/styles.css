@@ -23,6 +23,7 @@ body {
   background: var(--qwik-dark-background);
   color: var(--qwik-dark-text);
   overflow-x: hidden;
+  margin-left: 200px;
 }
 
 /* HEADINGS ------------------------------------- */
