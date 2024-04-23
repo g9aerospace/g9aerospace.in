@@ -1,21 +1,22 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import styles from "./privacy-policy.module.css";
 
 export default component$(() => {
   return (
     <>
-      <div id="privacy-policy" class="container container-center">
+      <div id="privacy-policy" class={`${styles.container} ${styles.containerCenter}`}>
         <h1>
           Privacy Policy
         </h1>
         <p>
           Welcome to the Privacy Policy of G9 Aerospace. This page informs you of my policies regarding the collection, use, and disclosure of personal data when you use my Service and the choices you have associated with that data. We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy.
         </p>
-        <h4>Information Collection and Use</h4>
+        <h4 class={styles.sectionTitle}>Information Collection and Use</h4>
         <p>
           I collect several different types of information for various purposes to provide and improve my Service to you.
         </p>
-        <h4>Contact Me</h4>
+        <h4 class={styles.sectionTitle}>Contact Me</h4>
         <p>
           If you have any questions about this Privacy Policy, please contact me at <a href="mailto:support@g9aerospace.in">support@g9aerospace.in</a>.
         </p>
