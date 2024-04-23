@@ -184,5 +184,8 @@
 }
 
 .sponsor {
-  margin-right: 8px;
+  margin: 180px auto 0; 
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
