@@ -19,7 +19,7 @@ export default component$(() => {
         {hostsData.map((host, index) => (
           <li key={index} class={styles.hostItem}>
             {/* Use simple href with lowercase host name and target="_blank" */}
-            <a href={`/${host.name.toLowerCase()}`} target="_blank" rel="noopener noreferrer" class={styles.hostLink}>
+            <a href={`/hosts/${host.name.toLowerCase()}`} target="_blank" rel="noopener noreferrer" class={styles.hostLink}>
               {getHostIcon(host.name)}
             </a>
             <div class={styles.hostInfo}>
