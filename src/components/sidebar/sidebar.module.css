@@ -119,7 +119,7 @@
 }
 
 .dropbtn:hover {
-  color: #2198e7;
+  background-color: transparent;
 }
 
 .dropbtn a {
