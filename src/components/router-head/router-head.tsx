@@ -1,5 +1,5 @@
 import { useDocumentHead, useLocation } from "@builder.io/qwik-city";
-
+import g9aerospace from "../../media/g9aerospace.png";
 import { component$ } from "@builder.io/qwik";
 
 /**
@@ -17,6 +17,13 @@ export const RouterHead = component$(() => {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="theme-color" content="#2e7bff" /> 
       <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+      {/* Open Graph tags */}
+      <meta property="og:title" content={`G9 Aerospace - ${head.title}`} />
+      <meta property="og:description" content={head.meta.find((m) => m.name === "description")?.content} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={loc.url.href} />
+      <meta property="og:image" content={g9aerospace} />
 
       {head.meta.map((m) => (
         <meta key={m.key} {...m} />
