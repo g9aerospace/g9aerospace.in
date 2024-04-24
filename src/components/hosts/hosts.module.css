@@ -53,11 +53,12 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  padding: 5px
+  padding: 5px;
+  transition: transform 0.2s;
 }
 
 .websiteIcon:hover {
-  background-color: var(--hover-background-color);
+  transform: scale(1.1);
 }
 
 .discordIcon {
@@ -66,10 +67,11 @@
   border-radius: 50%;
   padding: 5px;
   background-color: none;
+  transition: transform 0.2s;
 }
 
 .discordIcon:hover {
-  background-color: var(--hover-background-color);
+  transform: scale(1.1);
 }
 
 p {
