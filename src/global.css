@@ -20,7 +20,7 @@
   --section-padding: 20px 30px;
 
   --item-background-color: #0000002e;
-  --item-border-radius: var(var(--section-border-radius));
+  --item-border-radius: var(--small-border-radius);
   --item-padding: 10px 20px;
 
   --small-border-radius: 3px;

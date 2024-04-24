@@ -19,9 +19,9 @@
 
 .logo {
   display: flex;
-  align-items: top;
+  align-items: center; /* Updated */
   justify-content: center;
-  margin-bottom: 0px;
+  margin-bottom: 10px; /* Updated */
   position: relative;
   height: 130px;
   transition: border 0.2s ease, transform 0.3s ease;
@@ -30,20 +30,19 @@
 .logo img {
   border: none;
   border-radius: 50%;
-  transition: border 0.2s ease, transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .logo:hover img {
-  border: 7px solid grey;
   transform: scale(1.1);
-  transition: border 0.2s ease, transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .logo:before {
   content: "";
   display: block;
   padding-top: 100%;
-  transition: border 0.2s ease, transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .title {
@@ -157,16 +156,24 @@
 }
 
 /* Social Media Icons*/
-.socialIcons {
+.socialContainer { /* New class for containing social icons and sponsor button */
   position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+  flex-direction: column; /* Updated */
+  align-items: center; /* Updated */
+  justify-content: center; /* Updated */
+  width: 100%;
+}
+
+.socialIcons {
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 3%;
-  width: 100%;
+  margin-bottom: 10px; /* Updated */
 }
 
 .socialIcons a {
@@ -185,9 +192,8 @@
   height: 100%;
 }
 
-.sponsor {
-  margin: 180px auto 0; 
-  align-items: center;
-  justify-content: center;
+.sponsorContainer {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }

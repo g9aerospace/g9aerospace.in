@@ -55,9 +55,10 @@ export default component$(() => {
           </div>
         </div>
       </div>
-                
-      <div class={styles.socialIcons}>
-        
+      
+      {/* Social Media Icons and GitHub Sponsor Button */}
+      <div class={styles.socialContainer}>
+        <div class={styles.socialIcons}>
           <a href="https://www.instagram.com/g9aerospace/" target="_blank" rel="noopener">
             <img src="https://img.icons8.com/?size=256&id=Xy10Jcu1L2Su&format=png" alt="Instagram" />
           </a>
@@ -73,15 +74,19 @@ export default component$(() => {
           <a href="https://steamcommunity.com/id/g9aerospace/" target="_blank" rel="noopener">
             <img src="https://img.icons8.com/?size=256&id=zNqjI8XKkCv0&format=png" alt="Steam" />
           </a>
+        </div>
+        
+        <div class={styles.sponsorContainer}>
+          <iframe class={styles.sponsor}
+            src="https://github.com/sponsors/g9militantsYT/button"
+            title="Sponsor g9militantsYT"
+            height="32"
+            width="80%"
+            style={{ border: '0', borderRadius: '6px' }}>
+          </iframe>
+        </div>
       </div>
-
-      <iframe class={styles.sponsor}
-        src="https://github.com/sponsors/g9militantsYT/button"
-        title="Sponsor g9militantsYT"
-        height="32"
-        width="114"
-        style={{ border: '0', borderRadius: '6px' }}>
-      </iframe>
     </aside>
   );
 });
+

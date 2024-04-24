@@ -1,47 +1,91 @@
-/* src\components\creations\creations.module.css */
-
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .creationsList {
-    display: grid; /* Change display to grid */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Dynamically adjust column width */
-    gap: 20px; /* Add gap between grid items */
-    list-style: none;
-    padding: 0;
-  }
-  
-  .creationItem {
-    /* Remove margin and padding */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-  }
-  
-  .creationName {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0 0 10px;
-  }
-  
-  .creationOrganisation {
-    font-style: italic;
-    margin: 0 0 10px;
-  }
+  margin: 30px 80px 10px;
+  padding: 0;
+  background-color: var(--section-background-color);
+  border-radius: var(--section-border-radius);
+  padding: 30px
+}
 
-  .creationOrganizationImage {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .creationLink {
-    display: block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #007bff;
-  }
-  
+.creationsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.creationItem {
+  background-color: var(--item-background-color);
+  border-radius: var(--item-border-radius);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  transform: scale(1);
+  transition: transform 0.2s;
+
+}
+
+.creationItem:hover {
+  transform: scale(1.05);
+}
+
+.creationItem:active {
+  transform: rotate(1deg);
+  transition: transform 2s;
+}
+
+.leftContent {
+  flex: 1;
+}
+
+.rightContent {
+  flex: 2;
+  padding-left: 10px;
+}
+
+.creationOrganizationImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.creationOrganizationImage:hover {
+  transform: scale(1.1);
+}
+
+.creationOrganisation {
+  font-style: italic;
+  font-size: 10px;
+  margin: 0 0 10px;
+}
+
+.creationName {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkIcon {
+  width: 20px;
+  height: 20px;
+  padding: 0 5px 0;
+  transition: transform 0.2s;
+}
+
+.linkIcon:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;;
+}
+
+.creationDescription {
+  font-size: 12px;
+  margin: 0 0 10px;
+}
