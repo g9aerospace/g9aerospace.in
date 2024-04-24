@@ -60,6 +60,11 @@
   color: #2a7aff;
 }
 
+.title:hover {
+  text-decoration: none;
+  cursor:default;
+}
+
 .separator {
   color: #d6d6d69d;
   width: 100%;
