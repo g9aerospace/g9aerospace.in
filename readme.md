@@ -1,3 +1,5 @@
+[![pages-build-deployment](https://github.com/g9militantsYT/g9aerospace.in/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/g9militantsYT/g9aerospace.in/actions/workflows/pages/pages-build-deployment)
+
 # Qwik City App ⚡️
 
 - [Qwik Docs](https://qwik.dev/)
