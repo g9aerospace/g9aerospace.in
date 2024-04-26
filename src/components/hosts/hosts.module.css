@@ -44,6 +44,19 @@
   background-color: var(--hover-background-color);
 }
 
+.supportedTypes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 6%;
+}
+
+.typeCard img {
+  width: 30px;
+  filter: brightness(60%);
+}
+
 .cta {
   align-items: center;
   justify-content: center;

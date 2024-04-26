@@ -2,26 +2,31 @@
     {
       "name": "BBN",
       "website": "https://bbn.one/",
-      "discordLink": "https://discord.gg/bbn-hosting-757966278936756345"
+      "discordLink": "https://discord.gg/bbn-hosting-757966278936756345",
+      "type": "minecraft"
     },
     {
       "name": "EraNodes",
       "website": "https://client.eranodes.xyz/",
-      "discordLink": "https://discord.gg/8YdG2p3etY"
+      "discordLink": "https://discord.gg/8YdG2p3etY",
+      "type": "Minecraft, gta, palworld"
     },
     {
       "name": "LegacyNodes",
       "website": "https://dash.legacynodes.com/home",
-      "discordLink": "https://discord.gg/cCDcCSm3y2"
+      "discordLink": "https://discord.gg/cCDcCSm3y2",
+      "type": "minecraft, code, voice"
     },
     {
       "name": "DimeHosting",
       "website": "https://dash.dimehosting.xyz/",
-      "discordLink": "https://discord.gg/3MjvwQmReM"
+      "discordLink": "https://discord.gg/3MjvwQmReM",
+      "type": "minecraft"
     },
     {
       "name": "DestinyNodes",
       "website": "https://discord.com/invite/hnueYjdSgA",
-      "discordLink": "https://discord.gg/3MjvwQmReM"
+      "discordLink": "https://discord.gg/3MjvwQmReM",
+      "type": "minecraft"
     }
   ]

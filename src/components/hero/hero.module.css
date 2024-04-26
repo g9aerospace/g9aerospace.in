@@ -17,7 +17,7 @@
   z-index: -1;
   opacity: 0.3;
   pointer-events: none;
-  animation: moveBackground 8s linear infinite;
+  animation: moveBackground 8s ease-in-out infinite;
   filter: blur(4px); 
 }
 
@@ -51,6 +51,31 @@
   display: flex;
   flex-direction: row;
   gap: 24px;
+}
+
+.youtube-button {
+  background-color: red;
+  color: white;
+  border: none;
+  transition: background-color 3s ease;
+  height: 60px;
+  margin: 0 0 0 8px;
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: Bold;
+  align-items: center;
+  font-family: 'Red Hat Text', sans-serif;
+  padding: 0 24px;
+}
+
+.youtube-button:hover {
+  background-color: darkred;
+}
+
+.youtube-button:hover::after {
+  content: "⤤";
+  color: rgb(203, 154, 154);
+  margin-left: 5px;
 }
 
 @media screen and (min-width: 768px) {
