@@ -58,6 +58,14 @@
   color: white;
   border: none;
   transition: background-color 3s ease;
+  height: 60px;
+  margin: 0 0 0 8px;
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: Bold;
+  align-items: center;
+  font-family: 'Inter', cursive !important;
+  padding: 0 24px;
 }
 
 .youtube-button:hover {
