@@ -1,12 +1,22 @@
-import { component$ } from "@builder.io/qwik";
+/* eslint-disable qwik/jsx-a */
+/* eslint-disable qwik/jsx-img */
+import { component$, $ } from "@builder.io/qwik";
 import styles from "./sidebar.module.css";
 import g9aerospacelogo from "../../media/g9aerospace.png";
 import hostsData from "../../data/hosts.json";
 import serversData from "../../data/servers.json";
+import hamburgerIcon from "../../media/hamburger.svg";
 
 export default component$(() => {
+  const toggleSidebar = $(() => {
+    const sidebar = document.querySelector(`.${styles.sidebar}`);
+    if (sidebar) {
+      sidebar.classList.toggle(styles.sidebarMinimized);
+    }
+  });
   return (
-    <aside class={styles.sidebar}>
+    <aside class={`${styles.sidebar} ${styles.sidebarOpen}`}>
+      <div class={styles.hamburger} onClick$={toggleSidebar}><img src={hamburgerIcon} alt="Hamburger" /></div>
       <div class={styles.wrapper}>
         <div class={styles.logo}>
           <img src={g9aerospacelogo} alt="G9Aerospace Icon" width="100" height="100" />

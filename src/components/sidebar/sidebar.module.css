@@ -9,12 +9,54 @@
   padding: 20px;
   box-sizing: border-box;
   overflow-y: auto;
+  min-width: 150px;
+}
+
+.sidebarOpen {
+  width: 250px;
+}
+
+.sidebarMinimized {
+  width: 30px;
+  background-color: #1a1a1a23;
+  min-width: 0px;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+
+.sidebarMinimized .wrapper,
+.sidebarMinimized .socialContainer {
+  display: none;
+}
+
+.sidebarMinimized .hamburger {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hamburger {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1100;
+  transition: background-color 0.3s ease, top 1s ease, left 0s;
+  padding: 2px 4px 2px;
+  border-radius: 2px;
+}
+
+.hamburger:hover {
+ background-color: var(--hover-background-color);
+}
+
+.hamburger img {
+  width: 30px;
 }
 
 .logo {
