@@ -21,7 +21,6 @@ import voiceIcon from "../../media/voice-icon.png";
 // Define the Qwik component
 export default component$(() => {
   return (
-    <div class="container">
       <ul class={styles.hostList}>
         {hostsData.map((host, index) => (
           <li key={index} class={styles.hostItem}>
@@ -49,7 +48,6 @@ export default component$(() => {
           </li>
         ))}
       </ul>
-    </div>
   );
 });
 

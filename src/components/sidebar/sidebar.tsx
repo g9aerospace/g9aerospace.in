@@ -14,8 +14,9 @@ export default component$(() => {
       sidebar.classList.toggle(styles.sidebarMinimized);
     }
   });
+  
   return (
-    <aside class={`${styles.sidebar} ${styles.sidebarOpen}`}>
+    <aside class={`${styles.sidebar} ${styles.sidebarMinimized}`}> 
       <div class={styles.hamburger} onClick$={toggleSidebar}><img src={hamburgerIcon} alt="Hamburger" /></div>
       <div class={styles.wrapper}>
         <div class={styles.logo}>

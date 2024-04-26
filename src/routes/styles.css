@@ -25,9 +25,8 @@ body {
   background: var(--qwik-dark-background);
   color: var(--qwik-dark-text);
   overflow-x: hidden;
-  margin-left: 200px;
-  padding-bottom: 50px;
-  margin-bottom: 30px;
+  margin: 10px 15% 30px;
+  padding: 10px 3% 10px;
   font-family: 'Red Hat Text', sans-serif;
 }
 
@@ -60,7 +59,7 @@ h3 {
   font-size: 2rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 5rem;
   }
@@ -69,6 +68,10 @@ h3 {
   }
   h3 {
     font-size: 3rem;
+  }
+  body {
+    margin: 0px;
+    padding: 0px;
   }
 }
 
@@ -92,7 +95,7 @@ ul {
 /* CONTAINER ------------------------------------ */
 .container {
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 1.5px 5px;
 }
 .container.container-purple {
   background: var(--qwik-light-purple);
@@ -108,7 +111,7 @@ ul {
   /* does nothing on mobile */
 }
 .container.container-spacing-xl {
-  padding: 13px 10px;
+  padding: 4px 10px;
 }
 
 @media screen and (min-width: 768px) {

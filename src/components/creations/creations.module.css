@@ -1,17 +1,12 @@
-.container {
-  margin: 30px 80px 10px;
-  padding: 0;
-  background-color: var(--section-background-color);
-  border-radius: var(--section-border-radius);
-  padding: 30px
-}
-
 .creationsList {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   list-style: none;
-  padding: 0;
+  border-radius: var(--item-list-border-radius);
+  margin: var(--item-list-margin-tb) var(--item-list-margin-lr);
+  padding: var(--item-list-padding-tb) var(--item-list-padding-lr);
+  background-color: var(--section-background-color);
 }
 
 .creationItem {
@@ -22,7 +17,8 @@
   flex-direction: row;
   transform: scale(1);
   transition: transform 0.2s;
-
+  margin: var(--item-margin-tb) var(--item-margin-lr);
+  padding: var(--item-padding-tb) var(  --item-padding-lr);
 }
 
 .creationItem:hover {

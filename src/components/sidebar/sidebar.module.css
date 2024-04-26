@@ -5,7 +5,7 @@
   bottom: 0;
   background-color: #1a1a1a;
   color: #fff;
-  width: 250px;
+  width: 15%;
   padding: 20px;
   box-sizing: border-box;
   overflow-y: auto;
@@ -46,7 +46,7 @@
   left: 20px;
   cursor: pointer;
   z-index: 1100;
-  transition: background-color 0.3s ease, top 1s ease, left 0s;
+  transition: background-color 0.3s ease, top 0.4s ease, left 0s;
   padding: 2px 4px 2px;
   border-radius: 2px;
 }
