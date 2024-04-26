@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import styles from "./legacynodes.module.css"
 import ImgThunder from "../../../media/legacynodes.png?jsx"
+import Hosts from "../../../components/hosts/hosts"
 
 export default component$(() => {
   return (
@@ -143,6 +144,7 @@ export default component$(() => {
       
       </div>
     </div>
+    <Hosts />
     </>
   );
 });

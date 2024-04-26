@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import styles from "./bbn.module.css"
 import ImgThunder from "../../../media/bbn.png?jsx"
+import Hosts from "../../../components/hosts/hosts"
 
 export default component$(() => {
   return (
@@ -203,9 +204,9 @@ export default component$(() => {
     >
       Resource Calculator
       </button>
-      
       </div>
     </div>
+    <Hosts />
     </>
   );
 });

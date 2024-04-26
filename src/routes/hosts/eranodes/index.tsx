@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import styles from "./eranodes.module.css"
 import ImgThunder from "../../../media/eranodes.png?jsx"
+import Hosts from "../../../components/hosts/hosts"
 
 export default component$(() => {
   return (
@@ -142,6 +143,7 @@ export default component$(() => {
       </button>
       </div>
     </div>
+    <Hosts />
     </>
   );
 });
