@@ -14,6 +14,7 @@ export default component$(() => {
       <p>Have fun exploring my website!</p>
       <div class={styles["button-group"]}>
       <button
+        class={styles["youtube-button"]}
         onClick$={async () => {
           const defaults = {
             spread: 360,

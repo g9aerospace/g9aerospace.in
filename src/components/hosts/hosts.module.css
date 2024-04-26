@@ -49,10 +49,12 @@
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  gap: 6%;
 }
 
 .typeCard img {
   width: 30px;
+  filter: brightness(60%);
 }
 
 .cta {
