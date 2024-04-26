@@ -1,4 +1,6 @@
 /* THIS FILE IS JUST FOR EXAMPLES, DELETE IT IF YOU DON'T NEED IT */
+/* Import Red Hat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
 
 /* SHELL ---------------------------------------- */
 html {
@@ -26,6 +28,7 @@ body {
   margin-left: 200px;
   padding-bottom: 50px;
   margin-bottom: 30px;
+  font-family: 'Red Hat Text', sans-serif;
 }
 
 /* HEADINGS ------------------------------------- */
