@@ -89,10 +89,7 @@ export default component$(() => {
         <div class={styles.sponsorContainer}>
           <iframe class={styles.sponsor}
             src="https://github.com/sponsors/g9militantsYT/button"
-            title="Sponsor g9militantsYT"
-            height="32"
-            width="80%"
-            style={{ border: '0', borderRadius: '6px' }}>
+            title="Sponsor g9militantsYT">
           </iframe>
         </div>
       </div>

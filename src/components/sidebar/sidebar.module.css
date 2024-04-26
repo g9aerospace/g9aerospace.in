@@ -243,3 +243,15 @@
   justify-content: center;
   align-items: center;
 }
+
+.sponsor {
+  height: 28px;
+  width: 85%;border: none;
+  border-radius: 3px;
+  transition: transform 0.2s ease;
+}
+
+.sponsor:hover {
+  transform: scale(1.05);
+}
+
