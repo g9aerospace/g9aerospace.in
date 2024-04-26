@@ -44,6 +44,17 @@
   background-color: var(--hover-background-color);
 }
 
+.supportedTypes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.typeCard img {
+  width: 30px;
+}
+
 .cta {
   align-items: center;
   justify-content: center;
