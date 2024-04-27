@@ -13,6 +13,10 @@ export const RouterHead = component$(() => {
   const head = useDocumentHead();
   const loc = useLocation();
 
+  // The Open Graph image
+  const openGraphImage = head.meta.find((m) => m.property === "og:image")?.content;
+  const imageSource = openGraphImage || g9aerospace;
+
   return (
     <>
       <title>G9 Aerospace - {head.title}</title>
@@ -27,7 +31,7 @@ export const RouterHead = component$(() => {
       <meta property="og:description" content={head.meta.find((m) => m.name === "description")?.content} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={loc.url.href} />
-      <meta property="og:image" content={head.meta.find((m) => m.property === "og:image")?.content || g9aerospace} />
+      <meta property="og:image" content={imageSource} />
 
       {/* Loop over existing meta tags */}
       {head.meta.map((m) => (
