@@ -1,24 +1,28 @@
 .creationsList {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
   list-style: none;
-  border-radius: var(--item-list-border-radius);
-  margin: var(--item-list-margin-tb) var(--item-list-margin-lr);
-  padding: var(--item-list-padding-tb) var(--item-list-padding-lr);
+  display: grid;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: var(--item-margin-tb) var(--item-margin-lr);
+  padding: var(--item-padding-tb) var(  --item-padding-lr);
   background-color: var(--section-background-color);
+  border-radius: var(--item-list-border-radius);
+  width: 100%;
 }
 
 .creationItem {
   background-color: var(--item-background-color);
   border-radius: var(--item-border-radius);
-  padding: 10px;
   display: flex;
   flex-direction: row;
   transform: scale(1);
   transition: transform 0.2s;
   margin: var(--item-margin-tb) var(--item-margin-lr);
   padding: var(--item-padding-tb) var(  --item-padding-lr);
+  width: 95%;
+  height: 80%;
 }
 
 .creationItem:hover {
