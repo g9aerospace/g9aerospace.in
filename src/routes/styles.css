@@ -24,8 +24,8 @@ body {
   background: var(--qwik-dark-background);
   color: var(--qwik-dark-text);
   overflow-x: hidden;
-  margin: 10px 5% 30px; /* Adjusted margin for smaller screens */
-  padding: 10px 2% 10px; /* Adjusted padding for smaller screens */
+  margin: 10px 15% 30px;
+  padding: 10px 2% 10px;
   font-family: 'Red Hat Text', sans-serif;
 }
 
