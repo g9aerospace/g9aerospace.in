@@ -12,6 +12,9 @@ export const RouterHead = component$(() => {
   // Format the title
   const formattedTitle = head.title ? `G9 Aerospace - ${head.title}` : "G9 Aerospace";
 
+  // Set og:image, use default image if not defined
+  const ogImage = head.meta.find((m) => m.property === "og:image")?.content || g9aerospace;
+
   return (
     <>
       <title>{formattedTitle}</title>
@@ -26,7 +29,7 @@ export const RouterHead = component$(() => {
       <meta property="og:description" content={head.meta.find((m) => m.name === "description")?.content} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={loc.url.href} />
-      <meta property="og:image" content={g9aerospace} />
+      <meta property="og:image" content={ogImage} />
 
       {head.meta.map((m) => (
         <meta key={m.key} {...m} />
