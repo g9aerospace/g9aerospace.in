@@ -9,9 +9,12 @@ export const RouterHead = component$(() => {
   const head = useDocumentHead();
   const loc = useLocation();
 
+  // Format the title
+  const formattedTitle = head.title ? `G9 Aerospace - ${head.title}` : "G9 Aerospace";
+
   return (
     <>
-      <title>G9 Aerospace - {head.title}</title>
+      <title>{formattedTitle}</title>
 
       <link rel="canonical" href={loc.url.href} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +22,7 @@ export const RouterHead = component$(() => {
       <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
       {/* Open Graph tags */}
-      <meta property="og:title" content={`G9 Aerospace - ${head.title}`} />
+      <meta property="og:title" content={formattedTitle} />
       <meta property="og:description" content={head.meta.find((m) => m.name === "description")?.content} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={loc.url.href} />
