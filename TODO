@@ -1,43 +1,37 @@
 # TODO List
 
-1. **Make Sidebar More Responsive:**
+- **Make Sidebar More Responsive:**
    - Implement responsive design for the sidebar to ensure it displays properly on different screen sizes.
 
-2. **Enhance Hamburger Hover Effect:**
+- **Enhance Hamburger Hover Effect:**
    - Improve the hover effect of the hamburger menu to make it more visually appealing and intuitive.
 
-3. **Refine Dropdown Background Color and Styling:**
+- **Refine Dropdown Background Color and Styling:**
    - Adjust the background color and other styling properties of dropdown menus for better visual consistency and user experience.
 
-4. **Fix Spacing in Section 2 of Sidebar:**
+- **Fix Spacing in Section 2 of Sidebar:**
    - Address the spacing issues between lines in Section 2 of the sidebar to improve readability and aesthetics.
 
-5. **Improve Scrollbar Appearance:**
+- **Improve Scrollbar Appearance:**
    - Enhance the design of the scrollbar to make it more visually appealing and consistent with the overall website theme.
 
-6. **Implement Responsive Design Across All Pages:**
+- **Implement Responsive Design Across All Pages:**
    - Ensure that all pages of the website are responsive and adapt well to various devices and screen sizes.
 
-7. **Utilize Different Types of Ellipses:**
+- **Utilize Different Types of Ellipses:**
    - Introduce and utilize various types of ellipses where applicable to enhance visual interest and design diversity.
 
-8. **Transition from PNG to SVG Images:**
+- **Transition from PNG to SVG Images:**
    - Convert existing PNG images to SVG format to optimize loading times and scalability while maintaining image quality.
 
-9. **Customize OG Meta Tags for Fallback Image:**
+- **Customize OG Meta Tags for Fallback Image:**
    - Customize Open Graph meta tags to specify the current image as the fallback image for social media sharing.
+   
+- **Implement /Creations Page (Dynamic):**
+   - Create a dynamic Creations page to showcase various content or projects, ensuring it's easily updatable.
 
-10. **Enhance Website Icon:**
-    - Design and implement a better website icon/favicon for improved branding and recognition.
+- **Grammar Check for TOS, Cookies, and Privacy Policy:**
+   - Review and correct any grammatical errors in the Terms of Service, Cookies Policy, and Privacy Policy for clarity and professionalism.
 
-11. **Create /About Page:**
-    - Develop an About page to provide information about the website, its purpose, and the team behind it.
-
-12. **Implement /Creations Page (Dynamic):**
-    - Create a dynamic Creations page to showcase various content or projects, ensuring it's easily updatable.
-
-13. **Grammar Check for TOS, Cookies, and Privacy Policy:**
-    - Review and correct any grammatical errors in the Terms of Service, Cookies Policy, and Privacy Policy for clarity and professionalism.
-
-14. **Add Copyright Footer:**
-    - Include a copyright footer at the bottom of each page to protect intellectual property and assert ownership.
+- **Add Copyright Footer:**
+   - Include a copyright footer at the bottom of each page to protect intellectual property and assert ownership.

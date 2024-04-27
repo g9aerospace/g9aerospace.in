@@ -29,7 +29,6 @@ export default component$(() => {
           <div class={styles.section}>
             <ul class={styles.navList}>
               <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
             </ul>
           </div>
 
