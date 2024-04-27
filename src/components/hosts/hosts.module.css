@@ -87,16 +87,19 @@ p {
 @media only screen and (max-width: 768px) {
   .hostList {
     display: grid;
-    flex: auto;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7px;
+    margin: 5px auto 10px;
+    padding: 3px auto 3px;
   }
 
   .hostItem {
-    width: 100%;
+    width: 90%;
     margin: 2px auto 3px;
-    padding: 0;
+  }
+
+  .hostItem:hover {
+    transform: translateY(-3px);
   }
 
   .hostIcon {
