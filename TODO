@@ -1,0 +1,25 @@
+# TODO List
+
+- **Make Sidebar More Responsive:**
+   - Implement responsive design for the sidebar to ensure it displays properly on different screen sizes.
+
+- **Refine Dropdown Background Color and Styling:**
+   - Adjust the background color and other styling properties of dropdown menus for better visual consistency and user experience.
+
+- **Fix Spacing in Section 2 of Sidebar:**
+   - Address the spacing issues between lines in Section 2 of the sidebar to improve readability and aesthetics.
+
+- **Improve Scrollbar Appearance:**
+   - Enhance the design of the scrollbar to make it more visually appealing and consistent with the overall website theme.
+
+- **Implement Responsive Design Across All Pages:**
+   - Ensure that all pages of the website are responsive and adapt well to various devices and screen sizes.
+
+- **Utilize Different Types of Ellipses:**
+   - Introduce and utilize various types of ellipses where applicable to enhance visual interest and design diversity.
+
+- **Transition from PNG to SVG Images:**
+   - Convert existing PNG images to SVG format to optimize loading times and scalability while maintaining image quality.
+
+- **Add Copyright Footer:**
+   - Include a copyright footer at the bottom of each page to protect intellectual property and assert ownership.

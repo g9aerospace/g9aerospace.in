@@ -13,7 +13,6 @@ import dragonnetworkIcon from "../../media/dragon-network.png"
 // Define the Qwik component
 export default component$(() => {
   return (
-    <div class="container">
       <ul class={styles.serverList}>
         {serversData.map((server, index) => (
           <li key={index} class={styles.serverItem}>
@@ -36,7 +35,6 @@ export default component$(() => {
           </li>
         ))}
       </ul>
-    </div>
   );
 });
 

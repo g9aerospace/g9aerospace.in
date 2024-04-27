@@ -43,7 +43,7 @@ export default component$(() => {
         </p>
         <h4 class={styles.sectionTitle}>Links</h4>
         <p>
-          I has not reviewed all of the sites linked to its website and am not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by me of the site. Use of any such linked website is at the user's own risk.
+          I have not reviewed all of the sites linked on this website and am not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by me of the site. Use of any such linked website is at the user's own risk.
         </p>
         <h4 class={styles.sectionTitle}>Modifications</h4>
         <p>

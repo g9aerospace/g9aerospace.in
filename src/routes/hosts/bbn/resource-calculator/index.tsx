@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import styles from "./bbn.module.css";
 import Calculator from "../../../../components/bbn-resource-calculator/bbn-resource-calculator";
+import bbn from "../../../../media/bbn.png"
 
 export default component$(() => {
 
@@ -27,6 +28,10 @@ export const head: DocumentHead = {
     {
       name: "description",
       content: "Use this calculator to calculate the coins you require for the resources you wish to acquire",
+    },
+    {
+      property: "og:image",
+      content: bbn,
     },
   ],
 };

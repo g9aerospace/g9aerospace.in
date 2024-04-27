@@ -34,7 +34,6 @@ export default component$(() => {
   };
 
   return (
-    <div class={styles.container}>
       <ul class={styles.creationsList}>
         {creationsData.map((creation, index) => (
           <li key={index} class={styles.creationItem}>
@@ -61,6 +60,5 @@ export default component$(() => {
           </li>
         ))}
       </ul>
-    </div>
   );
 });

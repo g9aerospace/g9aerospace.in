@@ -3,6 +3,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import styles from "./bbn.module.css"
 import ImgThunder from "../../../media/bbn.png?jsx"
 import Hosts from "../../../components/hosts/hosts"
+import bbn from "../../../media/bbn.png"
 
 export default component$(() => {
   return (
@@ -217,6 +218,10 @@ export const head: DocumentHead = {
     {
       name: "description",
       content: "Try out BBN Hosting! They are great!",
+    },
+    {
+      property: "og:image",
+      content: bbn,
     },
   ],
 };

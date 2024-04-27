@@ -1,27 +1,28 @@
 .serverList {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  padding: var(--section-padding);
+  margin: var(--item-margin-tb) var(--item-margin-lr);
+  padding: var(--item-padding-tb) var(  --item-padding-lr);
   background-color: var(--section-background-color);
-  border-radius: var(--section-border-radius);
+  border-radius: var(--item-list-border-radius);
+  width: 100%;
 }
 
 .serverItem {
   overflow: hidden;
-  margin: 10px;
   width: calc(15% - 16px);
   transition: transform 0.3s ease;
   background-color: var(--item-background-color); 
   border-radius: var(--small-border-radius);
-  padding: var(--item-padding);
+  margin: var(--item-list-margin-tb) var(--item-list-margin-lr);
+  padding: var(--item-list-padding-tb) var(--item-list-padding-lr);
 }
 
 .serverItem:hover {
-  transform: translateY(-5px);
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 
 .serverItem:active {
@@ -51,29 +52,18 @@
   justify-content: center;
 }
 
-.websiteIcon {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  padding: 5px;
-  transition: transform 0.2s;
-}
-
-.websiteIcon:hover {
-  transform: scale(1.1);
-}
-
+.websiteIcon,
 .discordIcon {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   padding: 5px;
-  background-color: none;
   transition: transform 0.2s;
 }
 
+.websiteIcon:hover,
 .discordIcon:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 p {

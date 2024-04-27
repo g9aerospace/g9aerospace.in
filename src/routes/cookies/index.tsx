@@ -10,15 +10,15 @@ export default component$(() => {
           Cookies Policy
         </h1>
         <p>
-          This website uses cookies to enhance the user experience and for analytics purposes. By using our website, you consent to the use of cookies in accordance with this Cookies Policy.
+          This website uses cookies to enhance the user experience and for analytics purposes. By using my website, you consent to the use of cookies in accordance with this Cookies Policy.
         </p>
         <h4 class={styles.sectionTitle}>What Are Cookies</h4>
         <p>
           Cookies are small pieces of text sent by your web browser by a website you visit. A cookie file is stored in your web browser and allows the Service or a third-party to recognize you and make your next visit easier and the Service more useful to you.
         </p>
-        <h4 class={styles.sectionTitle}>How We Use Cookies</h4>
+        <h4 class={styles.sectionTitle}>How I Use Cookies</h4>
         <p>
-          When you use and access the Service, we may place a number of cookies files in your web browser. We use cookies for the following purposes:
+          When you use and access the Service, I may place a number of cookies files in your web browser. I use cookies for the following purposes:
         </p>
         <ul>
           <li>To enable certain functions of the Service</li>
@@ -27,13 +27,13 @@ export default component$(() => {
           <li>To enable advertisements delivery, including behavioral advertising</li>
         </ul>
         <p>
-          We use both session and persistent cookies on the Service and we use different types of cookies to run the Service:
+          I use both session and persistent cookies on the Service and I use different types of cookies to run the Service:
         </p>
         <ul>
-          <li>Essential cookies: We may use essential cookies to authenticate users and prevent fraudulent use of user accounts.</li>
-          <li>Analytical/performance cookies: We may use analytical/performance cookies to analyze how users interact with the Service, to monitor the performance of the Service, and to improve the Service.</li>
-          <li>Functionality cookies: We may use functionality cookies to recognize you on the Service and remember your preferences.</li>
-          <li>Advertising cookies: We may use advertising cookies to serve you with advertisements that may be relevant to you and your interests.</li>
+          <li>Essential cookies: I may use essential cookies to authenticate users and prevent fraudulent use of user accounts.</li>
+          <li>Analytical/performance cookies: I may use analytical/performance cookies to analyze how users interact with the Service, to monitor the performance of the Service, and to improve the Service.</li>
+          <li>Functionality cookies: I may use functionality cookies to recognize you on the Service and remember your preferences.</li>
+          <li>Advertising cookies: I may use advertising cookies to serve you with advertisements that may be relevant to you and your interests.</li>
         </ul>
         <p>
           For more information on cookies, please visit <a href="https://www.allaboutcookies.org/">All About Cookies</a>.
@@ -55,7 +55,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: "description",
-      content: "Read our cookies policy to understand how we use cookies on our website for analytics and other purposes.",
+      content: "Read my cookies policy to understand how I use cookies on my website for analytics and other purposes.",
     },
   ],
 };

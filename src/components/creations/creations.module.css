@@ -1,37 +1,36 @@
-.container {
-  margin: 30px 80px 10px;
-  padding: 0;
-  background-color: var(--section-background-color);
-  border-radius: var(--section-border-radius);
-  padding: 30px
-}
-
 .creationsList {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
   list-style: none;
-  padding: 0;
+  display: grid;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: var(--item-margin-tb) var(--item-margin-lr);
+  padding: var(--item-padding-tb) var(  --item-padding-lr);
+  background-color: var(--section-background-color);
+  border-radius: var(--item-list-border-radius);
+  width: 100%;
 }
 
 .creationItem {
   background-color: var(--item-background-color);
   border-radius: var(--item-border-radius);
-  padding: 10px;
   display: flex;
   flex-direction: row;
   transform: scale(1);
   transition: transform 0.2s;
-
+  margin: var(--item-margin-tb) var(--item-margin-lr);
+  padding: var(--item-padding-tb) var(  --item-padding-lr);
+  width: 95%;
+  height: 80%;
 }
 
 .creationItem:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .creationItem:active {
-  transform: rotate(1deg);
-  transition: transform 2s;
+  transform: scale(1);
 }
 
 .leftContent {

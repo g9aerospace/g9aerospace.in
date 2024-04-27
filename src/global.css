@@ -17,11 +17,24 @@
 
   --section-border-radius: var(--medium-border-radius);
   --section-background-color: #ffffff17;
-  --section-padding: 20px 30px;
+  --section-padding: 20px auto;
+
+  --small-padding: 5px;
+  --medium-padding: 10px;
+  --large-padding: 20px;
 
   --item-background-color: #0000002e;
   --item-border-radius: var(--small-border-radius);
-  --item-padding: 10px 20px;
+  --item-margin-tb: 5px;
+  --item-margin-lr: 5px;
+  --item-padding-tb: 4px;
+  --item-padding-lr: 4px;
+
+  --item-list-border-radius: var(--medium-border-radius);
+  --item-list-margin-tb: 10px;
+  --item-list-margin-lr: 10px;
+  --item-list-padding-tb: 7px;
+  --item-list-padding-lr: 5px;
 
   --small-border-radius: 3px;
   --medium-border-radius: 8px;

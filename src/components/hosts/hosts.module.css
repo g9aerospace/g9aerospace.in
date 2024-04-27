@@ -1,22 +1,24 @@
 .hostList {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  padding: var(--section-padding);
+  margin: var(--item-margin-tb) var(--item-margin-lr);
+  padding: var(--item-padding-tb) var(  --item-padding-lr);
   background-color: var(--section-background-color);
-  border-radius: var(--section-border-radius);
+  border-radius: var(--item-list-border-radius);
+  width: 100%;
 }
 
 .hostItem {
   overflow: hidden;
-  margin: 10px;
-  width: calc(15% - 16px);
+  width: 20%;
   transition: transform 0.3s ease;
   background-color: var(--item-background-color); 
   border-radius: var(--small-border-radius);
-  padding: var(--item-padding);
+  margin: var(--item-list-margin-tb) var(--item-list-margin-lr);
+  padding: var(--item-list-padding-tb) var(--item-list-padding-lr);
 }
 
 .hostItem:hover {
@@ -28,8 +30,8 @@
 }
 
 .hostIcon {
-  width: 100px;
-  height: 100px;
+  width: 80%;
+  height: auto;
   margin: 10px auto 10px;
   display: block;
   transition: transform 0.3s ease;
@@ -53,8 +55,8 @@
 }
 
 .typeCard img {
-  width: 30px;
-  filter: brightness(60%);
+  width: 20px;
+  filter: brightness(75%);
 }
 
 .cta {
@@ -62,27 +64,16 @@
   justify-content: center;
 }
 
-.websiteIcon {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  padding: 5px;
-  transition: transform 0.2s;
-}
-
-.websiteIcon:hover {
-  transform: scale(1.1);
-}
-
+.websiteIcon,
 .discordIcon {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   padding: 5px;
-  background-color: none;
   transition: transform 0.2s;
 }
 
+.websiteIcon:hover,
 .discordIcon:hover {
   transform: scale(1.1);
 }
@@ -93,21 +84,26 @@ p {
 }
 
 /* Media Query for Tablets */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .hostList {
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7px;
+    margin: 5px auto 10px;
+    padding: 3px auto 3px;
   }
 
-
   .hostItem {
-    width: calc(80% - 16px);
-    height: min-content;
-    margin: 5px auto 3px;
+    width: 90%;
+    margin: 2px auto 3px;
+  }
+
+  .hostItem:hover {
+    transform: translateY(-3px);
   }
 
   .hostIcon {
-      width: 50px;
-      height: 50px;
-    }
+    width: 30px;
+    height: auto;
+  }
 }

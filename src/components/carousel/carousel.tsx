@@ -18,7 +18,7 @@ export default component$(() => {
   return (
     <div class={styles.carousel}>
       {images.map((image, index) => (
-        <img key={index} src={image} alt={`Carousel Image ${index}`} class={styles.image} />
+        <img key={index} src={image} alt={`Carousel ${index}`} class={styles.image} />
       ))}
     </div>
   );

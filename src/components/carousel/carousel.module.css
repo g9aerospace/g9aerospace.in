@@ -1,16 +1,16 @@
 .carousel {
   display: flex;
-  flex-wrap: nowrap; /* Ensure items stay in a single row */
-  overflow-x: auto; /* Enable horizontal scrolling if needed */
-  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   align-items: center;
   justify-content: center;
-  margin: 20px 0;
+  margin: 0;
 }
 
 .image {
-  max-width: none; /* Remove max-width to prevent resizing */
-  height: 70px; /* Set the height of the images */
+  max-width: none;
+  height: 70px;
   border-radius: 5px;
   margin: 0 10px;
 }
