@@ -3,6 +3,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import styles from "./legacynodes.module.css"
 import ImgThunder from "../../../media/legacynodes.png?jsx"
 import Hosts from "../../../components/hosts/hosts"
+import legacynodes from "../../../media/legacynodes.png"
 
 export default component$(() => {
   return (
@@ -155,6 +156,10 @@ export const head: DocumentHead = {
     {
       name: "description",
       content: "Try out LegacyNodes! They are great!",
+    },
+    {
+      property: "og:image",
+      content: legacynodes,
     },
   ],
 };

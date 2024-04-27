@@ -157,7 +157,6 @@ export const head: DocumentHead = {
       name: "description",
       content: "Try out EraNodes! They are great!",
     },
-    // Add og:image meta tag with the Eranodes logo
     {
       property: "og:image",
       content: eranodes,
