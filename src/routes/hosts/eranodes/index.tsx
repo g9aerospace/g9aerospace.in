@@ -155,9 +155,5 @@ export const head: DocumentHead = {
       name: "description",
       content: "Try out EraNodes! They are great!",
     },
-    {
-      property: "og:image",
-      content: {ImgThunder},
-    },
   ],
 };

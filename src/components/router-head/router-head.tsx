@@ -9,8 +9,6 @@ export const RouterHead = component$(() => {
   const head = useDocumentHead();
   const loc = useLocation();
 
-  const ogimage = head.meta.find((m) => m.property === "og:image")?.content || g9aerospace;
-
   return (
     <>
       <title>G9 Aerospace - {head.title}</title>
@@ -25,7 +23,7 @@ export const RouterHead = component$(() => {
       <meta property="og:description" content={head.meta.find((m) => m.name === "description")?.content} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={loc.url.href} />
-      <meta property="og:image" content={ogimage} />
+      <meta property="og:image" content={g9aerospace} />
 
       {head.meta.map((m) => (
         <meta key={m.key} {...m} />
