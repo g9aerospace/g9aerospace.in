@@ -22,12 +22,11 @@
 }
 
 .creationItem:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .creationItem:active {
-  transform: rotate(1deg);
-  transition: transform 2s;
+  transform: scale(1);
 }
 
 .leftContent {
