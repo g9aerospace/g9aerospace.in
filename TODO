@@ -3,9 +3,6 @@
 - **Make Sidebar More Responsive:**
    - Implement responsive design for the sidebar to ensure it displays properly on different screen sizes.
 
-- **Enhance Hamburger Hover Effect:**
-   - Improve the hover effect of the hamburger menu to make it more visually appealing and intuitive.
-
 - **Refine Dropdown Background Color and Styling:**
    - Adjust the background color and other styling properties of dropdown menus for better visual consistency and user experience.
 
@@ -23,15 +20,6 @@
 
 - **Transition from PNG to SVG Images:**
    - Convert existing PNG images to SVG format to optimize loading times and scalability while maintaining image quality.
-
-- **Customize OG Meta Tags for Fallback Image:**
-   - Customize Open Graph meta tags to specify the current image as the fallback image for social media sharing.
-   
-- **Implement /Creations Page (Dynamic):**
-   - Create a dynamic Creations page to showcase various content or projects, ensuring it's easily updatable.
-
-- **Grammar Check for TOS, Cookies, and Privacy Policy:**
-   - Review and correct any grammatical errors in the Terms of Service, Cookies Policy, and Privacy Policy for clarity and professionalism.
 
 - **Add Copyright Footer:**
    - Include a copyright footer at the bottom of each page to protect intellectual property and assert ownership.
