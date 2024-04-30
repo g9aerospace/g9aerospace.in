@@ -29,6 +29,10 @@
   padding: 10px auto 5px;
 }
 
+.hostName {
+  text-align: center;
+}
+
 .hostIcon {
   width: 80%;
   height: auto;
@@ -62,6 +66,7 @@
 .cta {
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .websiteIcon,
