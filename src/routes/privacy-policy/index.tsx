@@ -5,6 +5,7 @@ import styles from "./privacy-policy.module.css";
 export default component$(() => {
   return (
     <>
+      <div role="presentation" class="ellipsis"></div>
       <div id="privacy-policy" class={`${styles.container} ${styles.containerCenter}`}>
         <h1>
           Privacy Policy
