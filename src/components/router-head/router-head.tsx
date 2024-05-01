@@ -31,6 +31,9 @@ export const RouterHead = component$(() => {
       <meta property="og:url" content={loc.url.href} />
       <meta property="og:image" content={ogImage} />
 
+      {/* AdSense */}
+      <meta name="google-adsense-account" content="ca-pub-9960461992182251"></meta>
+
       {head.meta.map((m) => (
         <meta key={m.key} {...m} />
       ))}

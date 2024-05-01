@@ -5,6 +5,7 @@ import styles from "./terms-of-service.module.css";
 export default component$(() => {
   return (
     <>
+      <div role="presentation" class="ellipsis"></div>
       <div id="terms-of-service" class={`${styles.container} ${styles.containerCenter}`}>
         <h1>
           Terms of Service
