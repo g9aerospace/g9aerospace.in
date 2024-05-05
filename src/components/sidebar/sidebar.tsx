@@ -75,7 +75,7 @@ export default component$(() => {
           <a href="https://www.youtube.com/@G9AEROSPACEYT" target="_blank" rel="noopener">
             <img src="https://img.icons8.com/?size=256&id=19318&format=png" alt="Youtube" />
           </a>
-          <a href="https://github.com/g9militantsYT" target="_blank" rel="noopener">
+          <a href="https://github.com/G9Aerospace" target="_blank" rel="noopener">
             <img src="https://img.icons8.com/?size=256&id=52539&format=png" alt="GitHub" />
           </a>
           <a href="https://discord.gg/gfzDMS7tQD" target="_blank" rel="noopener">
@@ -88,8 +88,8 @@ export default component$(() => {
         
         <div class={styles.sponsorContainer}>
           <iframe class={styles.sponsor}
-            src="https://github.com/sponsors/g9militantsYT/button"
-            title="Sponsor g9militantsYT">
+            src="https://github.com/sponsors/G9Aerospace/button"
+            title="Sponsor G9Aerospace">
           </iframe>
         </div>
       </div>
