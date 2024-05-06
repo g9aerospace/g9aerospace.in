@@ -8,7 +8,7 @@
   padding: var(--item-padding-tb) var(  --item-padding-lr);
   background-color: var(--section-background-color);
   border-radius: var(--item-list-border-radius);
-  width: 100%;
+  width: fill;
 }
 
 .serverItem {
