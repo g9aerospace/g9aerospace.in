@@ -4,7 +4,6 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  height: 450px;
   justify-content: center;
   gap: 40px;
 }
@@ -40,7 +39,6 @@
   }
 }
 
-
 .hero p {
   color: white;
   margin: 0;
@@ -54,21 +52,21 @@
 }
 
 .youtube-button {
-  background-color: red;
+  background-color: darkred;
   color: white;
   border: none;
   height: 60px;
   margin: 0 0 0 8px;
   border-radius: 12px;
   font-size: 24px;
-  font-weight: Bold;
+  font-weight: bold;
   align-items: center;
   font-family: 'Red Hat Text', sans-serif;
   padding: 0 24px;
 }
 
 .youtube-button:hover {
-  background-color: darkred;
+  background-color: red;
 }
 
 .youtube-button:hover::after {
@@ -78,21 +76,21 @@
 }
 
 .bmc-button {
-  background-color: rgb(0, 81, 255);
+  background-color: darkblue;
   color: white;
   border: none;
   height: 60px;
   margin: 0 0 0 8px;
   border-radius: 12px;
   font-size: 24px;
-  font-weight: Bold;
+  font-weight: bold;
   align-items: center;
   font-family: 'Red Hat Text', sans-serif;
   padding: 0 24px;
 }
 
 .bmc-button:hover {
-  background-color: rgb(55, 119, 255);
+  background-color: blue;
 }
 
 .bmc-button:hover::after {
@@ -101,13 +99,27 @@
   margin-left: 5px;
 }
 
-@media screen and (min-width: 768px) {
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
   .hero {
-    gap: 60px;
-    height: 500px;
+    height: auto;
+    margin-top: 20px;
+    padding: 40px 20px;
+    text-align: center;
   }
 
-  .hero p {
-    font-size: 1.3rem;
+  .hero-image {
+  display: none;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .youtube-button,
+  .bmc-button {
+    margin: 0;
+    width: 100%;
   }
 }

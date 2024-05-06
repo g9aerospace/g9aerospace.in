@@ -9,6 +9,8 @@
   padding: 20px;
   box-sizing: border-box;
   overflow-y: auto;
+  overflow-x: hidden;
+  transition: width 0.3s ease;;
   min-width: 150px;
 }
 
@@ -52,6 +54,10 @@
 
 .hamburger img {
   width: 30px;
+  background-color: #090e19a4;
+  padding: 2px 4px;
+  border-radius: 3px;
+  border: #fff solid 0.5px;
 }
 
 .logo {
