@@ -54,10 +54,14 @@
 
 .hamburger img {
   width: 30px;
-  background-color: #090e19a4;
-  padding: 2px 4px;
-  border-radius: 3px;
-  border: #fff solid 0.5px;
+  padding: 4px;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+.hamburger img:hover {
+  background-color: var(--hover-background-color);
+  border: #ffffff71 1px solid;
 }
 
 .logo {
