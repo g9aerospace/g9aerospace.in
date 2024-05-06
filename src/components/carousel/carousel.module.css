@@ -5,12 +5,24 @@
   -webkit-overflow-scrolling: touch;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 .image {
-  max-width: none;
-  height: 70px;
-  border-radius: 5px;
-  margin: 0 10px;
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .carousel {
+    padding: 5px;
+  }
+
+  .image {
+    max-width: 25px;
+  }
 }

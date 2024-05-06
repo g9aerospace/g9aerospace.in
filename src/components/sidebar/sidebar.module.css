@@ -9,6 +9,8 @@
   padding: 20px;
   box-sizing: border-box;
   overflow-y: auto;
+  overflow-x: hidden;
+  transition: width 0.3s ease;;
   min-width: 150px;
 }
 
@@ -52,6 +54,14 @@
 
 .hamburger img {
   width: 30px;
+  padding: 4px;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+.hamburger img:hover {
+  background-color: var(--hover-background-color);
+  border: #ffffff71 1px solid;
 }
 
 .logo {
@@ -252,4 +262,3 @@
 .sponsor:hover {
   transform: scale(1.05);
 }
-

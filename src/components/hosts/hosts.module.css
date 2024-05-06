@@ -8,7 +8,7 @@
   padding: var(--item-padding-tb) var(  --item-padding-lr);
   background-color: var(--section-background-color);
   border-radius: var(--item-list-border-radius);
-  width: 100%;
+  width: fill;
 }
 
 .hostItem {
@@ -94,8 +94,8 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 7px;
-    margin: 5px auto 10px;
-    padding: 3px auto 3px;
+    margin: 5px auto;
+    padding: 3px auto;
   }
 
   .hostItem {
