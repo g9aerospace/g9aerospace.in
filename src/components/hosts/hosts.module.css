@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   margin: var(--item-margin-tb) var(--item-margin-lr);
-  padding: var(--item-padding-tb) var(  --item-padding-lr);
+  padding: var(--item-padding-tb) var(--item-padding-lr);
   background-color: var(--section-background-color);
   border-radius: var(--item-list-border-radius);
   width: fill;
@@ -22,7 +22,7 @@
 }
 
 .hostItem:hover {
-  transform: translateY(-5px);
+  transform: scale(1.015);
 }
 
 .hostInfo {
@@ -43,7 +43,7 @@
 }
 
 .hostItem:hover .hostIcon {
-  transform: scale(1.1);
+  transform: scale(1.015);
 }
 
 .hostIcon:hover {
@@ -80,7 +80,7 @@
 
 .websiteIcon:hover,
 .discordIcon:hover {
-  transform: scale(1.1);
+  transform: scale(1.015);
 }
 
 p {

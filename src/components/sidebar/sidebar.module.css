@@ -12,6 +12,7 @@
   overflow-x: hidden;
   transition: width 0.3s ease;;
   min-width: 150px;
+  z-index: 1000;
 }
 
 .sidebarOpen {

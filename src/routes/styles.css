@@ -187,6 +187,46 @@ button.button-small {
   );
   transform: rotate(-5deg);
 }
+.ellipsis.ellipsis-blue {
+  top: 1350px;
+  left: -100px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(34, 88, 215, 0.5) 0%,
+    rgba(21, 25, 52, 0) 100%
+  );
+  transform: rotate(-5deg);
+}
+.ellipsis.ellipsis-green {
+  top: 1350px;
+  left: -100px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(2, 255, 48, 0.5) 0%,
+    rgba(21, 25, 52, 0) 100%
+  );
+  transform: rotate(-5deg);
+}
+.ellipsis.ellipsis-red {
+  top: 1350px;
+  left: -100px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(168, 0, 0, 0.5) 0%,
+    rgba(21, 25, 52, 0) 100%
+  );
+  transform: rotate(-5deg);
+}
+.ellipsis.ellipsis-yellow {
+  top: 1350px;
+  left: -100px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(219, 246, 48, 0.41) 0%,
+    rgba(52, 35, 21, 0) 100%
+  );
+  transform: rotate(-5deg);
+}
 
 @media screen and (min-width: 768px) {
   .ellipsis {
@@ -197,6 +237,26 @@ button.button-small {
   }
   .ellipsis.ellipsis-purple {
     top: 1300px;
+    left: -200px;
+  }
+  .ellipsis.ellipsis-blue {
+    top: 1300px;
+    left: -200px;
+  }
+  .ellipsis.ellipsis-red {
+    top: -100px;
+    left: 350px;
+    width: 1400px;
+    height: 800px;
+  }
+  .ellipsis.ellipsis-green {
+    top: -100px;
+    left: 350px;
+    width: 1400px;
+    height: 800px;
+  }
+  .ellipsis.ellipsis-yellow {
+    top: 800px;
     left: -200px;
   }
 }
@@ -226,20 +286,20 @@ button.button-small {
 
 /* SCROLLBAR ------------------------------------ */
 ::-webkit-scrollbar {
-  width: 8px; /* Adjusted width for smaller screens */
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.173);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.286);
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.599);
 }
 
 /* BUTTONS -------------------------------------- */

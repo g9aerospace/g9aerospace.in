@@ -5,7 +5,7 @@ import styles from "./cookies.module.css";
 export default component$(() => {
   return (
     <>
-      <div role="presentation" class="ellipsis"></div>
+      <div role="presentation" class="ellipsis ellipsis-green"></div>
       <div id="cookies-policy" class={`${styles.container} ${styles.containerCenter}`}>
         <h1>
           Cookies Policy

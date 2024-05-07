@@ -26,11 +26,7 @@
 }
 
 .creationItem:hover {
-  transform: scale(1.02);
-}
-
-.creationItem:active {
-  transform: scale(1);
+  transform: scale(1.015);
 }
 
 .leftContent {

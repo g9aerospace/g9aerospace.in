@@ -13,28 +13,28 @@ import dragonnetworkIcon from "../../media/dragon-network.png"
 // Define the Qwik component
 export default component$(() => {
   return (
-      <ul class={styles.serverList}>
-        {serversData.map((server, index) => (
-          <li key={index} class={styles.serverItem}>
-            {/* Use simple href with lowercase server name and target="_blank" */}
-            <a class={styles.serverLink}>
-              {getserverIcon(server.name)}
-            </a>
-            <div class={styles.serverInfo}>
-              <p class={styles.serverName}>{server.name}</p>
-              <p class={styles.cta}>
-                {/* Links for website and Discord icons */}
-                <a href={server.website} target="_blank" rel="noopener noreferrer">
-                  <img src={websiteicon} alt="Website Icon" class={styles.websiteIcon} width="50" height="50" />
-                </a>
-                <a href={server.discordLink} target="_blank" rel="noopener noreferrer">
-                  <img src={discordicon} alt="Discord Icon" class={styles.discordIcon} width="50" height="50" />
-                </a>
-              </p>
-            </div>
-          </li>
-        ))}
-      </ul>
+    <ul class={styles.serverList}>
+      {serversData.map((server, index) => (
+        <li key={index} class={styles.serverItem}>
+          {/* Use simple href with lowercase server name and target="_blank" */}
+          <a class={styles.serverLink}>
+            {getserverIcon(server.name)}
+          </a>
+          <div class={styles.serverInfo}>
+            <p class={styles.serverName}>{server.name}</p>
+            <p class={styles.cta}>
+              {/* Links for website and Discord icons */}
+              <a href={server.website} target="_blank" rel="noopener noreferrer">
+                <img src={websiteicon} alt="Website" class={styles.websiteIcon} width="50" height="50" />
+              </a>
+              <a href={server.discordLink} target="_blank" rel="noopener noreferrer">
+                <img src={discordicon} alt="Discord" class={styles.discordIcon} width="50" height="50" />
+              </a>
+            </p>
+          </div>
+        </li>
+      ))}
+    </ul>
   );
 });
 
