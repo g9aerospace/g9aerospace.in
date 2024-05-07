@@ -11,134 +11,147 @@ export default component$(() => {
         <br />
         to have <span class="highlight">you</span> here
       </h1>
-      <p>Have fun exploring my website!</p>
       <div class={styles["button-group"]}>
-      {/*Youtube Button*/}
-      <button
-        class={styles["youtube-button"]}
-        onClick$={async () => {
-          const defaults = {
-            spread: 360,
-            ticks: 70,
-            gravity: 0,
-            decay: 0.95,
-            startVelocity: 30,
-            colors: ["006ce9", "ac7ff4", "18b6f6", "713fc2", "ffffff"],
-            origin: {
-              x: 0.5,
-              y: 0.35,
-            },
-          };
+        {/*Youtube Button*/}
+        <button
+          class={styles["youtube-button"]}
+          onClick$={async (evt) => {
+            // Get button position
+            const buttonRect = evt.target.getBoundingClientRect();
 
-          function loadConfetti() {
-            return new Promise<(opts: any) => void>((resolve, reject) => {
-              if ((globalThis as any).confetti) {
-                return resolve((globalThis as any).confetti as any);
-              }
-              const script = document.createElement("script");
-              script.src =
-                "https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js";
-              script.onload = () =>
-                resolve((globalThis as any).confetti as any);
-              script.onerror = reject;
-              document.head.appendChild(script);
-              script.remove();
-            });
-          }
+            // Calculate position relative to the viewport
+            const x = buttonRect.left + buttonRect.width / 2;
+            const y = buttonRect.top + buttonRect.height / 2;
 
-          const confetti = await loadConfetti();
+            const defaults = {
+              spread: 360,
+              ticks: 70,
+              gravity: 0,
+              decay: 0.95,
+              startVelocity: 30,
+              colors: ["006ce9", "ac7ff4", "18b6f6", "713fc2", "ffffff"],
+              origin: {
+                x: x / window.innerWidth, // Convert to relative position
+                y: y / window.innerHeight, // Convert to relative position
+              },
+            };
 
-          function shoot() {
-            confetti({
-              ...defaults,
-              particleCount: 80,
-              scalar: 1.2,
-            });
+            function loadConfetti() {
+              return new Promise<(opts: any) => void>((resolve, reject) => {
+                if ((globalThis as any).confetti) {
+                  return resolve((globalThis as any).confetti as any);
+                }
+                const script = document.createElement("script");
+                script.src =
+                  "https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js";
+                script.onload = () =>
+                  resolve((globalThis as any).confetti as any);
+                script.onerror = reject;
+                document.head.appendChild(script);
+                script.remove();
+              });
+            }
 
-            confetti({
-              ...defaults,
-              particleCount: 60,
-              scalar: 0.75,
-            });
-          }
+            const confetti = await loadConfetti();
 
-          setTimeout(shoot, 0);
-          setTimeout(shoot, 100);
-          setTimeout(shoot, 200);
-          setTimeout(shoot, 300);
-          setTimeout(shoot, 400);
+            function shoot() {
+              confetti({
+                ...defaults,
+                particleCount: 80,
+                scalar: 1.2,
+              });
 
-          // Open website in new tab after animation
-          setTimeout(() => {
-            window.open("https://www.youtube.com/@G9AEROSPACEYT", "_blank");
-          }, 990); // Adjust the delay time as needed
-        }}
-      >
-        Youtube
-      </button>
-      {/*BuyMeaCoffee Button*/}
-      <button
-        class={styles["bmc-button"]}
-        onClick$={async () => {
-          const defaults = {
-            spread: 360,
-            ticks: 70,
-            gravity: 0,
-            decay: 0.95,
-            startVelocity: 30,
-            colors: ["006ce9", "ac7ff4", "18b6f6", "713fc2", "ffffff"],
-            origin: {
-              x: 0.5,
-              y: 0.35,
-            },
-          };
+              confetti({
+                ...defaults,
+                particleCount: 60,
+                scalar: 0.75,
+              });
+            }
 
-          function loadConfetti() {
-            return new Promise<(opts: any) => void>((resolve, reject) => {
-              if ((globalThis as any).confetti) {
-                return resolve((globalThis as any).confetti as any);
-              }
-              const script = document.createElement("script");
-              script.src =
-                "https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js";
-              script.onload = () =>
-                resolve((globalThis as any).confetti as any);
-              script.onerror = reject;
-              document.head.appendChild(script);
-              script.remove();
-            });
-          }
+            setTimeout(shoot, 0);
+            setTimeout(shoot, 100);
+            setTimeout(shoot, 200);
+            setTimeout(shoot, 300);
+            setTimeout(shoot, 400);
 
-          const confetti = await loadConfetti();
+            // Open website in new tab after animation
+            setTimeout(() => {
+              window.open("https://www.youtube.com/@G9AEROSPACEYT", "_blank");
+            }, 990); // Adjust the delay time as needed
+          }}
+        >
+          Youtube
+        </button>
+        {/*BuyMeaCoffee Button*/}
+        <button
+          class={styles["bmc-button"]}
+          onClick$={async (evt) => {
+            // Get button position
+            const buttonRect = evt.target.getBoundingClientRect();
 
-          function shoot() {
-            confetti({
-              ...defaults,
-              particleCount: 80,
-              scalar: 1.2,
-            });
+            // Calculate position relative to the viewport
+            const x = buttonRect.left + buttonRect.width / 2;
+            const y = buttonRect.top + buttonRect.height / 2;
 
-            confetti({
-              ...defaults,
-              particleCount: 60,
-              scalar: 0.75,
-            });
-          }
+            const defaults = {
+              spread: 360,
+              ticks: 70,
+              gravity: 0,
+              decay: 0.95,
+              startVelocity: 30,
+              colors: ["006ce9", "ac7ff4", "18b6f6", "713fc2", "ffffff"],
+              origin: {
+                x: x / window.innerWidth, // Convert to relative position
+                y: y / window.innerHeight, // Convert to relative position
+              },
+            };
 
-          setTimeout(shoot, 0);
-          setTimeout(shoot, 100);
-          setTimeout(shoot, 200);
-          setTimeout(shoot, 300);
-          setTimeout(shoot, 400);
+            function loadConfetti() {
+              return new Promise<(opts: any) => void>((resolve, reject) => {
+                if ((globalThis as any).confetti) {
+                  return resolve((globalThis as any).confetti as any);
+                }
+                const script = document.createElement("script");
+                script.src =
+                  "https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js";
+                script.onload = () =>
+                  resolve((globalThis as any).confetti as any);
+                script.onerror = reject;
+                document.head.appendChild(script);
+                script.remove();
+              });
+            }
 
-          // Open website in new tab after animation
-          setTimeout(() => {
-            window.open("https://buymeacoffee.com/g9aerospace", "_blank");
-          }, 990); // Adjust the delay time as needed
-        }}
-      >
-        Buy me a jet!
-      </button>
+            const confetti = await loadConfetti();
+
+            function shoot() {
+              confetti({
+                ...defaults,
+                particleCount: 80,
+                scalar: 1.2,
+              });
+
+              confetti({
+                ...defaults,
+                particleCount: 60,
+                scalar: 0.75,
+              });
+            }
+
+            setTimeout(shoot, 0);
+            setTimeout(shoot, 100);
+            setTimeout(shoot, 200);
+            setTimeout(shoot, 300);
+            setTimeout(shoot, 400);
+
+            // Open website in new tab after animation
+            setTimeout(() => {
+              window.open("https://buymeacoffee.com/g9aerospace", "_blank");
+            }, 990); // Adjust the delay time as needed
+          }}
+        >
+          Buy me a jet!
+        </button>
       </div>
     </div>
   );
