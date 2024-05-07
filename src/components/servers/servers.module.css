@@ -22,11 +22,7 @@
 }
 
 .serverItem:hover {
-  transform: scale(1.03);
-}
-
-.serverItem:active {
-  transform: scale(1.05);
+  transform: scale(1.015);
 }
 
 .serverInfo {
@@ -43,7 +39,7 @@
 }
 
 .serverIcon:hover {
-  transform: scale(1.1);
+  transform: scale(1.015);
 }
 
 .cta {

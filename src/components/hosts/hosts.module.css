@@ -22,7 +22,7 @@
 }
 
 .hostItem:hover {
-  transform: translateY(-5px);
+  transform: scale(1.015);
 }
 
 .hostInfo {
@@ -43,7 +43,7 @@
 }
 
 .hostItem:hover .hostIcon {
-  transform: scale(1.1);
+  transform: scale(1.015);
 }
 
 .hostIcon:hover {
@@ -80,7 +80,7 @@
 
 .websiteIcon:hover,
 .discordIcon:hover {
-  transform: scale(1.1);
+  transform: scale(1.015);
 }
 
 p {
