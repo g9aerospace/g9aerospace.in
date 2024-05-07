@@ -21,33 +21,33 @@ import voiceIcon from "../../media/voice-icon.png";
 // Define the Qwik component
 export default component$(() => {
   return (
-      <ul class={styles.hostList}>
-        {hostsData.map((host, index) => (
-          <li key={index} class={styles.hostItem}>
-            <a href={`/hosts/${host.name.toLowerCase()}`} target="_blank" rel="noopener noreferrer" class={styles.hostLink}>
-              {getHostIcon(host.name)}
-            </a>
-            <div class={styles.hostInfo}>
-              <p class={styles.hostName}>{host.name}</p>
-              <p class={styles.cta}>
-                <a href={host.website} target="_blank" rel="noopener noreferrer">
-                  <img src={websiteicon} alt="Website Icon" class={styles.websiteIcon} width="50" height="50" />
-                </a>
-                <a href={host.discordLink} target="_blank" rel="noopener noreferrer">
-                  <img src={discordicon} alt="Discord Icon" class={styles.discordIcon} width="50" height="50" />
-                </a>
-              </p>
-            </div>
-            <div class={styles.supportedTypes}>
-              {host.type && host.type.split(',').map((type, idx) => (
-                <div key={idx} class={styles.typeCard}>
-                  {getTypeIcon(type.trim())}
-                </div>
-              ))}
-            </div>
-          </li>
-        ))}
-      </ul>
+    <ul class={styles.hostList}>
+      {hostsData.map((host, index) => (
+        <li key={index} class={styles.hostItem}>
+          <a href={`/hosts/${host.name.toLowerCase()}`} target="_blank" rel="noopener noreferrer" class={styles.hostLink}>
+            {getHostIcon(host.name)}
+          </a>
+          <div class={styles.hostInfo}>
+            <p class={styles.hostName}>{host.name}</p>
+            <p class={styles.cta}>
+              <a href={host.website} target="_blank" rel="noopener noreferrer">
+                <img src={websiteicon} alt="Website" class={styles.websiteIcon} width="50" height="50" />
+              </a>
+              <a href={host.discordLink} target="_blank" rel="noopener noreferrer">
+                <img src={discordicon} alt="Discord" class={styles.discordIcon} width="50" height="50" />
+              </a>
+            </p>
+          </div>
+          <div class={styles.supportedTypes}>
+            {host.type && host.type.split(',').map((type, idx) => (
+              <div key={idx} class={styles.typeCard}>
+                {getTypeIcon(type.trim())}
+              </div>
+            ))}
+          </div>
+        </li>
+      ))}
+    </ul>
   );
 });
 

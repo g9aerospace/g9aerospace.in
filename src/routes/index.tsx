@@ -15,28 +15,19 @@ export default component$(() => {
 
       <div role="presentation" class="ellipsis"></div>
       <div role="presentation" class="ellipsis ellipsis-blue"></div>
-      
+ 
       <div id="hosts" class="container container-center">
-        <h3>
-          You can count on these <span class="highlight">Hosts</span>
-        </h3>
+        <h3>You can count on these <span class="highlight">Hosts</span></h3>
         <Hosts />
       </div>
-
-      <div id="servers"class="container container-center">
-        <h3>
-          You can play on these <span class="highlight">Servers</span>
-        </h3>
+      <div id="servers" class="container container-center">
+        <h3>You can play on these <span class="highlight">Servers</span></h3>
         <Servers />
       </div>
-
       <div id="creations" class="container container-center">
-        <h3>
-          You can check out these <span class="highlight">Creations</span>
-        </h3>
+        <h3>You can check out these <span class="highlight">Creations</span></h3>
         <Creations />
       </div>
-
     </>
   );
 });
@@ -45,7 +36,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: "description",
-      content: "Welcome to G9 Aerospace's Portfolio website!",
+      content: "View my portfolio!",
     },
   ],
 };
