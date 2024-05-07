@@ -14,7 +14,7 @@ export default component$(() => {
       <Carousel />
 
       <div role="presentation" class="ellipsis"></div>
-      <div role="presentation" class="ellipsis ellipsis-purple"></div>
+      <div role="presentation" class="ellipsis ellipsis-blue"></div>
       
       <div id="hosts" class="container container-center">
         <h3>
