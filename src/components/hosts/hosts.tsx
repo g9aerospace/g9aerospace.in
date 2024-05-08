@@ -1,3 +1,4 @@
+/* eslint-disable qwik/jsx-img */
 import { component$ } from "@builder.io/qwik";
 import styles from "./hosts.module.css";
 import websiteicon from "../../media/website-icon.png";
