@@ -1,5 +1,3 @@
-[![pages-build-deployment](https://github.com/g9militantsYT/g9aerospace.in/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/g9militantsYT/g9aerospace.in/actions/workflows/pages/pages-build-deployment)
-
 <a href="https://freetools.seobility.net/en/seocheck/g9aerospace.in"><img src="https://freetools.seobility.net/widget/widget.png?url=g9aerospace.in" alt="Seobility Score für g9aerospace.in"></a>
 
 # Qwik City App ⚡️
