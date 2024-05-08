@@ -192,8 +192,9 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   z-index: 1;
-  background-color: #2f2f2fe3;
+  background-color: #1f1f1fe4;
   margin-left: 10px;
+  backdrop-filter: blur(3px);
 }
 
 .dropdownContent a {

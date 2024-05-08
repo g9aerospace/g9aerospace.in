@@ -7,7 +7,9 @@
     "not ie 11",
     "not and_ff <= 124",
     "not firefox <= 124",
-    "not opera <= 109"
+    "not opera <= 109",
+    "not ios_saf <= 17.4",
+    "not safari <= 17.4"
   ],
   "hints": {
     "apple-touch-icons": "off",

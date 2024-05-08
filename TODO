@@ -1,8 +1,5 @@
 # TODO List
 
-- **Refine Dropdown Background Color and Styling:**
-   - Adjust the background color and other styling properties of dropdown menus for better visual consistency and user experience.
-
 - **Implement Responsive Design Across All Pages:**
    - Ensure that all pages of the website are responsive and adapt well to various devices and screen sizes.
 
@@ -11,9 +8,6 @@
 
 - **Transition from PNG to SVG Images:**
    - Convert existing PNG images to SVG format to optimize loading times and scalability while maintaining image quality.
-
-- **Add Copyright Footer:**
-   - Include a copyright footer at the bottom of each page to protect intellectual property and assert ownership.
 
 - **Better CTA:**
    - Uniform CTA
