@@ -21,7 +21,7 @@
 
 .sidebarMinimized {
   width: 30px;
-  background-color: #1a1a1a23;
+  background-color: #00000029;
   min-width: 0px;
 }
 
@@ -262,4 +262,10 @@
 
 .sponsor:hover {
   transform: scale(1.05);
+}
+
+@media only screen and (max-width: 767px) {
+  .sidebarMinimized {
+    background-color: transparent;
+  }
 }
