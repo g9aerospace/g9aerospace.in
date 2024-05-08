@@ -1,3 +1,4 @@
+/* eslint-disable qwik/jsx-img */
 import { component$ } from "@builder.io/qwik";
 import styles from "./hosts.module.css";
 import websiteicon from "../../media/website-icon.png";
@@ -7,12 +8,14 @@ import hostsData from "../../data/hosts.json";
 // Import host icons
 import bbnIcon from "../../media/bbn.png";
 import eranodesIcon from "../../media/eranodes.png";
+import eraserversIcon from "../../media/eraservers.png"
 import legacynodesIcon from "../../media/legacynodes.png";
 import dimehostingIcon from "../../media/dimehosting.png";
 import destinynodesIcon from "../../media/destinynodes.png";
 
 // Import type icons
 import minecraftIcon from "../../media/minecraft-icon.png";
+import vpsicon from "../../media/vps-icon.png"
 import gtaIcon from "../../media/gta-icon.png";
 import palworldIcon from "../../media/palworld-icon.png";
 import codeIcon from "../../media/code-icon.png";
@@ -55,6 +58,8 @@ function getTypeIcon(type: string) {
   switch (type.toLowerCase()) {
     case "minecraft":
       return <img src={minecraftIcon} alt="Minecraft Icon" class={styles.typeIcon} />;
+    case "vps":
+      return <img src={vpsicon} alt="VPS Icon" class={styles.typeIcon} />;
     case "gta":
       return <img src={gtaIcon} alt="GTA Icon" class={styles.typeIcon} />;
     case "palworld":
@@ -75,6 +80,8 @@ function getHostIcon(hostName: string) {
       return <img src={bbnIcon} alt="BBN Icon" class={styles.hostIcon} />;
     case "EraNodes":
       return <img src={eranodesIcon} alt="EraNodes Icon" class={styles.hostIcon} />;
+      case "EraServers":
+        return <img src={eraserversIcon} alt="EraServers Icon" class={styles.hostIcon} />;
     case "LegacyNodes":
       return <img src={legacynodesIcon} alt="LegacyNodes Icon" class={styles.hostIcon} />;
     case "DimeHosting":
