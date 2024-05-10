@@ -12,6 +12,12 @@
         "githubLink": "https://github.com/Eranodes/EraNodes-Utils"
     },
     {
+        "name": "EraNodes Homepage",
+        "organisation": "EraNodes",
+        "website": "https://eranodes.com",
+        "githubLink": "https://github.com/Eranodes/eranodes.com"
+    },
+    {
         "name": "Craft File Reader",
         "organisation": "KSPCommunity",
         "website": "https://www.npmjs.com/package/@kspcommunity/craft-file-reader",
