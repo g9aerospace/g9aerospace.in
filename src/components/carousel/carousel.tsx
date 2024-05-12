@@ -14,9 +14,8 @@ import dragonnetwork from "../../media/dragon-network.png";
 import vypergroup from "../../media/vypergroup.png";
 import embernodes from "../../media/embernodes.png";
 import bricksnetwork from "../../media/bricks-network.png";
-import hostysconnect from "../../media/hostys-connect.png"
 
-const images = [bbn, eranodes,eraservers, vypergroup, legacynodes, embernodes, dimehosting, hostysconnect, destinynodes, bricksnetwork, craftersgg, dragonnetwork];
+const images = [bbn, eranodes,eraservers, vypergroup, legacynodes, embernodes, dimehosting, destinynodes, bricksnetwork, craftersgg, dragonnetwork];
 // Define the Qwik component for the carousel
 export default component$(() => {
 
