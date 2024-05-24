@@ -7,9 +7,9 @@ export default component$(() => {
     <div class={["container", styles.hero]}>
       <ImgThunder class={styles["hero-image"]} alt="Image thunder" />
       <h1>
-        So <span class="highlight">fantastic</span>
+      <span class="highlight">Welcome</span> to <span class="highlight">my world</span>
         <br />
-        to have <span class="highlight">you</span> here
+      <span class="highlight">Explore</span> what I <span class="highlight">create</span>
       </h1>
       <div class={styles["button-group"]}>
         {/*Youtube Button*/}
